@@ -140,7 +140,6 @@ cache/        Overpass cache, ~400 MB (gitignored)
 app.py        Streamlit demo — buffer vs network coverage, with A/B toggles
 3-4_session.ipynb        lectures 3 & 4 (final)
 geopandas_analysis.ipynb lectures 1 & 2
-python_visualization.ipynb  lecture 3 early draft
 practice.ipynb           lecture 3 exercise stub (has deliberate typos)
 ```
 

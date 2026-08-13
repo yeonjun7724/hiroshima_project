@@ -15,6 +15,7 @@ data/BND_ADM_DONG_PG.shp
 # Rendered maps are outputs, not sources. Regenerate from the notebooks.
 # 렌더링된 지도는 소스가 아니라 산출물이다. 노트북에서 재생성한다.
 seoul_steps_compare.html
+deck_3d_population_yellow_orange_red_radius_only.html
 outputs/*.html
 outputs/*.gpkg
 
