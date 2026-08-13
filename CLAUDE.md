@@ -194,8 +194,23 @@ Notebook filenames do not match lecture numbers — see the mapping above.
    표고(강/측량 공백 7개 픽셀)가 Dijkstra에서 조용히 특정 정류장의 도달범위를
    75배 부풀리는 실제 버그를 발견·수정함 — 발표의 주제(조용히 틀리는 공간분석)가
    발표 준비 도구에서도 그대로 재현된 사례.
-3. **Task 3** — GeoParquet pre-bake + self-hosted PMTiles basemap so the demo
-   survives conference wifi.
+3. **Task 3** — GeoParquet pre-bake done; PMTiles basemap still open.
+   `analysis/prebake_seoul_admin.py` filters the 140MB nationwide boundary
+   shapefile to Seoul's 426 dongs and writes `data/BND_ADM_DONG_SEOUL.parquet`
+   (4.15MB, committed). This fixed a real, previously-undiscovered bug: app.py
+   pointed at `data/BND_ADM_DONG_PG.gpkg`, a file that has **never existed**
+   in this repo — app.py has been broken since it was written. Verified live
+   in a browser (Playwright): both 남현동 and 청림동 load, KPIs match the
+   published findings (청림동 total pop 17,881, matching finding 02) and both
+   maps render. Self-hosted PMTiles basemap (replacing lonboard's live
+   CartoCDN call from Task 6) is still open — needs research into whether
+   lonboard's bundled MapLibre exposes a pmtiles:// protocol hook before
+   committing to that path.
+   **Task 3 절반 완료**: GeoParquet 사전굽기는 끝났고, 그 과정에서 app.py가
+   존재한 적 없는 파일을 가리키던 실제 버그(작성 이후 계속 깨져 있었음)를
+   발견·수정함. 브라우저에서 남현동·청림동 둘 다 확인, KPI가 발표된 finding과
+   일치. PMTiles 자체 호스팅은 아직 — lonboard가 pmtiles:// 프로토콜을 지원
+   하는지부터 조사 필요.
 4. **Task 10** — isolated environment + lockfile.
 5. **Task 2** — run all four notebooks end to end on pandas 3.0. This is
    where the lonboard cells (Task 6) get their first real execution against

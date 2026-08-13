@@ -4,11 +4,17 @@
 cache/
 
 # --- Oversized source data ----------------------------------------------
-# BND_ADM_DONG_PG.shp is 140 MB - above GitHub's 100 MB per-file limit.
-# Task 3 replaces it with a Seoul-only GeoParquet extract; until then this
-# file must be fetched separately (see CLAUDE.md, Data sources).
-# BND_ADM_DONG_PG.shp는 140MB로 GitHub 파일당 100MB 제한을 넘는다.
-# 3번 작업에서 서울만 담은 GeoParquet으로 대체한다. 그전까지는 별도 확보 필요.
+# BND_ADM_DONG_PG.shp is 140 MB (nationwide) - above GitHub's 100 MB
+# per-file limit. app.py no longer reads it directly: Task 3 added
+# analysis/prebake_seoul_admin.py, which filters it to Seoul (426 dongs,
+# 4.15 MB) and writes data/BND_ADM_DONG_SEOUL.parquet -- that parquet IS
+# committed. The .shp itself must still be fetched separately if you need
+# to rerun the prebake script (see CLAUDE.md, Data notes).
+# BND_ADM_DONG_PG.shp는 전국 데이터로 140MB라 GitHub 100MB 제한을 넘는다.
+# app.py는 더 이상 이 파일을 직접 읽지 않는다: Task 3에서 추가한
+# analysis/prebake_seoul_admin.py가 서울만(426개 동, 4.15MB) 걸러
+# data/BND_ADM_DONG_SEOUL.parquet을 만들고, 이 parquet은 커밋된다.
+# 사전 굽기 스크립트를 다시 돌리려면 .shp 원본은 별도로 확보해야 한다.
 data/BND_ADM_DONG_PG.shp
 
 # Task 9: prefecture/nationwide-scale raw downloads (~137MB). Only the

@@ -20,7 +20,7 @@ from shapely.geometry import mapping, LineString  # GeoJSON 변환 / 선 도형 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))         # 이 스크립트 파일이 위치한 폴더 (절대경로)
 DATA_DIR = os.path.join(BASE_DIR, "data")                     # 데이터 파일 보관 하위 폴더
 
-ADMIN_SHP  = os.path.join(DATA_DIR, "BND_ADM_DONG_PG.gpkg")  # 행정동 경계 파일 (GeoPackage)
+ADMIN_SHP  = os.path.join(DATA_DIR, "BND_ADM_DONG_SEOUL.parquet")  # 행정동 경계 파일 (서울만, GeoParquet -- analysis/prebake_seoul_admin.py로 생성)
 BUS_XLSX   = os.path.join(DATA_DIR, "서울시버스정류소위치정보(20260108).xlsx")  # 버스정류장 위치 엑셀
 SUBWAY_CSV = os.path.join(DATA_DIR, "서울교통공사_1_8호선 역사 좌표(위경도) 정보_20250814.csv")  # 지하철역 CSV
 GRID_SHP   = os.path.join(DATA_DIR, "nlsp_021001001.shp")    # 인구 격자(100m×100m) 쉐이프파일
@@ -126,7 +126,7 @@ with st.spinner("데이터 로드/분석 중... (OSM 네트워크 다운로드 �
     # ─────────────────────────────────────────────────────
     # (1) 행정동 로드 및 선택
     # ─────────────────────────────────────────────────────
-    gdf_admin = gpd.read_file(ADMIN_SHP)                               # 전체 행정동 경계 레이어 로드
+    gdf_admin = gpd.read_parquet(ADMIN_SHP)                            # 서울 행정동 경계 레이어 로드 (GeoParquet)
     gdf_admin["region_id"] = gdf_admin["ADM_CD"].astype(str).str.strip()  # 행정동 코드 → 문자열 + 앞뒤 공백 제거
     gdf_admin["region_nm"] = gdf_admin["ADM_NM"].astype(str).str.strip()  # 행정동 이름 → 문자열 + 공백 제거
     gdf_admin = gdf_admin.to_crs(TARGET_CRS)                           # 분석 좌표계(5179)로 변환
