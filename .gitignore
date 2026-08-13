@@ -1,0 +1,35 @@
+# --- OSMnx / Overpass response cache ------------------------------------
+# ~400 MB of raw API responses. Regenerated on demand; never commit.
+# 원시 API 응답 약 400MB. 필요 시 재생성되므로 커밋하지 않는다.
+cache/
+
+# --- Oversized source data ----------------------------------------------
+# BND_ADM_DONG_PG.shp is 140 MB - above GitHub's 100 MB per-file limit.
+# Task 3 replaces it with a Seoul-only GeoParquet extract; until then this
+# file must be fetched separately (see CLAUDE.md, Data sources).
+# BND_ADM_DONG_PG.shp는 140MB로 GitHub 파일당 100MB 제한을 넘는다.
+# 3번 작업에서 서울만 담은 GeoParquet으로 대체한다. 그전까지는 별도 확보 필요.
+data/BND_ADM_DONG_PG.shp
+
+# --- Large generated artifacts ------------------------------------------
+# Rendered maps are outputs, not sources. Regenerate from the notebooks.
+# 렌더링된 지도는 소스가 아니라 산출물이다. 노트북에서 재생성한다.
+seoul_steps_compare.html
+outputs/*.html
+outputs/*.gpkg
+
+# --- Python / Jupyter ----------------------------------------------------
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# --- Credentials ---------------------------------------------------------
+# Mapbox tokens were previously committed in-notebook and in exported HTML.
+# Both have been scrubbed; keep them out for good.
+# Mapbox 토큰이 과거 노트북과 내보낸 HTML에 포함돼 있었다. 모두 제거했으며
+# 다시 들어가지 않도록 한다.
+*.token
+secrets.json
