@@ -117,6 +117,21 @@ Regenerate any of these with the scripts in `analysis/`.
   **히로시마 버스정류장(KSJ P11)은 2010년 데이터** — 정부가 그 이후 갱신하지
   않았다. 철도/노면전차(N02)와 인구격자(e-Stat)는 최신(각각 2025년, 2020년
   국세조사). 히로시마 분석 좌표계는 EPSG:6670, 표시 좌표계는 EPSG:4326.
+- **lonboard's exported HTML must be served over HTTP, not opened via
+  `file://`.** Double-clicking `deck_3d_population_...html` or
+  `koi_slope_map.html` renders an empty map with no error dialog: the widget
+  offloads GeoArrow parsing to a Web Worker, and browsers block worker script
+  loading from `file://` origins. Confirmed by hitting this exact failure
+  (blank map, `importScripts` errors in the console) and fixing it by running
+  `python -m http.server` in the directory and opening `localhost:PORT/...`
+  instead. This applies at the conference too — no internet needed, but a
+  local server process must be running.
+  **lonboard가 내보낸 HTML은 `file://`로 직접 열면 안 되고 반드시 HTTP로
+  서빙해야 한다.** 더블클릭하면 에러 없이 빈 지도만 뜬다 — GeoArrow 파싱을
+  Web Worker에서 하는데, 브라우저가 `file://`에서 워커 스크립트 로드를 막는다.
+  실제로 이 실패(빈 지도, 콘솔에 importScripts 에러)를 겪고 `python -m
+  http.server`로 서빙해서 고쳤다. 발표 당일에도 마찬가지 — 인터넷은 필요
+  없지만 로컬 서버 프로세스는 반드시 떠 있어야 한다.
 
 ---
 
