@@ -1,0 +1,13 @@
+{
+  "flat_speed_kmh": 5.036742124615245,
+  "time_budget_s": 214.42431899022446,
+  "n_bus_stops": 41,
+  "naive_area_km2": 3.534578440489911,
+  "naive_population": 33527.4670013319,
+  "corrected_area_km2": 3.373898754083649,
+  "corrected_population": 32739.867012381037,
+  "hillside_mean_pct_change": -15.52,
+  "hillside_n": 10,
+  "valley_floor_mean_pct_change": -0.6923076923076923,
+  "valley_floor_n": 26
+}

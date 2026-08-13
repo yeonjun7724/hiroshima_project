@@ -170,15 +170,30 @@ Notebook filenames do not match lecture numbers — see the mapping above.
    **Task 6 완료**: 3D 인구블록 셀을 lonboard로 전환, MapLibre 렌더링·토큰 불필요.
    합성 데이터로 스모크 테스트만 검증(실제 노트북 실행은 Task 2). PMTiles
    자체 호스팅은 미완료 — Task 3으로 이관.
-2. **Task 9** — Hiroshima slope case, Koi-ue (己斐上). Data acquisition done
-   (`analysis/hiroshima/fetch_sources.py`): 44 bus stops (KSJ P11), 9 rail/
-   streetcar stations (KSJ N02), 58 population-mesh cells / 82,151 people
-   (e-Stat 500m mesh, 2020 census), 16 DEM5A 5m tiles (GSI), all clipped to
-   1.5km around Hiroden Nishi-Hiroshima (Koi) station. **Still open**:
-   Tobler's hiking function itself hasn't been implemented or applied yet —
-   this is source data only, not an analysis.
-   **Task 9 진행중**: 己斐上 사례. 데이터 수집은 끝남(스크립트 참고). Tobler
-   도보함수 구현·적용은 아직 안 함 — 지금은 원본 데이터만 있는 상태.
+2. ~~**Task 9** — Hiroshima slope case, Koi-ue (己斐上).~~ Done:
+   `analysis/hiroshima/fetch_sources.py` (data) +
+   `analysis/hiroshima/tobler_slope_correction.py` (analysis). Tobler's
+   (1993) hiking function applied per directed edge (uphill/downhill cost
+   differently) to the walk-home leg from each of 44 bus stops, compared
+   against the flat-ground 300m buffer app.py already uses.
+   **Result**: small in aggregate (+2.4%, 788 people, network-wide union)
+   but the same shape as finding 04 — nearly harmless on the 26 valley-floor
+   stops (mean −0.7%), severe on the 10 hillside stops ≥60m elevation (mean
+   −15.5%, worst single stop −32.5%). Per-stop numbers in
+   `analysis/hiroshima/per_stop_comparison.csv`.
+   A real bug was caught and fixed during this work, not just narrative
+   material: 7 DEM pixels were NaN (river/survey gaps), which produced NaN
+   edge times that networkx's Dijkstra doesn't handle safely — one edge
+   case silently inflated a single stop's catchment by ~75x before a
+   nearest-valid-pixel fill closed it. Left in git history as a reminder
+   that this failure mode (spatial predicate silently wrong, no
+   exception) is exactly what the talk is about, including in the tooling
+   built *for* the talk.
+   **Task 9 완료**: 언덕 정류장(10곳, 평균 −15.5%)에서는 뚜렷하지만 평지
+   정류장(26곳, −0.7%)에서는 거의 없어 finding 04와 같은 모양. 작업 중 NaN
+   표고(강/측량 공백 7개 픽셀)가 Dijkstra에서 조용히 특정 정류장의 도달범위를
+   75배 부풀리는 실제 버그를 발견·수정함 — 발표의 주제(조용히 틀리는 공간분석)가
+   발표 준비 도구에서도 그대로 재현된 사례.
 3. **Task 3** — GeoParquet pre-bake + self-hosted PMTiles basemap so the demo
    survives conference wifi.
 4. **Task 10** — isolated environment + lockfile.
