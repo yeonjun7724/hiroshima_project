@@ -33,6 +33,13 @@ data/hiroshima/koi_slope_map.html
 outputs/*.html
 outputs/*.gpkg
 
+# --- Local dev tools -------------------------------------------------------
+# go-pmtiles CLI binary (Task 3, PMTiles basemap). Not project source; fetch
+# from https://github.com/protomaps/go-pmtiles/releases if you need it again.
+# go-pmtiles CLI 바이너리 (Task 3, PMTiles 베이스맵용). 프로젝트 소스가 아니다.
+# 다시 필요하면 위 릴리스 페이지에서 받는다.
+tools/
+
 # --- Python / Jupyter ----------------------------------------------------
 __pycache__/
 *.py[cod]
