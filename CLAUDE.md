@@ -114,7 +114,9 @@ Regenerate any of these with the scripts in `analysis/`.
 
 ## Environment
 
-geopandas 1.1.4 · shapely 2.1.2 · pandas 3.0.5 · osmnx 2.1.1 · streamlit 1.61.1
+geopandas 1.1.4 · shapely 2.1.2 · pandas 3.0.5 · osmnx 2.1.1 · streamlit 1.61.1 ·
+lonboard 0.16.0 (added for Task 6; pulls in its own arro3 Arrow impl, doesn't
+touch pyarrow)
 
 **Known conflict:** installing streamlit/osmnx downgraded pyarrow 25.0.1 → 24.0.0,
 and an `arcgis` package in the same environment pins `pyarrow<24`. The env is
@@ -149,14 +151,25 @@ Notebook filenames do not match lecture numbers — see the mapping above.
 
 ## Remaining work, in order
 
-1. **Task 6** — MapLibre + PMTiles, pydeck → lonboard. Needs a notebook
-   frontend to verify: lonboard renders as a Jupyter widget.
+1. ~~**Task 6** — pydeck → lonboard.~~ Done: `3-4_session.ipynb`'s 3D
+   population-block cells now use `SolidPolygonLayer`/`PolygonLayer.from_geopandas`
+   + `Map(basemap=MaplibreBasemap(style=CartoStyle...))`. Renders through
+   MapLibre GL, zero Mapbox token. Verified via a standalone `to_html()`
+   smoke test (synthetic data, not the real notebook run — that's Task 2).
+   PMTiles (self-hosted basemap, not Carto's live CDN) is **not** done; it's
+   now folded into Task 3 below since it's the same conference-wifi problem.
+   **Task 6 완료**: 3D 인구블록 셀을 lonboard로 전환, MapLibre 렌더링·토큰 불필요.
+   합성 데이터로 스모크 테스트만 검증(실제 노트북 실행은 Task 2). PMTiles
+   자체 호스팅은 미완료 — Task 3으로 이관.
 2. **Task 9** — Hiroshima slope case. 国土数値情報 stops, e-Stat 500 m mesh,
    DEM, Tobler's hiking function. **Ask before downloading** — state filename,
    source and size first.
-3. **Task 3** — GeoParquet pre-bake so the demo survives conference wifi.
+3. **Task 3** — GeoParquet pre-bake + self-hosted PMTiles basemap so the demo
+   survives conference wifi.
 4. **Task 10** — isolated environment + lockfile.
-5. **Task 2** — run all four notebooks end to end on pandas 3.0.
+5. **Task 2** — run all four notebooks end to end on pandas 3.0. This is
+   where the lonboard cells (Task 6) get their first real execution against
+   Seoul data — treat that as unverified until this runs.
 6. **Task 8** (optional) — spopt MCLP against the greedy siting heuristic.
 
 Talk runs ~36 min as structured; FOSS4G slots are usually 20–25. Compress
