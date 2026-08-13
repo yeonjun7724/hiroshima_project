@@ -11,6 +11,13 @@ cache/
 # 3번 작업에서 서울만 담은 GeoParquet으로 대체한다. 그전까지는 별도 확보 필요.
 data/BND_ADM_DONG_PG.shp
 
+# Task 9: prefecture/nationwide-scale raw downloads (~137MB). Only the
+# 1.5km-clipped extracts (koi_*.gpkg) and DEM tiles are committed; rerun
+# analysis/hiroshima/fetch_sources.py to regenerate this.
+# Task 9: 현/전국 단위 원본(~137MB). 1.5km로 클리핑된 결과(koi_*.gpkg)와
+# DEM 타일만 커밋한다. 재생성하려면 analysis/hiroshima/fetch_sources.py 재실행.
+data/hiroshima/_raw/
+
 # --- Large generated artifacts ------------------------------------------
 # Rendered maps are outputs, not sources. Regenerate from the notebooks.
 # 렌더링된 지도는 소스가 아니라 산출물이다. 노트북에서 재생성한다.

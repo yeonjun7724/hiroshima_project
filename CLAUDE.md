@@ -109,6 +109,14 @@ Regenerate any of these with the scripts in `analysis/`.
 - **Registered population is the independent check.** It validated the areal
   weighting: 남현동 +5.4 % → −0.9 %, 청림동 +24.0 % → −8.0 %.
 - Analysis CRS is EPSG:5179 (metres); display CRS is EPSG:4326.
+- **Hiroshima bus stops (KSJ P11) are FY2010 data** — the government has not
+  republished this dataset since; routes may have changed since then. The
+  rail/streetcar (N02) and population mesh (e-Stat) sources are current
+  (2025 and 2020-census respectively). Hiroshima analysis CRS is EPSG:6670
+  (JGD2000 / Plane Rectangular CS III); display CRS is EPSG:4326.
+  **히로시마 버스정류장(KSJ P11)은 2010년 데이터** — 정부가 그 이후 갱신하지
+  않았다. 철도/노면전차(N02)와 인구격자(e-Stat)는 최신(각각 2025년, 2020년
+  국세조사). 히로시마 분석 좌표계는 EPSG:6670, 표시 좌표계는 EPSG:4326.
 
 ---
 
@@ -133,8 +141,10 @@ arcgis는 pyarrow<24를 요구한다. 이미 불일치 상태다. 데모를 신�
 
 ```
 analysis/     forensic scripts + result CSVs (rerunnable)
+analysis/hiroshima/  Task 9 data acquisition (fetch_sources.py, rerunnable)
 talk/         storyline.html — talk structure, findings, abstract draft
 data/         source data (large shp gitignored — see .gitignore)
+data/hiroshima/  Task 9 clipped extracts + DEM tiles (_raw/ gitignored)
 outputs/      generated maps and gpkg (gitignored)
 cache/        Overpass cache, ~400 MB (gitignored)
 app.py        Streamlit demo — buffer vs network coverage, with A/B toggles
@@ -160,9 +170,15 @@ Notebook filenames do not match lecture numbers — see the mapping above.
    **Task 6 완료**: 3D 인구블록 셀을 lonboard로 전환, MapLibre 렌더링·토큰 불필요.
    합성 데이터로 스모크 테스트만 검증(실제 노트북 실행은 Task 2). PMTiles
    자체 호스팅은 미완료 — Task 3으로 이관.
-2. **Task 9** — Hiroshima slope case. 国土数値情報 stops, e-Stat 500 m mesh,
-   DEM, Tobler's hiking function. **Ask before downloading** — state filename,
-   source and size first.
+2. **Task 9** — Hiroshima slope case, Koi-ue (己斐上). Data acquisition done
+   (`analysis/hiroshima/fetch_sources.py`): 44 bus stops (KSJ P11), 9 rail/
+   streetcar stations (KSJ N02), 58 population-mesh cells / 82,151 people
+   (e-Stat 500m mesh, 2020 census), 16 DEM5A 5m tiles (GSI), all clipped to
+   1.5km around Hiroden Nishi-Hiroshima (Koi) station. **Still open**:
+   Tobler's hiking function itself hasn't been implemented or applied yet —
+   this is source data only, not an analysis.
+   **Task 9 진행중**: 己斐上 사례. 데이터 수집은 끝남(스크립트 참고). Tobler
+   도보함수 구현·적용은 아직 안 함 — 지금은 원본 데이터만 있는 상태.
 3. **Task 3** — GeoParquet pre-bake + self-hosted PMTiles basemap so the demo
    survives conference wifi.
 4. **Task 10** — isolated environment + lockfile.
