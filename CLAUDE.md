@@ -137,18 +137,39 @@ Regenerate any of these with the scripts in `analysis/`.
 
 ## Environment
 
-geopandas 1.1.4 · shapely 2.1.2 · pandas 3.0.5 · osmnx 2.1.1 · streamlit 1.61.1 ·
-lonboard 0.16.0 (added for Task 6; pulls in its own arro3 Arrow impl, doesn't
-touch pyarrow)
+**Isolated via uv — `uv run <command>` for everything, not the system Python.**
+`pyproject.toml` + `uv.lock` pin exact versions (geopandas 1.1.4, shapely
+2.1.2, pandas 3.0.5, osmnx 2.1.1, streamlit 1.61.1, lonboard 0.16.0, and
+everything each of those pulls in transitively). First-time setup: `uv sync`
+(installs into `.venv/`, gitignored). Verified end-to-end in this isolated
+env: `analysis/hiroshima/tobler_slope_correction.py` reproduces its exact
+published numbers, `hiroshima_slope_case.ipynb` executes clean via nbclient,
+`app.py` serves and loads in a browser.
+**uv로 격리됨 — 시스템 파이썬이 아니라 매사 `uv run <command>`를 쓸 것.**
+처음 설정: `uv sync`. 이 격리 환경에서 실제로 검증함: Tobler 스크립트가 발표된
+수치를 그대로 재현, 히로시마 노트북이 nbclient로 깨끗이 실행, app.py가 브라우저에서
+정상 동작.
 
-**Known conflict:** installing streamlit/osmnx downgraded pyarrow 25.0.1 → 24.0.0,
-and an `arcgis` package in the same environment pins `pyarrow<24`. The env is
-already inconsistent. Task 10 moves the talk to an isolated pixi/uv environment
-with a lockfile — do this before relying on any demo.
+**Why this exists:** installing streamlit/osmnx into the old shared global
+Python downgraded pyarrow 25.0.1 → 24.0.0, and an unrelated `arcgis` package
+in that same global env pins `pyarrow<24` — a real, already-triggered
+conflict. The uv environment is fully separate from that global install, so
+it can't inherit the problem. `pyarrow` is pinned explicitly at 23.0.1 (below
+both ceilings) precisely because of that history — don't bump it casually.
+**왜 필요했는가:** 기존 공유 전역 파이썬에 streamlit/osmnx를 설치하며 pyarrow가
+25.0.1→24.0.0으로 내려갔고, 같은 환경의 무관한 `arcgis` 패키지는 pyarrow<24를
+요구한다 — 실제로 이미 터진 충돌이다. uv 환경은 그 전역 설치와 완전히 분리돼
+있어 이 문제를 물려받을 수 없다. `pyarrow`를 23.0.1로 명시 고정한 것도 이
+이력 때문이다 — 가볍게 올리지 말 것.
 
-**알려진 충돌:** streamlit/osmnx 설치가 pyarrow를 24.0.0으로 내렸고, 같은 환경의
-arcgis는 pyarrow<24를 요구한다. 이미 불일치 상태다. 데모를 신뢰하기 전에
-10번(격리 환경 + 락파일)을 먼저 처리할 것.
+**Dev-only tools** (`uv add --dev`, not needed to run the actual demo):
+`nbclient`/`nbformat` (headless notebook execution for verification),
+`playwright` (browser-driven screenshot verification — this is how every
+map/app change in this repo has actually been checked, not just read from
+the diff).
+**개발용 전용 도구**(`uv add --dev`, 실제 데모 실행에는 불필요):
+`nbclient`/`nbformat`(검증용 헤드리스 노트북 실행), `playwright`(브라우저
+스크린샷 검증 — 이 저장소의 지도/앱 변경은 실제로 이렇게 확인해왔다).
 
 ---
 
@@ -162,10 +183,16 @@ data/         source data (large shp gitignored — see .gitignore)
 data/hiroshima/  Task 9 clipped extracts + DEM tiles (_raw/ gitignored)
 outputs/      generated maps and gpkg (gitignored)
 cache/        Overpass cache, ~400 MB (gitignored)
+tools/        local dev binaries (go-pmtiles), gitignored, not project source
 app.py        Streamlit demo — buffer vs network coverage, with A/B toggles
 3-4_session.ipynb        lectures 3 & 4 (final)
 geopandas_analysis.ipynb lectures 1 & 2
 practice.ipynb           lecture 3 exercise stub (has deliberate typos)
+hiroshima_slope_case.ipynb  lonboard map of the Task 9 result
+pyproject.toml / uv.lock    the actual dev environment (Task 10) — use this,
+                            not requirements.txt, which exists only in case
+                            something still expects it for Streamlit Cloud
+                            auto-detection and has not been verified against it
 ```
 
 Notebook filenames do not match lecture numbers — see the mapping above.
@@ -236,7 +263,19 @@ Notebook filenames do not match lecture numbers — see the mapping above.
    `pmtiles://`를 네이티브 지원하지 않음을 확인하고, 서버 쪽에서 미리 일반
    XYZ 타일로 변환해 서빙하는 방식(`go-pmtiles serve`)으로 우회함. 오프라인
    절차는 `hiroshima_slope_case.ipynb` 마지막 셀 참고.
-4. **Task 10** — isolated environment + lockfile.
+4. ~~**Task 10** — isolated environment + lockfile.~~ Done: `uv` project,
+   `pyproject.toml` + `uv.lock`, all versions pinned to what was already
+   validated this session (see Environment section above). Missed one
+   dependency on the first pass — `osmnx.distance.nearest_nodes` needs
+   scikit-learn, which wasn't in any top-level import so it slipped past the
+   initial pinning by direct-import inspection; caught by actually running
+   `tobler_slope_correction.py` in the new env, not by reading requirements
+   off imports. `.venv/` and `tools/` are both gitignored (regenerate via
+   `uv sync`; `tools/` needs `go-pmtiles` refetched separately, see Task 3).
+   **Task 10 완료**: uv 프로젝트로 전환, 이번 세션에서 이미 검증된 버전 그대로
+   고정. 첫 시도에서 scikit-learn 하나를 놓쳤다(어떤 코드도 직접 import하지
+   않아서) — 실제로 스크립트를 돌려보고서야 잡음. import 목록만 보고 판단하지
+   않은 이유.
 5. **Task 2** — run all four notebooks end to end on pandas 3.0. This is
    where the lonboard cells (Task 6) get their first real execution against
    Seoul data — treat that as unverified until this runs.

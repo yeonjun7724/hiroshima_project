@@ -5,6 +5,7 @@ geopandas
 pandas
 numpy
 osmnx
+scikit-learn
 networkx
 shapely
 openpyxl

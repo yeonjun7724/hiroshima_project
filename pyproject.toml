@@ -1,0 +1,33 @@
+[project]
+name = "gis-session"
+version = "0.1.0"
+description = "Seoul/Hiroshima public-transport accessibility analysis for the FOSS4G Hiroshima 2026 talk"
+requires-python = ">=3.12"
+dependencies = [
+    "folium==0.20.0",
+    "geopandas==1.1.4",
+    "ipykernel==7.3.0",
+    "lonboard==0.16.0",
+    "networkx==3.6.1",
+    "numpy==2.5.1",
+    "openpyxl==3.1.5",
+    "osmnx==2.1.1",
+    "pandas==3.0.5",
+    "pillow==12.3.0",
+    "pyarrow==23.0.1",
+    "pyogrio==0.13.0",
+    "pyproj==3.7.2",
+    "requests==2.34.2",
+    "scikit-learn==1.9.0",
+    "scipy==1.18.0",
+    "shapely==2.1.2",
+    "streamlit==1.61.1",
+    "streamlit-folium==0.27.4",
+]
+
+[dependency-groups]
+dev = [
+    "nbclient==0.11.0",
+    "nbformat==5.11.0",
+    "playwright==1.61.0",
+]
