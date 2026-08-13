@@ -54,10 +54,16 @@ the current plan. Do not resume it without asking the user first.
 - A verbatim-duplicate section ("GeoPandas와 Folium의 차이") already exists in
   both notebooks — worth deduping during the merge, not carrying twice.
 
-**Next step:** re-catalog both notebooks' actual section structure and code
-(headers alone aren't enough — need to know what each section's code does
-and what Seoul data it touches) before planning the merge + localization in
-detail.
+**Next step:** the full section-by-section catalog of both notebooks (headers,
+what each section's code actually does, every Seoul data file touched,
+verbatim/near-duplicate content between the two, a hard sequential
+dependency — NB2 loads `outputs/demo_admin.gpkg`/`demo_uncovered.gpkg`,
+which only exist because NB1 writes them at the end) is already done —
+see [`analysis/notebook_merge_catalog.md`](analysis/notebook_merge_catalog.md).
+Start there instead of re-deriving it. Start the actual merge plan from its
+"두 노트북 간 중복" and cell-range tables, and re-scope the Hiroshima data
+extent (currently just 1.5km around Koi-ue) before assuming it covers what
+the merged lecture needs.
 
 ---
 
