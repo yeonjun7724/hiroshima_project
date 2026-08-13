@@ -11,6 +11,56 @@ Working document (structure, findings, abstract draft):
 
 ---
 
+## ⚠️ Goal correction (2026-08-13, read this first)
+
+Everything below "The talk's thesis" and "Findings" describes a plan that
+was **built on a misunderstanding** and is now superseded. The user's actual
+goal, stated directly: merge `3-4_session.ipynb` and `geopandas_analysis.ipynb`
+(the two lecture notebooks) into **one notebook**, and replace **all** the
+Seoul-specific data throughout with Hiroshima data, so it can be presented as
+a normal tutorial at FOSS4G Hiroshima — "이렇게 코드를 짜면 이런 지도가
+나온다" (write code like this, get a map like this). **Not** a bug-hunting
+narrative. The "Counted in Full" defects reframe below was this session's own
+invention, based on a stale reading of the goal — it is kept in this file for
+reference (the Seoul findings are still real and reproducible) but is **not**
+the current plan. Do not resume it without asking the user first.
+사용자가 실제로 말한 목표: `3-4_session.ipynb`와 `geopandas_analysis.ipynb`
+(강의 1~4강)을 **하나의 노트북으로 합치고**, 서울 데이터를 **전부** 히로시마
+데이터로 바꿔서, FOSS4G Hiroshima에서 정상적인 튜토리얼("이렇게 코드를 짜면
+이런 지도가 나온다")로 발표하는 것. 버그 찾기 내러티브가 아니다. 아래
+"Counted in Full" 재구성은 이번 세션이 목표를 잘못 읽고 자체적으로 만든
+방향이라 지금은 유효하지 않다 (서울 결함 자체는 실제고 재현 가능하니 참고자료로만
+남겨둠). 사용자에게 먼저 묻지 않고 그 방향으로 되돌아가지 말 것.
+
+**What's already usable toward the real goal:**
+- Hiroshima data exists at `data/hiroshima/` (from Task 9, scoped to a 1.5km
+  radius around Koi-ue/己斐上): 44 bus stops, 9 rail/streetcar stations, a
+  500m population mesh (e-Stat), 5m DEM tiles. **This radius is probably too
+  small to cover what the merged lecture needs** — the lecture likely needs
+  city-wide or multi-ward Hiroshima data (registered population by admin
+  area, admin boundary polygons, a bikeshare equivalent to 따릉이 for the
+  lecture-3 "따릉이는 어디까지 닿고 있는가" section). Re-scope before reusing
+  as-is.
+- `analysis/hiroshima/fetch_sources.py` is a working template for pulling
+  more KSJ/e-Stat/GSI data at a different bbox if a wider extract is needed.
+- lonboard (Task 6), the uv environment (Task 10), and PMTiles self-hosting
+  (Task 3) are all genuinely reusable regardless of narrative — they're
+  infrastructure, not tied to the abandoned defects framing.
+- Both source notebooks are 5MB+ and can't be opened with the Read tool
+  (even offset/limit doesn't page a notebook this large — it always tries to
+  load the whole file). Inspect them by writing small scripts that
+  `json.load()` the file directly and work with `nb["cells"]`, same approach
+  used throughout `analysis/`.
+- A verbatim-duplicate section ("GeoPandas와 Folium의 차이") already exists in
+  both notebooks — worth deduping during the merge, not carrying twice.
+
+**Next step:** re-catalog both notebooks' actual section structure and code
+(headers alone aren't enough — need to know what each section's code does
+and what Seoul data it touches) before planning the merge + localization in
+detail.
+
+---
+
 ## Conventions
 
 **Comments are bilingual: English first, Korean translation directly below.**
@@ -201,6 +251,13 @@ Notebook filenames do not match lecture numbers — see the mapping above.
 ---
 
 ## Remaining work, in order
+
+**⚠️ This numbered list (Tasks 2/3/6/8/9/10) was built for the abandoned
+"Counted in Full" plan — see the goal-correction section near the top of
+this file.** The infrastructure items (6, 3, 10) are still genuinely done
+and reusable; treat the rest as historical. The real next task — merging
+the two lecture notebooks into a Hiroshima-localized tutorial — isn't on
+this list yet because the plan for it doesn't exist yet.
 
 1. ~~**Task 6** — pydeck → lonboard.~~ Done: `3-4_session.ipynb`'s 3D
    population-block cells now use `SolidPolygonLayer`/`PolygonLayer.from_geopandas`
