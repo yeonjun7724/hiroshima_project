@@ -198,13 +198,59 @@ capture real routes) rather than a forced fit to missing data.
   mode would have been "0 routes found," which didn't happen and was
   checked explicitly (`fails: 0`).
 
-**Next step:** Lecture 4 from `3-4_session.ipynb` cells 56-96 — the lonboard
-3D population-block visualization (Task 6's pattern) and MCLP-style site
-selection, retargeted to 海老園四丁目/海老山南一丁目. Will need a population-
-grid equivalent for the extruded 3D blocks (Seoul used a 100m
-`nlsp_021001001.shp` grid); the small-area polygons from lecture 1
-(`hiroshima_city_admin.gpkg`) may substitute directly, same open question
-noted for Task 9's abandoned mesh500 naming — check before assuming.
+**Progress: Lecture 4 is drafted, executed, and verified — all four lectures
+are now merged.** `hiroshima_tutorial.ipynb` is 149 cells, covering NB1's
+cells 56-96 (Task 6's lonboard pattern) retargeted to 海老園四丁目 as the
+selected small area (the more vulnerable of lecture 2's top two), with a
+1,250m search circle and the same area-weighted-overlap KPI computation as
+Seoul's original. Verified via nbclient end-to-end execution *and* a
+Playwright screenshot of the exported HTML served over HTTP (not just "no
+exception raised" — the file:// limitation documented below applies here
+too).
+- **Population-grid substitution, decided and documented in-notebook**:
+  Seoul's original used a fine 100m population grid here, separate from its
+  registered-population table. Hiroshima's e-Stat source doesn't offer an
+  equivalent fine grid in this project's pipeline, so this lecture reuses
+  lecture 1's small-area (chōme) polygons (`hiroshima_city_admin.gpkg`) as
+  the population surface instead — an honest substitution, not a silent one,
+  with a markdown note explaining the tradeoff (courser units → area-
+  weighting matters *more*, not less; the KPI overstatement here is +39%
+  total / +350% uncovered, larger than Seoul's +23-52%, precisely because a
+  1,250m circle only intersects a handful of large chōme polygons instead of
+  many small grid cells).
+- **Two real bugs caught by actually executing and looking at the map**,
+  not just reading the ported code:
+  1. `matplotlib` was never a declared dependency in `pyproject.toml` — it
+     had apparently been available some other way during lectures 1-3's
+     verification, but a clean `uv sync` doesn't install it, and neither
+     `geopandas` nor `osmnx==2.1.1` pull it in transitively. `uv add
+     matplotlib` fixed it; same "actually run it" pattern that caught the
+     missing scikit-learn in Task 10.
+  2. The elevation formula (`pop**1.80 * 0.02`) was carried over unchanged
+     from Seoul's version, which was tuned for a 100m grid cell (population
+     in the tens-to-low-hundreds). Chōme polygons hold thousands of people
+     each, so the same formula produced 3D columns up to **31km tall** —
+     confirmed numerically (`pop_capped` max ~2,750 → `elev` max ~31,018)
+     and visually (a Playwright screenshot showed pillars running off the
+     top of the frame). Fixed by normalizing population by its 99.5th-
+     percentile value *before* exponentiating, capping visual height at
+     900m regardless of the input population's absolute scale — this makes
+     the formula reusable for a grid or for coarse polygons alike, whereas
+     the original silently assumed one specific unit's magnitude.
+- Self-hosted PMTiles (Task 3) still only covers the old Koi-ue extent, not
+  海老園四丁目/海老山南一丁目's location — this lecture uses the CartoStyle
+  CDN fallback for now, documented in-notebook as a known gap, not silently
+  worked around.
+
+**Next step:** the merge is functionally complete — all four lectures exist
+in one Hiroshima-localized notebook. Remaining open items, none blocking:
+bikeshare/ODPT integration (skipped per user direction, needs their own
+developer account); whether to re-extract PMTiles for 海老園四丁目/海老山南
+一丁目's location to drop the CartoCDN dependency; an overall read-through
+pass for narrative flow now that all four lectures sit together; deciding
+whether `practice.ipynb` (the old lecture-3 exercise stub with deliberate
+typos, Seoul-only) still has a role or should be retired now that lecture 3
+has a different Hiroshima-native framing.
 
 ---
 
@@ -336,8 +382,12 @@ Regenerate any of these with the scripts in `analysis/`.
 
 **Isolated via uv — `uv run <command>` for everything, not the system Python.**
 `pyproject.toml` + `uv.lock` pin exact versions (geopandas 1.1.4, shapely
-2.1.2, pandas 3.0.5, osmnx 2.1.1, streamlit 1.61.1, lonboard 0.16.0, and
-everything each of those pulls in transitively). First-time setup: `uv sync`
+2.1.2, pandas 3.0.5, osmnx 2.1.1, streamlit 1.61.1, lonboard 0.16.0,
+matplotlib 3.11.1, and everything each of those pulls in transitively).
+`matplotlib` was added explicitly during the lecture-4 merge work — it had
+been usable in earlier sessions some other way, but a clean `uv sync` does
+not pull it in (neither geopandas nor osmnx depend on it), and every EDA
+plot in lectures 1-4 needs it. First-time setup: `uv sync`
 (installs into `.venv/`, gitignored). Verified end-to-end in this isolated
 env: `analysis/hiroshima/tobler_slope_correction.py` reproduces its exact
 published numbers, `hiroshima_slope_case.ipynb` executes clean via nbclient,

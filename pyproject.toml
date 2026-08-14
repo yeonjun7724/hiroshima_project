@@ -8,6 +8,7 @@ dependencies = [
     "geopandas==1.1.4",
     "ipykernel==7.3.0",
     "lonboard==0.16.0",
+    "matplotlib>=3.11.1",
     "networkx==3.6.1",
     "numpy==2.5.1",
     "openpyxl==3.1.5",
