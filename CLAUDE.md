@@ -277,11 +277,29 @@ in one Hiroshima-localized notebook, and both demo areas (Koi-ue for the
 slope case, 海老園四丁目/海老山南一丁目 for the tutorial) now have their own
 self-hosted offline basemap. Remaining open items, none blocking:
 bikeshare/ODPT integration (skipped per user direction, needs their own
-developer account, revisit later per user); an overall read-through pass
-for narrative flow now that all four lectures sit together; deciding
-whether `practice.ipynb` (the old lecture-3 exercise stub with deliberate
-typos, Seoul-only) still has a role or should be retired now that lecture 3
-has a different Hiroshima-native framing.
+developer account, revisit later per user).
+
+**Narrative read-through pass: done.** Unified the "[Lecture N]" heading
+style across all four lectures (1 and 2 had used descriptive titles instead)
+and added a short closing section tying the four lectures together — see
+CLAUDE.md's own commit history for detail; not re-summarized here.
+
+**`practice.ipynb` retired (user decision).** It was a Seoul-only lecture-3
+exercise stub (deliberate typos) that read `outputs/demo_admin.gpkg`/
+`demo_uncovered.gpkg` — the same filenames lecture 2 now writes Hiroshima
+data to. Running `hiroshima_tutorial.ipynb` then opening `practice.ipynb`
+would have silently joined Seoul bus/bike-share CSVs against Hiroshima
+chōme polygons with no error, exactly the failure class this whole project
+is about. Deleted rather than reworked or path-isolated, per explicit user
+choice (options included keeping it as a standalone Seoul exercise or
+rebuilding it Hiroshima-native; user chose deletion).
+**`practice.ipynb` 폐기(사용자 결정).** 서울 전용 3강 실습 스텁이었는데,
+2강이 이제 같은 파일명(`outputs/demo_admin.gpkg`/`demo_uncovered.gpkg`)으로
+히로시마 데이터를 쓰기 때문에, `hiroshima_tutorial.ipynb` 실행 후
+`practice.ipynb`를 열면 에러 없이 서울 버스/따릉이 CSV와 히로시마 소지역
+폴리곤이 조용히 조인되는 문제가 있었다 — 이 프로젝트가 경계하는 바로 그
+실패 유형. 별도 서울 실습으로 남기거나 히로시마 버전으로 재작성하는 선택지도
+제시했으나, 사용자가 삭제를 택함.
 
 ---
 
@@ -463,9 +481,8 @@ outputs/      generated maps and gpkg (gitignored)
 cache/        Overpass cache, ~400 MB (gitignored)
 tools/        local dev binaries (go-pmtiles), gitignored, not project source
 app.py        Streamlit demo — buffer vs network coverage, with A/B toggles
-3-4_session.ipynb        lectures 3 & 4 (final)
-geopandas_analysis.ipynb lectures 1 & 2
-practice.ipynb           lecture 3 exercise stub (has deliberate typos)
+3-4_session.ipynb        lectures 3 & 4 (final, Seoul, source material for the merge)
+geopandas_analysis.ipynb lectures 1 & 2 (Seoul, source material for the merge)
 hiroshima_slope_case.ipynb  lonboard map of the Task 9 result
 pyproject.toml / uv.lock    the actual dev environment (Task 10) — use this,
                             not requirements.txt, which exists only in case
