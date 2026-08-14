@@ -69,6 +69,13 @@ the current plan. Do not resume it without asking the user first.
   in `fetch_sources.py`/`tobler_slope_correction.py` is now misleading but
   left as-is since those scripts are for the abandoned slope-case narrative,
   not the merge.
+- **Language decision (user-confirmed)**: `hiroshima_tutorial.ipynb` is
+  English-first, Korean-translation-second throughout — both markdown prose
+  *and* code comments (extending this file's existing bilingual-comment
+  convention to the notebook's narrative text too, since FOSS4G Hiroshima's
+  audience mostly won't read Korean). Exception: actual matplotlib-rendered
+  output (plot titles, axis labels, legends, category values) is
+  English-only — see the font note below for why.
 - Still missing, not yet fetched:
   - **Bikeshare** (따릉이 equivalent, for lecture 3's "따릉이는 어디까지
     닿고 있는가"): Hiroshima's ぴーすくる (Peesakuru, run by DOCOMO Bike
@@ -95,11 +102,54 @@ the current plan. Do not resume it without asking the user first.
 - A verbatim-duplicate section ("GeoPandas와 Folium의 차이") already exists in
   both notebooks — worth deduping during the merge, not carrying twice.
 
-**Next step:** start actually drafting the merged notebook structure using
-`analysis/notebook_merge_catalog.md`'s cell-range tables and dedup list, now
-that city-wide Hiroshima admin/population/bus/rail data exists to swap in.
-Decide section-by-section what changes (data source + narrative framing) vs.
-what's pure GeoPandas/Folium/OSMnx mechanics that ports over unchanged.
+**Progress: Lecture 1 is drafted, executed, and verified** — see
+`hiroshima_tutorial.ipynb` (47 cells, English-first/Korean-second throughout
+per the user's language decision — see below). Covers NB1's cells 0-69:
+Pandas/GeoPandas intro, folder setup, utility functions, admin boundary +
+population, bus/rail aggregation, merge + derived indicators (bus/rail stops
+per 10,000 residents), EDA. Executed end-to-end via nbclient, not just
+read — that caught four real bugs the Seoul original never had to handle,
+because Hiroshima's data has a different shape:
+- `pd.qcut` on `bus_per_10k` crashed (`Bin edges must be unique`): 93 of
+  1,136 small areas have zero registered population (parks, industrial
+  land, the airport) — Seoul's coarser 426 dongs never hit this. Fixed by
+  excluding zero-population areas from the per-capita indicator (NaN, not
+  inf) rather than papering over it with `duplicates="drop"`.
+- Even after that fix, qcut still failed: 40% of *populated* small areas
+  have literally zero bus stops inside their own polygon (fine subdivision
+  → most residents rely on a neighbouring block's stop). A 5-quantile split
+  can't work when the bottom 40% of values are identical. Fixed by giving
+  "no stop in block" its own explicit class and only quantile-splitting the
+  areas that do have a stop.
+- The `bus_class` choropleth's colors came out backwards (`"high"` rendered
+  lightest, `"no stop in block"` darkest) because geopandas colors
+  unordered categoricals alphabetically. Fixed with an explicit
+  `pd.Categorical(..., ordered=True)`.
+- Matplotlib rendered the Korean half of bilingual plot titles as tofu
+  boxes: "Yu Gothic" (needed for Japanese place names) doesn't cover
+  Hangul. Resolution: bilingual EN/KO applies to markdown prose and code
+  comments only — actual matplotlib-rendered text (titles, axis labels,
+  legends, category values) is English-only, since a font that covers
+  Japanese place names *and* Korean *and* renders cleanly isn't a given.
+- Not a bug, but caught by actually looking at the rendered map: outlying
+  mountainous wards show as "high" bus accessibility per 10,000 residents —
+  not because service is better, but because a tiny population denominator
+  inflates the per-capita ratio. Left in as a teaching moment (added a
+  markdown note) rather than hidden — same shape as the Seoul areal-weighting
+  findings: a correct number describing the wrong thing.
+- Also fixed on sight, not load-bearing: `target_top10`'s tie-break now
+  favours population (most people affected first, not sort-order luck), and
+  the two EDA scatter plots clip axes / cap labels at 5, since a few
+  small-denominator outliers and 100+ overlapping labels made the raw
+  version unreadable.
+
+**Next step:** Lecture 2 (`geopandas_analysis.ipynb` cells 70-106 — the
+Union/Intersection/Difference coverage analysis, vulnerability scoring,
+Top-5/Top-20 selection), then lectures 3-4 from `3-4_session.ipynb`, using
+`analysis/notebook_merge_catalog.md`'s cell-range tables. Lecture 3-4 will
+need the OSMnx walk network and 100m-grid-equivalent swapped to Hiroshima —
+the Koi-ue extracts from Task 9 can likely serve as the "zoom into one
+neighbourhood" demo area, same role 남현동/청림동 played in the Seoul version.
 
 ---
 
