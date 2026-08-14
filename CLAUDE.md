@@ -237,17 +237,48 @@ too).
      900m regardless of the input population's absolute scale — this makes
      the formula reusable for a grid or for coarse polygons alike, whereas
      the original silently assumed one specific unit's magnitude.
-- Self-hosted PMTiles (Task 3) still only covers the old Koi-ue extent, not
-  海老園四丁目/海老山南一丁目's location — this lecture uses the CartoStyle
-  CDN fallback for now, documented in-notebook as a known gap, not silently
-  worked around.
+**PMTiles re-extracted for this lecture's demo area** — the gap noted above
+(CartoCDN fallback because self-hosted PMTiles only covered Koi-ue) is
+closed. `data/hiroshima/hiroshima_basemap_ebaen.pmtiles` (2.3MB) is a 2km-
+radius bbox extract around 海老園四丁目's centroid
+(`132.336894,34.340863,132.380367,34.376915`), pulled the same way as the
+Koi-ue extract — `tools\pmtiles.exe extract` against
+`https://build.protomaps.com/20260813.pmtiles` via range requests, never the
+120GB global file. `analysis/hiroshima/build_basemap_style.py` was
+parameterized (`--name`/`--port`/`--out`) so the same hand-written style
+logic serves both extracts instead of duplicating it; regenerating the
+Koi-ue style with no args still produces a byte-identical
+`basemap_style.json` (checked). `data/hiroshima/basemap_style_ebaen.json`
+is the new area's style, generated with
+`--name hiroshima_basemap_ebaen --port 8891 --out basemap_style_ebaen.json`.
+- **A real bug, not just plumbing**: the first attempt served
+  `data/hiroshima/` and `outputs/` from two separate `http.server`
+  processes, and the browser blocked the style-JSON fetch with a CORS
+  error — Python's `http.server` sends no `Access-Control-Allow-Origin`
+  header, and this lecture's HTML export lives in `outputs/` while the
+  style JSON lives in `data/hiroshima/`, a different folder than the
+  Koi-ue case (where the HTML and style JSON share one folder, so it never
+  hit this). Caught by actually opening the exported HTML and reading the
+  browser console, not by assuming the two-server pattern would transfer
+  unchanged. Fixed by serving one `http.server` rooted at the **repo
+  root** instead of per-folder, so both paths are same-origin:
+  `python -m http.server 8001` (from the repo root) +
+  `tools\pmtiles.exe serve data/hiroshima --port 8891 --cors "*"
+  --public-url "http://localhost:8891/"`. Then open
+  `http://localhost:8001/outputs/hiroshima_3d_population.html`. Verified
+  via Playwright: OSM attribution (not CartoDB), the hand-built dark
+  style's water/building colors, and chōme place labels all render.
+- The daily-build URL is dated (`build.protomaps.com/YYYYMMDD.pmtiles`) and
+  a given date 404s once Protomaps ages it out — probe a few recent dates
+  (`curl -sI`) if re-running this later; there's no `latest.pmtiles` alias.
 
 **Next step:** the merge is functionally complete — all four lectures exist
-in one Hiroshima-localized notebook. Remaining open items, none blocking:
+in one Hiroshima-localized notebook, and both demo areas (Koi-ue for the
+slope case, 海老園四丁目/海老山南一丁目 for the tutorial) now have their own
+self-hosted offline basemap. Remaining open items, none blocking:
 bikeshare/ODPT integration (skipped per user direction, needs their own
-developer account); whether to re-extract PMTiles for 海老園四丁目/海老山南
-一丁目's location to drop the CartoCDN dependency; an overall read-through
-pass for narrative flow now that all four lectures sit together; deciding
+developer account, revisit later per user); an overall read-through pass
+for narrative flow now that all four lectures sit together; deciding
 whether `practice.ipynb` (the old lecture-3 exercise stub with deliberate
 typos, Seoul-only) still has a role or should be retired now that lecture 3
 has a different Hiroshima-native framing.

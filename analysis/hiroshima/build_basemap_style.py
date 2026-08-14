@@ -18,22 +18,39 @@ for the exact `pmtiles serve` command) -- this script only writes the style JSON
 that points at it.
 로컬 pmtiles 타일 서버가 떠 있어야 한다(정확한 `pmtiles serve` 명령은 노트북/
 CLAUDE.md 참고) -- 이 스크립트는 그 서버를 가리키는 스타일 JSON만 만든다.
+
+CLI args let one script serve both self-hosted extracts in this repo (Koi-ue,
+from Task 9, and 海老園四丁目/海老山南一丁目, from the lecture-4 merge) without
+duplicating the layer-paint logic:
+    python build_basemap_style.py                      # Koi-ue (default, port 8890)
+    python build_basemap_style.py --name ebaen --port 8891 --out basemap_style_ebaen.json
+CLI 인자로 이 저장소의 두 자체 호스팅 추출본(Task 9의 己斐上, 4강 병합의
+海老園四丁目/海老山南一丁目)을 같은 레이어/색상 로직으로 재사용한다.
 """
+import argparse
 import json
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-OUT = os.path.join(BASE_DIR, "data", "hiroshima", "basemap_style.json")
 
-TILE_SERVER = "http://localhost:8890"
+parser = argparse.ArgumentParser()
+parser.add_argument("--name", default="hiroshima_basemap", help="pmtiles archive basename (no extension) served by `pmtiles serve`")
+parser.add_argument("--port", type=int, default=8890, help="port `pmtiles serve` is listening on")
+parser.add_argument("--out", default="basemap_style.json", help="output style JSON filename, written under data/hiroshima/")
+args = parser.parse_args()
+
+OUT = os.path.join(BASE_DIR, "data", "hiroshima", args.out)
+
+TILE_SERVER = f"http://localhost:{args.port}"
 SOURCE_ID = "protomaps"
+TILESET_NAME = args.name
 
 style = {
     "version": 8,
     "sources": {
         SOURCE_ID: {
             "type": "vector",
-            "url": f"{TILE_SERVER}/hiroshima_basemap.json",
+            "url": f"{TILE_SERVER}/{TILESET_NAME}.json",
         }
     },
     "glyphs": "https://fonts.protomaps.dev/{fontstack}/{range}.pbf",  # labels only; falls back to no text if unreachable offline
