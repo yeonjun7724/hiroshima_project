@@ -143,13 +143,40 @@ because Hiroshima's data has a different shape:
   small-denominator outliers and 100+ overlapping labels made the raw
   version unreadable.
 
-**Next step:** Lecture 2 (`geopandas_analysis.ipynb` cells 70-106 — the
-Union/Intersection/Difference coverage analysis, vulnerability scoring,
-Top-5/Top-20 selection), then lectures 3-4 from `3-4_session.ipynb`, using
-`analysis/notebook_merge_catalog.md`'s cell-range tables. Lecture 3-4 will
-need the OSMnx walk network and 100m-grid-equivalent swapped to Hiroshima —
-the Koi-ue extracts from Task 9 can likely serve as the "zoom into one
-neighbourhood" demo area, same role 남현동/청림동 played in the Seoul version.
+**Progress: Lecture 2 is also drafted, executed, and verified** —
+`hiroshima_tutorial.ipynb` is now 80 cells. Covers NB1's cells 70-106:
+buffer coverage (bus 300m / rail 500m), Union/Intersection/Difference,
+uncovered-area extraction, min-max-normalized vulnerability score, Top-20/
+Top-5 ranking, a Step1/2/3 comparison Folium map, and the spatial-
+multicollinearity writeup. The GeoPandas-vs-Folium duplicate section was
+skipped (already covered in lecture 1, per the catalog's dedup note).
+- **The final demo area is data-derived, not hand-picked**: `final_names =
+  candidate_top20.head(2)["region_nm"]` — whatever the real ranking produces.
+  For this run that's **海老園四丁目 and 海老山南一丁目** (both 佐伯区/Saeki
+  ward): ~1,100-1,300 residents, 0 bus stops, 0 stations, 87-100% uncovered.
+  This is *not* Koi-ue (己斐上) from Task 9 — the ranking never put Koi-ue
+  in the top 20, so forcing it in would have meant hand-picking the answer
+  instead of letting the computed result stand. The earlier note in this
+  file suggesting Koi-ue could double as the lecture 3-4 demo area was wrong;
+  lecture 3-4 needs fresh Hiroshima data fetched for 海老園四丁目/海老山南一丁目's
+  actual location instead (walk network, local population detail).
+  `outputs/demo_admin.gpkg` / `demo_uncovered.gpkg` are written the same way
+  Seoul's version did, for lecture 3-4 to load.
+- Real fix, not cosmetic: the Top-5 map was originally unreadable — each
+  small area is a tiny sliver against the whole city, so a thin red outline
+  was invisible at city scale, and the 5 areas span two distant wards so a
+  single shared zoom window didn't help either. Fixed with a small-multiples
+  panel, one tightly-zoomed subplot per area, regardless of how scattered
+  they are.
+- No new bugs of the qcut/font/color-order kind this section — those were
+  all fixed once in lecture 1 and the fixes carried forward cleanly.
+
+**Next step:** lectures 3-4 from `3-4_session.ipynb`, using
+`analysis/notebook_merge_catalog.md`'s cell-range tables. Needs fresh
+Hiroshima source data for wherever 海老園四丁目/海老山南一丁目 actually are
+(OSMnx walk network, a population-grid equivalent for the lonboard 3D
+blocks) — the existing Koi-ue extracts from Task 9 do not cover this area
+and are not the right base to build on for this lecture (see above).
 
 ---
 
