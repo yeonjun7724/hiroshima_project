@@ -33,16 +33,57 @@ the current plan. Do not resume it without asking the user first.
 남겨둠). 사용자에게 먼저 묻지 않고 그 방향으로 되돌아가지 말 것.
 
 **What's already usable toward the real goal:**
-- Hiroshima data exists at `data/hiroshima/` (from Task 9, scoped to a 1.5km
-  radius around Koi-ue/己斐上): 44 bus stops, 9 rail/streetcar stations, a
-  500m population mesh (e-Stat), 5m DEM tiles. **This radius is probably too
-  small to cover what the merged lecture needs** — the lecture likely needs
-  city-wide or multi-ward Hiroshima data (registered population by admin
-  area, admin boundary polygons, a bikeshare equivalent to 따릉이 for the
-  lecture-3 "따릉이는 어디까지 닿고 있는가" section). Re-scope before reusing
-  as-is.
-- `analysis/hiroshima/fetch_sources.py` is a working template for pulling
-  more KSJ/e-Stat/GSI data at a different bbox if a wider extract is needed.
+- The full section-by-section catalog of both notebooks (headers, what each
+  section's code actually does, every Seoul data file touched, verbatim/
+  near-duplicate content between the two, a hard sequential dependency — NB2
+  loads `outputs/demo_admin.gpkg`/`demo_uncovered.gpkg`, which only exist
+  because NB1 writes them at the end) is done — see
+  [`analysis/notebook_merge_catalog.md`](analysis/notebook_merge_catalog.md).
+  Start there, not by re-reading the notebooks.
+- **City-wide Hiroshima data is now fetched**, not just the 1.5km Koi-ue
+  buffer: `analysis/hiroshima/fetch_city_sources.py` re-clips the *same* raw
+  downloads Task 9 already pulled (still cached in `data/hiroshima/_raw/`,
+  no re-download) to all of Hiroshima City's 8 wards. Produces:
+  - `data/hiroshima/hiroshima_city_admin.gpkg` — 1,136 chōme (小地域) across
+    8 wards, **total pop 1,200,754** (matches Hiroshima City's real
+    population — sanity-checked). Columns renamed `region_nm`/`ward_nm`/
+    `pop`/`households`. **This is the Seoul `BND_ADM_DONG_PG.shp` +
+    등록인구 CSV equivalent, already combined into one file** — see the
+    correction below, it does double duty.
+  - `data/hiroshima/hiroshima_city_bus_stops.gpkg` — 1,660 stops, city-wide.
+  - `data/hiroshima/hiroshima_city_stations.gpkg` — 143 rail/streetcar
+    stations, city-wide.
+  - The Koi-ue-only extracts (`koi_*.gpkg`, 1.5km radius) are untouched and
+    still there if the merged lecture wants a "zoom into one neighbourhood"
+    demo section — Seoul's version does exactly this (남현동/청림동 out of
+    426 dongs), so Koi-ue can play that same role rather than being wasted.
+- **Correction to a Task 9 labeling mistake**: what this repo's docs/scripts
+  called Hiroshima's "500m population mesh" (`koi_pop_mesh500.gpkg`, e-Stat
+  `dlserveyId=A002005212020&downloadType=5`) is **not a regular grid** — it's
+  real 小地域 (chōme/town) boundary polygons with population attached
+  (`S_NAME` has real neighbourhood names like 八丁堀, 基町; `CITY_NAME` has
+  real ward names like 広島市中区). Confirmed by inspecting the data directly,
+  not assumed. This means it's the Seoul admin-boundary-plus-population
+  equivalent, not a separate mesh product — one less data source to chase
+  down than Task 9's notes implied. The variable/file naming ("mesh500")
+  in `fetch_sources.py`/`tobler_slope_correction.py` is now misleading but
+  left as-is since those scripts are for the abandoned slope-case narrative,
+  not the merge.
+- Still missing, not yet fetched:
+  - **Bikeshare** (따릉이 equivalent, for lecture 3's "따릉이는 어디까지
+    닿고 있는가"): Hiroshima's ぴーすくる (Peesakuru, run by DOCOMO Bike
+    Share) publishes station data as GBFS via 公共交通オープンデータセンター
+    (ODPT, api.odpt.org) — but it needs a free ODPT developer account +
+    API token, which the user has to create themselves (self-service email
+    signup, not something to do on their behalf without asking). **User
+    chose to skip this and proceed with the rest for now** — ask again
+    before spending more effort here, or ask the user to hand over a token.
+  - A true regular population **mesh** (like Seoul's 100m
+    `nlsp_021001001.shp`, used only in NB2 lecture 4 for the 3D lonboard
+    population blocks) — not fetched. The chōme polygons above can likely
+    substitute directly for this (extrude by chōme instead of by grid cell);
+    probably don't need a separate mesh fetch unless the visual result looks
+    bad with irregular chōme shapes instead of uniform squares.
 - lonboard (Task 6), the uv environment (Task 10), and PMTiles self-hosting
   (Task 3) are all genuinely reusable regardless of narrative — they're
   infrastructure, not tied to the abandoned defects framing.
@@ -54,16 +95,11 @@ the current plan. Do not resume it without asking the user first.
 - A verbatim-duplicate section ("GeoPandas와 Folium의 차이") already exists in
   both notebooks — worth deduping during the merge, not carrying twice.
 
-**Next step:** the full section-by-section catalog of both notebooks (headers,
-what each section's code actually does, every Seoul data file touched,
-verbatim/near-duplicate content between the two, a hard sequential
-dependency — NB2 loads `outputs/demo_admin.gpkg`/`demo_uncovered.gpkg`,
-which only exist because NB1 writes them at the end) is already done —
-see [`analysis/notebook_merge_catalog.md`](analysis/notebook_merge_catalog.md).
-Start there instead of re-deriving it. Start the actual merge plan from its
-"두 노트북 간 중복" and cell-range tables, and re-scope the Hiroshima data
-extent (currently just 1.5km around Koi-ue) before assuming it covers what
-the merged lecture needs.
+**Next step:** start actually drafting the merged notebook structure using
+`analysis/notebook_merge_catalog.md`'s cell-range tables and dedup list, now
+that city-wide Hiroshima admin/population/bus/rail data exists to swap in.
+Decide section-by-section what changes (data source + narrative framing) vs.
+what's pure GeoPandas/Folium/OSMnx mechanics that ports over unchanged.
 
 ---
 
