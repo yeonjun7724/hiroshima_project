@@ -32,6 +32,7 @@ deck_3d_population_yellow_orange_red_radius_only.html
 data/hiroshima/koi_slope_map.html
 outputs/*.html
 outputs/*.gpkg
+outputs/*.csv
 
 # --- Local dev tools -------------------------------------------------------
 # go-pmtiles CLI binary (Task 3, PMTiles basemap). Not project source; fetch

@@ -171,12 +171,40 @@ skipped (already covered in lecture 1, per the catalog's dedup note).
 - No new bugs of the qcut/font/color-order kind this section — those were
   all fixed once in lecture 1 and the fixes carried forward cleanly.
 
-**Next step:** lectures 3-4 from `3-4_session.ipynb`, using
-`analysis/notebook_merge_catalog.md`'s cell-range tables. Needs fresh
-Hiroshima source data for wherever 海老園四丁目/海老山南一丁目 actually are
-(OSMnx walk network, a population-grid equivalent for the lonboard 3D
-blocks) — the existing Koi-ue extracts from Task 9 do not cover this area
-and are not the right base to build on for this lecture (see above).
+**Progress: Lecture 3 is also drafted, executed, and verified** —
+`hiroshima_tutorial.ipynb` is now 112 cells. Covers NB2's cells 0-55, but
+**reframed**: the original taught OSMnx/NetworkX routing from Seoul's 따릉이
+(bike-share) stations to the nearest bus/subway within 5 minutes. Hiroshima's
+equivalent, ぴーすくる, only exposes station data via ODPT, which needs a
+free developer account the user would have to register for themselves — still
+skipped per their earlier direction. Rather than block the section on that,
+the routing origin here is a 100m sample grid of points *inside* 海老園四丁目/
+海老山南一丁目 themselves, and the question becomes "how far do residents of
+the most vulnerable areas actually have to walk to transit" — a direct,
+honest continuation of lecture 2's cliffhanger (straight-line buffers can't
+capture real routes) rather than a forced fit to missing data.
+- **Real result, not just plumbing**: both small areas *do* have a walkable
+  route to a stop within 15 minutes (101 routes found, 0 failures) — nearest
+  real-network distance is 503-582m, mean ~930m. That's a materially
+  different, more precise finding than lecture 2's "0% covered": these areas
+  aren't transit deserts, they're just outside the flat 300m/500m buffer
+  standard by a few hundred metres. Left as an explicit markdown callout
+  rather than stated as a bare number.
+- Network fetched fresh for this area (OSMnx `graph_from_polygon`, 2km
+  buffer around the two small areas, ~4,300 nodes) — confirmed *before*
+  writing notebook cells, via a standalone prototype script, that routing
+  actually succeeds here before committing to the approach.
+- No qcut/font/color-order class of bug this time; this section's failure
+  mode would have been "0 routes found," which didn't happen and was
+  checked explicitly (`fails: 0`).
+
+**Next step:** Lecture 4 from `3-4_session.ipynb` cells 56-96 — the lonboard
+3D population-block visualization (Task 6's pattern) and MCLP-style site
+selection, retargeted to 海老園四丁目/海老山南一丁目. Will need a population-
+grid equivalent for the extruded 3D blocks (Seoul used a 100m
+`nlsp_021001001.shp` grid); the small-area polygons from lecture 1
+(`hiroshima_city_admin.gpkg`) may substitute directly, same open question
+noted for Task 9's abandoned mesh500 naming — check before assuming.
 
 ---
 
