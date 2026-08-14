@@ -1,13 +1,21 @@
 # gis_session — FOSS4G Hiroshima talk
 
-Seoul public-transport accessibility analysis, being rebuilt into a conference
-talk. Roughly one month to delivery from 2026-08-13.
+Seoul public-transport accessibility analysis, being rebuilt into a
+Hiroshima-localized FOSS4G tutorial. Roughly one month to delivery from
+2026-08-13.
 
-서울 대중교통 접근성 분석을 컨퍼런스 발표로 재구성하는 작업.
+서울 대중교통 접근성 분석을 히로시마 현지화 FOSS4G 튜토리얼로 재구성하는 작업.
 2026-08-13 기준 발표까지 약 1개월.
 
-Working document (structure, findings, abstract draft):
-[talk/storyline.html](talk/storyline.html) — also published as an artifact.
+**The actual deliverable is [`hiroshima_tutorial.ipynb`](hiroshima_tutorial.ipynb)**
+— read the "Goal correction" section immediately below before anything else
+in this file. `talk/storyline.html` describes an earlier, abandoned plan
+("Counted in Full", a bug-hunting narrative) and is kept only as reference
+material, not as the current working document — do not start from it.
+**실제 산출물은 [`hiroshima_tutorial.ipynb`](hiroshima_tutorial.ipynb)다** —
+이 파일의 다른 어떤 내용보다 바로 아래 "Goal correction" 섹션을 먼저 읽을 것.
+`talk/storyline.html`은 이전에 폐기된 계획("Counted in Full", 버그찾기
+내러티브)을 설명하며 참고자료로만 남아 있다 — 여기서 작업을 시작하지 말 것.
 
 ---
 
@@ -472,18 +480,32 @@ the diff).
 ## Layout
 
 ```
-analysis/     forensic scripts + result CSVs (rerunnable)
-analysis/hiroshima/  Task 9 data acquisition (fetch_sources.py, rerunnable)
+analysis/     forensic scripts + result CSVs (rerunnable) + notebook_merge_catalog.md
+analysis/hiroshima/  data acquisition (fetch_sources.py = Koi-ue 1.5km buffer,
+                     fetch_city_sources.py = city-wide 8-ward re-clip, both
+                     rerunnable) + build_basemap_style.py (PMTiles style JSON,
+                     parameterized for both the Koi-ue and 海老園四丁目 extracts)
 talk/         storyline.html — talk structure, findings, abstract draft
+              (describes the abandoned "Counted in Full" plan, not the
+              current tutorial merge -- see the goal-correction section)
 data/         source data (large shp gitignored — see .gitignore)
-data/hiroshima/  Task 9 clipped extracts + DEM tiles (_raw/ gitignored)
+data/hiroshima/  clipped extracts, DEM tiles (_raw/ gitignored), and two
+                 self-hosted PMTiles basemaps + style JSONs: Koi-ue
+                 (hiroshima_basemap.pmtiles / basemap_style.json) and
+                 海老園四丁目 (hiroshima_basemap_ebaen.pmtiles /
+                 basemap_style_ebaen.json)
 outputs/      generated maps and gpkg (gitignored)
 cache/        Overpass cache, ~400 MB (gitignored)
 tools/        local dev binaries (go-pmtiles), gitignored, not project source
 app.py        Streamlit demo — buffer vs network coverage, with A/B toggles
+              (Seoul only, part of the abandoned "Counted in Full" plan)
+hiroshima_tutorial.ipynb  THE deliverable: all 4 lectures merged and
+                          Hiroshima-localized, 150 cells, drafted/executed/
+                          verified end to end (see "Progress" notes above)
 3-4_session.ipynb        lectures 3 & 4 (final, Seoul, source material for the merge)
 geopandas_analysis.ipynb lectures 1 & 2 (Seoul, source material for the merge)
-hiroshima_slope_case.ipynb  lonboard map of the Task 9 result
+hiroshima_slope_case.ipynb  lonboard map of the Task 9 result (Koi-ue,
+                            separate from hiroshima_tutorial.ipynb)
 pyproject.toml / uv.lock    the actual dev environment (Task 10) — use this,
                             not requirements.txt, which exists only in case
                             something still expects it for Streamlit Cloud
@@ -578,15 +600,24 @@ this list yet because the plan for it doesn't exist yet.
    고정. 첫 시도에서 scikit-learn 하나를 놓쳤다(어떤 코드도 직접 import하지
    않아서) — 실제로 스크립트를 돌려보고서야 잡음. import 목록만 보고 판단하지
    않은 이유.
-5. **Task 2** — run all four notebooks end to end on pandas 3.0. This is
-   where the lonboard cells (Task 6) get their first real execution against
-   Seoul data — treat that as unverified until this runs.
-6. **Task 8** (optional) — spopt MCLP against the greedy siting heuristic.
+5. ~~**Task 2** — run all four notebooks end to end.~~ Superseded: the
+   original Seoul notebooks were never run end-to-end under this plan, but
+   `hiroshima_tutorial.ipynb` (their merged, Hiroshima-localized
+   replacement) has been — repeatedly, including a full 150-cell nbclient
+   re-run during a later general check-up, restored afterward since the
+   diff was only execution timestamps. Do not describe the merged
+   notebook's execution as unverified; it isn't.
+6. **Task 8** (optional, abandoned-plan-only) — spopt MCLP against the
+   greedy siting heuristic. Not part of the current tutorial deliverable;
+   only relevant if the "Counted in Full" narrative is ever revived.
 
-Talk runs ~36 min as structured; FOSS4G slots are usually 20–25. Compress
-beat 02, protect beats 05 and 06.
-구성상 약 36분인데 FOSS4G 슬롯은 보통 20~25분이다. 02단계를 압축하고
-05·06단계를 지킬 것.
+The "~36 min talk, compress beat 02" timing note above was sized for the
+abandoned bug-hunting narrative's beat structure and doesn't describe
+`hiroshima_tutorial.ipynb`, which hasn't been timed as a talk yet — treat
+that number as historical, not a target for the merged tutorial.
+위 "약 36분, 02단계 압축" 시간 안내는 폐기된 버그찾기 구성 기준이며
+`hiroshima_tutorial.ipynb`에는 적용되지 않는다 — 병합된 튜토리얼은 아직
+발표 시간으로 재본 적이 없다. 참고용 과거 기록으로만 볼 것.
 
 ---
 
