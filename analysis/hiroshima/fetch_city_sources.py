@@ -47,6 +47,14 @@ def city_admin_and_population():
     gdf = gpd.read_file(os.path.join(RAW_DIR, "mesh_r2ka34", "r2ka34.shp"))
     city = gdf[gdf["CITY_NAME"].astype(str).str.startswith("広島市")].copy()
     city = city.rename(columns={"S_NAME": "region_nm", "CITY_NAME": "ward_nm", "JINKO": "pop", "SETAI": "households"})
+    # Every sibling output in this file (and in fetch_sources.py) is normalized
+    # to display CRS 4326 before saving; this one was the sole exception,
+    # silently saved in the raw source's JGD2011 geographic CRS (EPSG:6668)
+    # instead -- fixed to match the project-wide convention.
+    # 이 파일(과 fetch_sources.py)의 다른 모든 출력은 저장 전 표시 좌표계(4326)로
+    # 정규화하는데, 이 함수만 예외로 원본 소스의 JGD2011 좌표계(EPSG:6668) 그대로
+    # 저장되고 있었다 -- 프로젝트 전역 컨벤션에 맞춰 수정.
+    city = city.to_crs(4326)
     out = os.path.join(DATA_DIR, "hiroshima_city_admin.gpkg")
     city.to_file(out, driver="GPKG")
     print(f"admin+population: {len(city)} small areas across {city['ward_nm'].nunique()} wards, "

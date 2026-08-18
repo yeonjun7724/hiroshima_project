@@ -80,11 +80,27 @@ def load_dem_mosaic(zoom=15):
     xs = sorted({t[0] for t in tiles})
     ys = sorted({t[1] for t in tiles})
     x0, y0 = xs[0], ys[0]
+    n_cols, n_rows = xs[-1] - x0 + 1, ys[-1] - y0 + 1
 
-    mosaic = np.full((256 * len(ys), 256 * len(xs)), np.nan)
+    # Place each tile at its true offset from the grid origin (x - x0, y - y0),
+    # not its compact index among the x/y values actually present. A compact
+    # index silently assumes a dense grid: if a tile is missing from the
+    # middle of the range (e.g. a 404 that fell back to a differently-named
+    # fallback_* file, which the regex above skips), every tile past the hole
+    # would shift one slot over and corrupt the mosaic's spatial layout with
+    # no error. A true-offset placement instead leaves a real gap (NaN),
+    # which the nearest-valid-pixel fill below already handles correctly.
+    # 각 타일을 실제 있는 x/y 값들 사이의 압축 인덱스가 아니라, 격자 원점 기준
+    # 진짜 오프셋(x - x0, y - y0)에 배치한다. 압축 인덱스는 격자가 빈틈없이
+    # 촘촘하다고 암묵 가정한다 -- 범위 중간의 타일 하나가 없으면(예: 404 이후
+    # 위 정규식이 건너뛰는 다른 이름의 fallback_* 파일로 대체된 경우) 그 뒤의
+    # 모든 타일이 한 칸씩 밀려 모자이크 배치가 에러 없이 조용히 망가진다.
+    # 진짜 오프셋으로 배치하면 대신 실제 빈틈(NaN)이 남고, 이는 아래의 최근접
+    # 유효 픽셀 채우기가 이미 올바르게 처리한다.
+    mosaic = np.full((256 * n_rows, 256 * n_cols), np.nan)
     for x, y, f in tiles:
         arr = decode_elevation(f)
-        cx, cy = xs.index(x) * 256, ys.index(y) * 256
+        cx, cy = (x - x0) * 256, (y - y0) * 256
         mosaic[cy : cy + 256, cx : cx + 256] = arr
 
     # A handful of DEM5A pixels are NODATA over the Ota River / gaps in the
@@ -100,7 +116,7 @@ def load_dem_mosaic(zoom=15):
         mosaic = mosaic[iy, ix]
 
     lon_min, lat_max = _tile_to_lonlat(x0, y0, zoom)
-    lon_max, lat_min = _tile_to_lonlat(x0 + len(xs), y0 + len(ys), zoom)
+    lon_max, lat_min = _tile_to_lonlat(x0 + n_cols, y0 + n_rows, zoom)
 
     def sample(lons, lats):
         lons, lats = np.asarray(lons), np.asarray(lats)
@@ -215,10 +231,24 @@ def main():
         corrected = isochrone_polygon(G, node, radius=TIME_BUDGET_S, weight="time_s", undirected=False)
         na = naive.area if naive else 0.0
         ca = corrected.area if corrected else 0.0
+        # A stop going from 0 reachable area (naive) to some real area
+        # (corrected) is a genuine, large accessibility result -- but percent
+        # change from a zero baseline is mathematically undefined, and the
+        # naive `if na > 0 else nan` guard means pandas silently drops it from
+        # any downstream .mean() with no indication it happened. Same "swallowed
+        # into NaN instead of an explicit case" pattern as lecture 1's qcut fix
+        # (see CLAUDE.md) -- flagged explicitly here instead.
+        # naive(평지 가정)에서 도달면적 0이었다가 corrected(경사보정)에서 실제
+        # 면적이 생기는 경우는 진짜로 의미 있는 접근성 결과다 -- 하지만 0을
+        # 분모로 하는 퍼센트 변화는 수학적으로 정의되지 않고, 기존의
+        # `na > 0 else nan` 처리는 아무 표시 없이 이후 .mean() 계산에서 이
+        # 값을 조용히 빼버린다. 1강 qcut 수정(CLAUDE.md 참고)과 같은 "NaN에
+        # 조용히 삼켜지는" 패턴이라 여기서는 명시적으로 표시한다.
         rows.append({
             "node": node, "elev_m": round(float(r["elev"]), 1),
             "naive_m2": round(na), "corrected_m2": round(ca),
             "pct_change": round(100 * (ca - na) / na, 1) if na > 0 else float("nan"),
+            "newly_reachable": bool(na == 0 and ca > 0),
         })
         if naive is not None:
             naive_polys.append(naive)
@@ -236,6 +266,15 @@ def main():
     print(f"  hillside stops (>=60m elev, n={len(hill)}): mean change {hill['pct_change'].mean():+.1f}%, "
           f"range {hill['pct_change'].min():+.1f}% to {hill['pct_change'].max():+.1f}%")
     print(f"  valley-floor stops (<10m elev, n={len(flat)}): mean change {flat['pct_change'].mean():+.1f}%")
+
+    newly = per_stop[per_stop["newly_reachable"]]
+    if len(newly) > 0:
+        print(f"  NOTE: {len(newly)} stop(s) went from 0 reachable area under the flat assumption to "
+              f"{newly['corrected_m2'].sum():,.0f} m2 total under the slope-corrected budget -- excluded "
+              f"from the means above (% change from a zero baseline is undefined) but a real accessibility "
+              f"gain, listed here rather than silently dropped:")
+        for _, nr in newly.iterrows():
+            print(f"    node {nr['node']} (elev {nr['elev_m']}m): 0 -> {nr['corrected_m2']:,.0f} m2")
 
     naive_cover = unary_union(naive_polys) if naive_polys else None
     corrected_cover = unary_union(corrected_polys) if corrected_polys else None

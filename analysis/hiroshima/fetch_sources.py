@@ -158,8 +158,17 @@ def fetch_dem(zoom=15):
     out_dir = os.path.join(DATA_DIR, "dem")
     os.makedirs(out_dir, exist_ok=True)
 
-    d_lat = RADIUS_M / 111_320
-    d_lon = RADIUS_M / (111_320 * np.cos(np.radians(CENTER_LAT)))
+    # tobler_slope_correction.py's build_graph() downloads the walk network
+    # with RADIUS_M + 300m of padding, not RADIUS_M -- match that here so
+    # every network node's elevation comes from a real tile instead of being
+    # silently clamped to the mosaic edge for nodes in that outer 300m ring.
+    # tobler_slope_correction.py의 build_graph()는 도보 네트워크를 RADIUS_M이
+    # 아니라 RADIUS_M + 300m 여유로 받는다 -- 여기서도 맞춰서, 바깥쪽 300m 링에
+    # 있는 노드의 표고가 모자이크 가장자리로 조용히 클램핑되지 않고 실제 타일에서
+    # 나오게 한다.
+    dem_radius_m = RADIUS_M + 300
+    d_lat = dem_radius_m / 111_320
+    d_lon = dem_radius_m / (111_320 * np.cos(np.radians(CENTER_LAT)))
     x1, y1 = _lonlat_to_tile(CENTER_LON - d_lon, CENTER_LAT + d_lat, zoom)
     x2, y2 = _lonlat_to_tile(CENTER_LON + d_lon, CENTER_LAT - d_lat, zoom)
 

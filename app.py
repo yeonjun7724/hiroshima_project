@@ -32,7 +32,16 @@ MAP_CRS    = 4326   # 지도 표시용 좌표계: EPSG:4326 (위경도, WGS84)
 
 BUS_BUFFER_M   = 300.0    # 버스정류장 도보 커버 기준 거리 (m)
 SUB_BUFFER_M   = 500.0    # 지하철역 도보 커버 기준 거리 (m)
-GRAPH_BUFFER_M = 1500.0   # OSM 네트워크 다운로드 범위: 행정동 경계 바깥 여유 버퍼 (m)
+# Must stay >= NEIGHBOUR_MARGIN_M (defined below): when "Include stops outside
+# the district" is toggled on, a stop up to NEIGHBOUR_MARGIN_M away is used
+# for routing, so the OSM graph must be downloaded at least that far, or
+# nearest_nodes() silently snaps those stops to whatever node happens to sit
+# at the graph's outer edge instead of erroring.
+# NEIGHBOUR_MARGIN_M(아래 정의) 이상이어야 한다: "경계 밖 정류장 포함" 토글을
+# 켜면 최대 NEIGHBOUR_MARGIN_M 거리의 정류장까지 경로 계산에 쓰이므로, OSM
+# 그래프도 최소 그만큼은 받아둬야 한다. 아니면 nearest_nodes()가 에러 없이
+# 그래프 가장자리의 아무 노드에나 조용히 스냅해버린다.
+GRAPH_BUFFER_M = 2000.0   # OSM 네트워크 다운로드 범위: 행정동 경계 바깥 여유 버퍼 (m)
 EDGE_BUFFER_M  = 25.0     # isochrone 폴리곤 생성 시 도로 폭 보정 버퍼 (m)
 
 MAP_HEIGHT_PX = 650       # 지도 위젯 표시 높이 (픽셀)
@@ -396,7 +405,17 @@ with st.spinner("데이터 로드/분석 중... (OSM 네트워크 다운로드 �
         # 도착 노드 목록: 버스 노드 + 지하철 노드 (순서 유지하며 중복 제거)
         targets = list(dict.fromkeys(list(bus_nodes) + list(subway_nodes)))
         if len(targets) > MAX_DRAW_ROUTES:                             # 경로가 너무 많으면
-            targets = targets[:MAX_DRAW_ROUTES]                        # 앞부분만 사용 (성능 안전장치)
+            # Keep the nearest MAX_DRAW_ROUTES targets to the source instead
+            # of whichever happened to come first in the bus+subway
+            # concatenation -- an arbitrary-order truncation could silently
+            # skip closer stops in favour of farther ones, even though the
+            # caption promises a route "to each bus stop/station".
+            # 소스에서 가까운 순서대로 MAX_DRAW_ROUTES개를 남긴다 -- 버스+지하철
+            # 연결 순서상 우연히 앞에 온 것만 쓰면, 캡션이 "각 정류장/역까지"라고
+            # 약속했는데도 더 가까운 정류장이 먼 정류장 대신 조용히 누락될 수 있다.
+            src_x, src_y = G.nodes[src_node]["x"], G.nodes[src_node]["y"]
+            targets.sort(key=lambda n: (G.nodes[n]["x"] - src_x) ** 2 + (G.nodes[n]["y"] - src_y) ** 2)
+            targets = targets[:MAX_DRAW_ROUTES]                        # 가장 가까운 것들만 사용 (성능 안전장치)
 
         for tn in targets:                                             # 각 도착 노드에 대해
             if tn == src_node:                                         # 출발 == 도착이면 경로 불필요
@@ -669,9 +688,16 @@ def _add_base_layers(m):
         ).add_to(m)
 
     for _, r in sub_ll.iterrows():                                     # 지하철역 마커 순회
-        # 역명 컬럼 탐색 (CSV 컬럼명이 다를 수 있으므로 후보 순서대로 시도)
-        sta_name = str(
-            r.get("역명") or r.get("station_nm") or r.get("역사명") or ""
+        # 역명 컬럼 탐색 (CSV 컬럼명이 다를 수 있으므로 후보 순서대로 시도).
+        # `or` chains only fall through on falsy values, but a NaN cell is
+        # truthy -- str(float('nan')) would silently render as the literal
+        # text "nan" in the tooltip. pd.notna() catches that case explicitly.
+        # `or` 체인은 falsy 값에서만 다음으로 넘어가는데, NaN 셀은 truthy라
+        # str(float('nan'))이 툴팁에 문자 그대로 "nan"으로 조용히 렌더링될 수
+        # 있다. pd.notna()로 그 경우를 명시적으로 걸러낸다.
+        sta_name = next(
+            (str(v) for v in (r.get("역명"), r.get("station_nm"), r.get("역사명")) if pd.notna(v) and str(v)),
+            "",
         )
         folium.Marker(                                                 # 마커 생성
             location=[r.geometry.y, r.geometry.x],                    # [위도, 경도]

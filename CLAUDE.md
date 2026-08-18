@@ -309,6 +309,184 @@ rebuilding it Hiroshima-native; user chose deletion).
 실패 유형. 별도 서울 실습으로 남기거나 히로시마 버전으로 재작성하는 선택지도
 제시했으나, 사용자가 삭제를 택함.
 
+**Full code review pass, 2026-08-18: 3 real bugs found and fixed (not the
+Seoul exhibit bugs — those stay as-is per policy above).** User asked for a
+review of the entire codebase. Three parallel review passes (the tutorial
+notebook; app.py + analysis/*.py; analysis/hiroshima/*.py) turned up three
+genuine defects, all now fixed and verified — the notebook re-executed
+clean end-to-end via nbclient (150 cells, 0 errors) after the fixes, and the
+standalone scripts were re-run to confirm they still reproduce their
+published numbers.
+**전체 코드 점검, 2026-08-18: 실제 버그 3건 발견 및 수정(서울 대조군 버그는
+위 정책대로 그대로 둠).** 사용자가 코드베이스 전체 점검을 요청. 세 갈래
+병렬 리뷰(튜토리얼 노트북 / app.py+analysis/*.py / analysis/hiroshima/*.py)
+에서 진짜 결함 3건을 찾아 모두 수정·검증함 — 수정 후 노트북을 nbclient로
+처음부터 끝까지 재실행해 150셀 전부 에러 없이 통과했고, 독립 스크립트들도
+다시 실행해 기존 발표 수치를 그대로 재현하는지 확인함.
+
+- **`hiroshima_tutorial.ipynb` cell 15: `region_id` (KEY_CODE) was not
+  actually unique, and every merge in lectures 1-2 treated it as one.**
+  e-Stat splits 15 of Hiroshima's 1,136 small areas into non-contiguous
+  statistical fragments that keep the same KEY_CODE but carry different
+  population and geometry (e.g. 温品町 as one row with population 0, another
+  with 317). Bus/rail counts, aggregated per region_id then merged back with
+  `on="region_id"`, were silently copied onto every fragment sharing that
+  id — the same "join on a non-unique key" failure class as the Seoul
+  finding 05, recurring on a different key. Fixed by dissolving `gdf_admin`
+  to one row per region_id (population/households summed, geometry unioned)
+  immediately after load, with an explicit uniqueness assertion. Same fix
+  mirrored at cell 117, where lecture 4 independently re-reads the same raw
+  file rather than reusing lecture 1's already-fixed `gdf_admin`. Real,
+  material effect: zero-population small-area count dropped from 117 to 78
+  once split fragments' populations were correctly summed instead of
+  double-counted as separate (sometimes zero) rows.
+  **`hiroshima_tutorial.ipynb` 셀 15: `region_id`(KEY_CODE)가 실제로는
+  유일하지 않은데 1-2강의 모든 병합이 유일 키처럼 취급하고 있었다.** e-Stat이
+  히로시마 1,136개 소지역 중 15개를 KEY_CODE는 같지만 인구·geometry가 다른,
+  서로 떨어진 통계 조각으로 쪼개놓았다(예: 温品町이 인구 0인 행과 317인 행
+  둘로 존재). region_id로 집계한 뒤 `on="region_id"`로 다시 병합한 버스/철도
+  개수가 같은 id를 공유하는 모든 조각에 조용히 복사되고 있었다 — 서울 발견
+  05와 같은 "비유일 키 조인" 실패 유형이 다른 키에서 재발한 것. gdf_admin을
+  읽자마자 region_id 하나당 한 행으로 dissolve(인구·세대수 합산, geometry
+  union)하고 유일성을 assert하도록 수정. 4강이 1강의 이미 고쳐진 gdf_admin을
+  재사용하지 않고 같은 원본 파일을 독립적으로 다시 읽는 셀 117에도 동일하게
+  적용. 실질적 효과: 인구 0인 소지역 수가 117개에서 78개로 줄었다 — 쪼개진
+  조각들의 인구가 이중계상(때로는 0인 별개 행)되지 않고 올바르게 합산됐기
+  때문.
+- **`hiroshima_tutorial.ipynb` cells 127/133/134: lecture 4's candidate
+  pre-filter used a different distance condition than the KPI circle it fed
+  into.** `gdf_cand` was filtered to areas within 1,250m of *some transit
+  stop city-wide*; the KPI then intersected a 1,250m circle *around the
+  selected demo area* against that same pre-filtered set, silently dropping
+  any area that genuinely overlapped the circle but whose centroid happened
+  to sit >1,250m from any stop. Confirmed concretely: 3 real areas were
+  dropped this way (all zero-population this run, so the printed KPI
+  numbers were coincidentally unaffected, but the area *count* changed from
+  35 to 38 once fixed). Fixed by computing `is_uncovered`/`unc_frac` and the
+  circle intersection against the full `gdf_grid` instead of `gdf_cand`
+  (which is still used, correctly, for the earlier "pick a demo area near a
+  stop" step).
+  **`hiroshima_tutorial.ipynb` 셀 127/133/134: 4강의 candidate 사전필터가
+  KPI가 실제로 쓰는 원과 다른 거리 조건을 쓰고 있었다.** `gdf_cand`는 "도시
+  전역 아무 정류장에서나 1,250m 이내"로 걸러졌는데, KPI는 "선택된 데모 지역
+  중심 1,250m 원"과의 교차를 그 이미 걸러진 집합에 대해서만 계산해서,
+  원과는 실제로 겹치지만 중심점이 정류장에서 1,250m보다 먼 지역이 조용히
+  누락되고 있었다. 실제로 3개 지역이 이렇게 빠졌음을 확인(이번 실행에선
+  전부 인구 0이라 출력된 KPI 수치는 우연히 영향 없었지만, 수정 후 원 안
+  지역 개수는 35개에서 38개로 바뀜). `is_uncovered`/`unc_frac`와 원 교차
+  계산을 `gdf_cand`가 아니라 전체 `gdf_grid`에 대해 하도록 수정(`gdf_cand`는
+  앞단의 "정류장 근처 데모지역 선정" 단계에는 그대로 올바르게 남겨둠).
+- **`analysis/lecture4_grid_bias.py` was silently broken.** It read
+  `outputs/demo_uncovered.gpkg` for its "Seoul finding 01/03 reproduction"
+  numbers, but that exact filename is now written by
+  `hiroshima_tutorial.ipynb`'s own lecture 2 — with Hiroshima data. Running
+  the script crashed with `ZeroDivisionError` after silently computing 0
+  flagged cells. Same failure class `practice.ipynb` was retired over,
+  just uncaught in this script. Fixed by making the script self-contained
+  (recompute the Seoul district + uncovered geometry directly from
+  `BND_ADM_DONG_PG.shp` + bus/subway data, the same pattern
+  `edge_effect_experiment.py` already used) instead of depending on a
+  shared `outputs/` filename. Also fixed a zero-division guard and a
+  second bug found during the same review: the Bias-2 circle search was
+  scoped to `cand` (filtered by a different, transit-distance condition)
+  instead of the full grid, which could silently drop populated cells.
+  Re-verified after the fix: reproduces CLAUDE.md's exact published numbers
+  (+51.7%, +23.1%).
+  **`analysis/lecture4_grid_bias.py`가 조용히 망가져 있었다.** "서울 발견
+  01/03 재현" 수치를 위해 `outputs/demo_uncovered.gpkg`를 읽었는데, 이제
+  정확히 같은 파일명을 `hiroshima_tutorial.ipynb`의 자체 2강이 히로시마
+  데이터로 쓰고 있었다. 실행하면 비커버 격자 0개를 조용히 계산한 뒤
+  `ZeroDivisionError`로 크래시. `practice.ipynb`를 폐기시켰던 것과 같은
+  실패 유형이 이 스크립트에서는 미포착 상태였다. `BND_ADM_DONG_PG.shp` +
+  버스/지하철 데이터로 서울 행정동·비커버 지오메트리를 직접 재계산하는
+  자체완결 방식(`edge_effect_experiment.py`가 이미 쓰는 패턴)으로 고쳐
+  공유 `outputs/` 파일명 의존을 없앰. 같은 리뷰에서 발견한 0으로 나누기
+  미방어, 그리고 Bias-2 원 검색이 (다른 조건인 정류장-거리로 걸러진)
+  `cand`에 한정돼 인구 있는 격자를 조용히 누락시킬 수 있던 두 번째 버그도
+  함께 수정. 수정 후 재검증: CLAUDE.md 공식 발표 수치(+51.7%, +23.1%)를
+  정확히 재현함.
+- **`app.py`: `GRAPH_BUFFER_M` (1500m) was smaller than
+  `NEIGHBOUR_MARGIN_M` (2000m).** The "Include stops outside the district"
+  toggle — whose entire purpose is to demonstrate the corrected methodology
+  live on stage — used stops up to 2000m away, but the OSM walking-network
+  graph was only downloaded 1500m out. 128 of 352 neighbour-included stops
+  (36%, confirmed for 남현동) fell outside the downloaded graph, so
+  `nearest_nodes()` silently snapped them to whatever node sat at the
+  graph's outer edge instead of erroring — distorting exactly the "fixed"
+  side of the toggle it exists to showcase. Fixed by raising
+  `GRAPH_BUFFER_M` to 2000m; re-verified numerically (0 of 352 stops now
+  fall outside the graph extent). Two smaller issues fixed in the same
+  file: a subway-station-name fallback that could render the literal string
+  `"nan"` in a tooltip (an `or`-chain doesn't fall through on a truthy
+  `NaN`), and `MAX_DRAW_ROUTES` truncating routes in arbitrary
+  concatenation order instead of nearest-first.
+  **`app.py`: `GRAPH_BUFFER_M`(1500m)이 `NEIGHBOUR_MARGIN_M`(2000m)보다
+  작았다.** "경계 밖 정류장 포함" 토글 — 무대에서 수정된 방법론을 보여주는
+  것이 유일한 목적인 토글 — 은 최대 2000m 거리의 정류장까지 쓰는데, OSM
+  도보망은 1500m까지만 받아뒀다. 경계 밖 정류장 352개 중 128개(36%, 남현동
+  기준 확인)가 다운로드된 그래프 밖에 있어서, `nearest_nodes()`가 에러 없이
+  그래프 가장자리의 아무 노드에나 조용히 스냅됨 — 토글이 보여주려는 바로 그
+  "수정본" 쪽을 왜곡시키고 있었다. `GRAPH_BUFFER_M`을 2000m로 올려 수정,
+  수치로 재검증(이제 352개 중 그래프 밖은 0개). 같은 파일에서 발견한 사소한
+  버그 두 개도 함께 수정: 지하철역명 fallback이 툴팁에 문자 그대로 `"nan"`을
+  렌더링할 수 있던 문제(`or` 체인은 truthy인 `NaN`에서 다음으로 안 넘어감),
+  `MAX_DRAW_ROUTES`가 가까운 순이 아니라 임의의 연결 순서로 경로를 잘라내던
+  문제.
+- **`analysis/hiroshima/fetch_city_sources.py`: `hiroshima_city_admin.gpkg`
+  was the one file in this project saved in the raw source's CRS
+  (EPSG:6668, JGD2011 geographic) instead of the display CRS (EPSG:4326)
+  every sibling output normalizes to.** Non-breaking in practice (JGD2011
+  vs. WGS84 differs by sub-meter amounts in Japan, and the notebook
+  defensively reprojects on load), but a landmine and an inconsistency with
+  the project's own stated convention. Fixed with the same `.to_crs(4326)`
+  every other function already does; file regenerated from the cached raw
+  download (no re-fetch needed) with identical row counts/population totals,
+  only the CRS metadata changed.
+  **`analysis/hiroshima/fetch_city_sources.py`: `hiroshima_city_admin.gpkg`가
+  이 프로젝트에서 유일하게 표시 좌표계(EPSG:4326) 대신 원본 소스의 좌표계
+  (EPSG:6668, JGD2011 경위도)로 저장되고 있었다.** 실제로는 문제를 일으키지
+  않았지만(일본 내에서 JGD2011과 WGS84 차이는 서브미터급이고, 노트북이 로드
+  시 방어적으로 재투영함), 프로젝트 자체 컨벤션과 어긋나는 지뢰였다. 다른
+  모든 함수가 이미 하는 `.to_crs(4326)`으로 동일하게 수정; 캐시된 원본에서
+  재생성(재다운로드 불필요)했고 행 수/인구 합계는 동일, CRS 메타데이터만
+  바뀜.
+- **`analysis/hiroshima/tobler_slope_correction.py`: two latent (not yet
+  triggered) bugs hardened.** The DEM mosaic placed tiles at their compact
+  index among present x/y values rather than their true offset from the
+  grid origin — silently correct only because today's 16 tiles form a dense
+  4x4 grid with no gaps; would corrupt the mosaic's spatial layout the
+  moment any tile is missing from the middle of the range (e.g. a 404
+  fallback). Fixed to place tiles at `(x - x0, y - y0)`, leaving real gaps
+  that the existing nearest-valid-pixel fill already handles correctly.
+  Also: `pct_change` was `NaN` (and so silently dropped from the mean)
+  whenever the flat-ground buffer found 0 reachable area, even when the
+  slope-corrected budget found real area — a genuine "0 -> reachable"
+  accessibility gain, swallowed with no indication, same shape as lecture
+  1's qcut fix. Now flagged with an explicit `newly_reachable` column and
+  printed separately rather than silently dropped. Neither bug changed this
+  run's numbers (re-verified: exact same published figures reproduced,
+  hillside -15.5%/valley -0.7%/network +2.4%); both were real risks on a
+  future rerun. Also bumped `fetch_dem()`'s tile-fetch radius to match
+  `build_graph()`'s `RADIUS_M + 300` walk-network buffer (previously
+  1500m vs. 1800m), so outer-ring nodes get real elevation instead of a
+  silently clamped mosaic-edge value.
+  **`analysis/hiroshima/tobler_slope_correction.py`: 아직 발동하지 않은
+  잠재 버그 두 개를 보강.** DEM 모자이크가 타일을 격자 원점 기준 진짜
+  오프셋이 아니라 존재하는 x/y 값들 사이의 압축 인덱스에 배치하고 있었다 —
+  현재 16개 타일이 빈틈없는 4x4 격자라 우연히 문제없었을 뿐, 범위 중간에
+  타일 하나라도 없어지면(예: 404 폴백) 모자이크 배치가 조용히 망가진다.
+  `(x - x0, y - y0)`에 배치하도록 수정해 실제 빈틈이 남게 하고, 이미 있는
+  최근접 유효픽셀 채우기가 그걸 올바르게 처리하게 함. 또한: 평지 가정
+  버퍼가 도달면적 0을 찾았는데 경사보정 예산은 실제 면적을 찾은 경우
+  `pct_change`가 NaN이 되어(그래서 평균에서 조용히 빠짐) — 진짜 "0→도달가능"
+  접근성 개선인데 아무 표시 없이 삼켜지던 것으로, 1강 qcut 수정과 같은
+  모양의 문제. 이제 `newly_reachable` 컬럼으로 명시하고 별도로 출력하도록
+  수정. 두 버그 모두 이번 실행 수치는 바꾸지 않았지만(재검증: 언덕
+  -15.5%/평지 -0.7%/네트워크 +2.4% 동일 재현), 재실행 시 실제 위험이었음.
+  `fetch_dem()`의 타일 요청 반경도 `build_graph()`가 실제 쓰는
+  `RADIUS_M + 300` 도보망 버퍼에 맞춰 올림(기존 1500m vs 1800m) — 바깥쪽
+  링 노드가 조용히 클램핑된 모자이크 가장자리 값 대신 실제 표고를 쓰게 됨.
+
 ---
 
 ## Conventions
