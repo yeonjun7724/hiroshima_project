@@ -567,8 +567,45 @@ Regenerate any of these with the scripts in `analysis/`.
   point: the same bug is nearly harmless on empty mountainside and severe in a
   dense block. Severity belongs to the terrain, not the code. This is the
   bridge to the Hiroshima slope case.
-- **Mapbox is out.** It is a proprietary SaaS dependency in a FOSS4G talk.
-  Migrating to MapLibre + PMTiles and pydeck → lonboard.
+- **Mapbox is out, mostly.** It is a proprietary SaaS dependency in a
+  FOSS4G talk. Migrated to MapLibre + PMTiles and pydeck → lonboard.
+  **Partial reversal, 2026-08-18 (explicit user request):**
+  `hiroshima_tutorial.ipynb` lecture 4's 3D population map was switched
+  back from lonboard to literal, runnable **pydeck** code, at the user's
+  explicit request after being shown the tradeoff (pydeck has no native
+  GeoPandas support -- `MultiPolygon` geometries must be exploded into
+  per-part rows by hand -- and its Mapbox-branded style needs a token +
+  live internet). Designed to degrade gracefully rather than reintroduce
+  a hard dependency: the basemap reads `MAPBOX_TOKEN` from an environment
+  variable (never hardcoded/committed -- this repo has already had
+  exposed tokens revoked once), and falls back to pydeck's own free
+  `map_provider="carto"` (no token, pydeck's actual default since ~0.8)
+  when the variable isn't set. `pydeck==0.9.3` added to `pyproject.toml`
+  via `uv add` alongside the existing `lonboard==0.16.0` (not removed --
+  `hiroshima_slope_case.ipynb` still depends on it). Re-verified end to
+  end via nbclient with no token set (150+ cells, 0 errors, Carto
+  fallback path). The "MapLibre + PMTiles" self-hosted-basemap decision
+  is untouched everywhere else in the project (app.py, the Koi-ue and
+  海老園四丁目 basemap extracts) -- this reversal is scoped to lecture 4's
+  rendering library only.
+  **Mapbox는 (대부분) 뺐다.** FOSS4G 발표에서 상용 SaaS 의존성이라서.
+  MapLibre + PMTiles, pydeck → lonboard로 전환했었다.
+  **부분 번복, 2026-08-18(사용자 명시적 요청):**
+  `hiroshima_tutorial.ipynb` 4강의 3D 인구 지도를 lonboard에서 다시 실제로
+  실행되는 **pydeck** 코드로 되돌렸다 -- 트레이드오프(pydeck은 GeoPandas
+  네이티브 지원이 없어 MultiPolygon을 직접 조각별 행으로 explode해야
+  하고, Mapbox 브랜드 스타일은 토큰+실시간 인터넷이 필요함)를 설명한 뒤
+  사용자가 명시적으로 요청함. 강한 의존성을 다시 들이지 않도록 우아하게
+  대체(degrade)하게 설계: 배경지도는 `MAPBOX_TOKEN`을 환경변수로만
+  읽고(하드코딩·커밋 절대 안 함 -- 이 저장소는 이미 한 번 노출된 토큰을
+  폐기한 이력이 있음), 변수가 없으면 pydeck 자체의 무료
+  `map_provider="carto"`(토큰 불필요, ~0.8 이후 pydeck의 실제 기본값)로
+  대체된다. `pydeck==0.9.3`을 `uv add`로 기존 `lonboard==0.16.0`과 함께
+  `pyproject.toml`에 추가(lonboard는 제거하지 않음 -- `hiroshima_slope_case.ipynb`가
+  여전히 의존). 토큰 없이 nbclient로 처음부터 끝까지 재검증(150+셀, 에러
+  0건, Carto 폴백 경로). "MapLibre + PMTiles" 자체 호스팅 배경지도 결정은
+  프로젝트 나머지 부분(app.py, 己斐上·海老園四丁目 배경지도 추출본)에서는
+  그대로 유효 -- 이번 번복은 4강 렌더링 라이브러리에만 한정됨.
 - **GTFS / r5py is out of scope** for this talk. Mention as future work.
 
 ---
