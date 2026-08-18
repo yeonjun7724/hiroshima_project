@@ -801,8 +801,17 @@ that number as historical, not a target for the merged tutorial.
 
 ## Outstanding user action
 
-The two exposed Mapbox tokens were removed from all files, but **they still
-need to be revoked in the Mapbox account.** Not done as of the last session.
+~~The two exposed Mapbox tokens were removed from all files, but they still
+need to be revoked in the Mapbox account.~~ **Done (user, 2026-08-18):**
+user rotated the Mapbox account token to a new one, which invalidates the
+two exposed tokens. No further action needed here — and note this doesn't
+reintroduce a Mapbox dependency into the codebase; the "Mapbox is out"
+decision above still stands, this was purely an account-security cleanup
+for tokens that had been exposed before the MapLibre/PMTiles migration.
 
-노출됐던 Mapbox 토큰 2개를 파일에서 모두 제거했으나, **Mapbox 계정에서
-폐기(revoke)하는 것은 아직 남아 있다.**
+~~노출됐던 Mapbox 토큰 2개를 파일에서 모두 제거했으나, Mapbox 계정에서
+폐기(revoke)하는 것은 아직 남아 있었다.~~ **완료(사용자, 2026-08-18):**
+사용자가 Mapbox 계정 토큰을 새 것으로 교체(rotate)해서 노출됐던 토큰 2개는
+무효화됨. 더 조치할 것 없음 — 이게 코드베이스에 Mapbox 의존성을 다시
+들여오는 건 아님. 위 "Mapbox is out" 결정은 그대로 유효하고, 이번 건 순전히
+MapLibre/PMTiles 전환 이전에 노출됐던 토큰에 대한 계정 보안 정리였음.
