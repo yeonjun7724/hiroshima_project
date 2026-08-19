@@ -487,6 +487,88 @@ published numbers.
   `RADIUS_M + 300` 도보망 버퍼에 맞춰 올림(기존 1500m vs 1800m) — 바깥쪽
   링 노드가 조용히 클램핑된 모자이크 가장자리 값 대신 실제 표고를 쓰게 됨.
 
+**Lecture 4 pydeck review, 2026-08-19: 2 real bugs found and fixed, triggered
+by the user reporting the rendered 3D map "looks strange" (screenshot showed
+extruded population blocks floating on a blank void, no basemap, no
+streets/coastline).** Both were invisible to the 2026-08-18 review because
+that review checked "0 errors on nbclient execution," and both of these fail
+silently -- no exception either.
+**4강 pydeck 점검, 2026-08-19: 실제 버그 2건 발견·수정.** 사용자가 렌더링된
+3D 지도가 "이상하게 나왔다"고 보고(스크린샷에 배경지도·도로·해안선 없이
+압출된 인구 블록만 빈 배경 위에 떠 있었음)한 게 계기. 두 버그 모두
+2026-08-18 리뷰에서는 잡히지 않았는데, 그 리뷰가 "nbclient 실행 에러 0건"만
+확인했고 이 둘은 에러 없이 조용히 틀리기 때문.
+- **Cell 146: `MAP_STYLE = None` when falling back to Carto never actually
+  requests a basemap.** The cell's own comment claimed this fallback "always
+  renders SOMETHING" -- false. Confirmed directly with a Playwright network
+  trace: `map_provider="carto", map_style=None` produces **zero** requests to
+  any Carto domain in pydeck 0.9.3's `to_html()` export (tested against a
+  minimal reproduction with an empty layer list, ruling out any interaction
+  with this lecture's own layers). pydeck's Carto fallback needs an
+  *explicit* style alias (`"light"`, `"dark"`, `"road"` all work and were
+  confirmed to trigger real `basemaps.cartocdn.com` style/tile requests);
+  passing `None` is accepted with no warning and silently produces no
+  basemap at all. Fixed: `MAP_STYLE = "dark"` (matches the Mapbox
+  `dark-v11` style used in the token branch). Re-verified against the
+  regenerated `outputs/hiroshima_3d_population.html`: `mapStyle` now
+  resolves to `https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json`
+  and the same network trace shows the full tile/sprite/font fetch sequence
+  succeeding. (Could not get a clean on-screen pixel screenshot to confirm
+  the paint in this session's sandboxed headless browser -- repeated
+  Playwright launches degraded to blank-canvas WebGL renders even for a
+  previously-successful reference case with zero code differences, which
+  points to a sandbox GPU/driver limitation rather than a notebook defect;
+  the network-level evidence is deterministic and unambiguous either way.
+  Worth a quick visual double-check in a normal browser.)
+  **셀 146: Carto로 대체될 때 `MAP_STYLE = None`이면 배경지도 요청이 아예
+  발생하지 않는다.** 셀 자체 주석은 이 대체 경로가 "항상 뭔가는 렌더링한다"고
+  주장했는데 — 사실이 아니었다. Playwright 네트워크 트레이스로 직접 확인:
+  `map_provider="carto", map_style=None`은 pydeck 0.9.3의 `to_html()`
+  결과물에서 Carto 도메인으로의 요청을 **0건** 발생시킨다(이 강의의 다른
+  레이어와의 상호작용 가능성을 배제하기 위해 빈 레이어 목록의 최소
+  재현으로도 테스트함). pydeck의 Carto 대체 경로는 명시적인 스타일 별칭이
+  필요하다(`"light"`/`"dark"`/`"road"` 모두 실제 `basemaps.cartocdn.com`
+  스타일·타일 요청을 발생시킴을 확인함) — `None`을 넘기면 경고 없이 그냥
+  배경지도가 없는 채로 조용히 끝난다. `MAP_STYLE = "dark"`로 수정(토큰 분기의
+  Mapbox `dark-v11`과 시각적으로 맞춤). 재생성한
+  `outputs/hiroshima_3d_population.html`로 재검증: `mapStyle`이 이제
+  `https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json`로
+  해석되고, 같은 네트워크 트레이스에서 타일·스프라이트·폰트 요청 전체가
+  성공함을 확인. (이번 세션의 샌드박스 헤드리스 브라우저에서는 실제 픽셀
+  렌더링 스크린샷 확인에는 실패했다 -- 코드 차이가 전혀 없는데도 이전에
+  성공했던 참조 케이스조차 반복적인 Playwright 실행 후에는 빈 캔버스로
+  퇴화했는데, 이는 노트북 결함이 아니라 샌드박스의 GPU/드라이버 한계로
+  보임. 네트워크 수준 증거는 어느 쪽이든 결정적이고 모호하지 않음. 일반
+  브라우저에서 한 번 더 눈으로 확인해볼 가치는 있음.)
+- **Cell 148: the elevation formula used raw `pop`, not the lecture's own
+  area-weighted `pop_eff`.** This lecture's markdown intro (cell 120)
+  explicitly promises a 3D map that accounts for "cells that only partly
+  overlap" the search radius -- exactly the `pop_eff = pop * in_frac`
+  column the KPI cell immediately above computes and prints as a
+  **+39%/+350% overstatement** when NOT area-weighted. The elevation cell
+  used `gdf_ll["pop"]` (raw, unweighted) for extrusion height, so the map
+  itself silently committed the exact mistake its neighbouring KPI cell
+  exists to demonstrate -- a partially-overlapping small area was extruded
+  to its full population's height, not its share inside the circle. Caught
+  by reading this lecture's code against its own stated claim, not by an
+  execution error. Fixed: elevation now derives from `pop_eff`. Re-verified
+  end to end: KPI numbers unchanged (28,983 / 2,312 / +39.0% / +349.8%,
+  same as before -- this cell only feeds the map, not the KPI print), 38
+  blocks in the regenerated HTML, elevation range still a sane 0-900m.
+  **셀 148: 표고(높이) 공식이 이 강의 자신의 면적가중 `pop_eff`가 아니라
+  raw `pop`을 쓰고 있었다.** 이 강의 도입부 markdown(셀 120)은 "반경에
+  일부만 걸친 구역까지 정확히 반영해서" 3D 지도를 그린다고 명시적으로
+  약속하는데 — 그게 바로 바로 위 KPI 셀이 계산하고 **면적가중하지 않으면
+  +39%/+350% 과대계상**이라고 출력하는 `pop_eff = pop * in_frac` 컬럼이다.
+  표고 셀은 압출 높이에 `gdf_ll["pop"]`(raw, 비가중)을 썼다 — 즉 지도
+  자체가, 바로 옆 KPI 셀이 증명하려는 바로 그 실수를 조용히 저지르고
+  있었다: 반경에 일부만 걸친 소지역이 (원 안에 들어온 비율이 아니라) 전체
+  인구 높이로 압출됨. 실행 에러가 아니라 이 강의 코드를 자신이 한 말과
+  대조해서 잡음. `pop_eff` 기반으로 수정. 처음부터 끝까지 재검증: KPI
+  수치는 불변(28,983 / 2,312 / +39.0% / +349.8%, 이전과 동일 -- 이 셀은
+  지도에만 영향을 주고 KPI 출력에는 영향 없음), 재생성된 HTML의 블록
+  38개, 표고 범위는 여전히 타당한 0-900m.
+
 ---
 
 ## Conventions
