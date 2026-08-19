@@ -569,6 +569,101 @@ silently -- no exception either.
   지도에만 영향을 주고 KPI 출력에는 영향 없음), 재생성된 HTML의 블록
   38개, 표고 범위는 여전히 타당한 0-900m.
 
+**Framing pass, 2026-08-19: notebook reframed around AI/vibe-coding-era
+spatial literacy — user-requested, not a return to "Counted in Full."**
+User asked for a content review of the whole repo with FOSS4G Hiroshima
+2026 in mind specifically: does a "write code like this, get a map like
+this" tutorial still land in a year when AI assistants write GeoPandas
+syntax on request? Checked directly — the notebook had zero mentions of
+AI/vibe-coding anywhere. Proposed reviving the abandoned "Counted in
+Full" bug-hunting angle as one option; **user explicitly rejected it**
+on three counts: the bug-hunting tone itself, content tied to Seoul
+data, and the "AI plays tricks" framing itself. Requested tone:
+**positive and collaborative.** Three new concept pitches were offered
+(GIS literacy as the compass that steers AI; live AI pair-programming;
+local ground truth as what AI can't know) — user picked all three and
+asked for a blend, done in **plan mode** with an approved plan
+(`ethereal-mapping-starlight.md`).
+**2026-08-19 프레이밍 작업: 노트북을 AI/바이브코딩 시대 공간분석
+리터러시 관점으로 재구성 — 사용자 요청, "Counted in Full"로의 회귀
+아님.** 사용자가 FOSS4G 히로시마 2026을 염두에 두고 저장소 전체 내용
+검토를 요청: "이렇게 코드를 짜면 이런 지도가 나온다" 튜토리얼이 AI가
+GeoPandas 문법을 대신 써주는 시대에도 여전히 유효한가? 직접 확인한
+결과 노트북에 AI/바이브코딩 언급이 전혀 없었음. 폐기된 "Counted in
+Full" 버그찾기 방향을 대안으로 제시했으나 **사용자가 명시적으로
+거부** — 버그찾기 톤 자체, 서울 데이터에 걸돈 내용, "AI가 장난을
+부린다"는 프레이밍 자체 세 가지 이유. 요청한 톤은 **긍정적·협업적**.
+새 컨셉 3가지(GIS 지식=AI의 나침반 / 라이브 AI 페어프로그래밍 / 현지
+지식은 AI가 모른다)를 제시했고 사용자가 셋 다 선택해 조합을 원함 —
+플랜 모드에서 승인된 계획(`ethereal-mapping-starlight.md`)으로 진행.
+
+**Resolution**: this very notebook was already built in collaboration
+with an AI coding assistant, and that porting process had already
+surfaced several real, already-documented moments (see the Progress
+notes above) where domain literacy — not faster syntax — made the
+difference: `region_id`/KEY_CODE turning out not to be unique, the
+per-capita denominator inflating hillside "accessibility," and the
+elevation formula producing 31km-tall columns when ported unchanged
+from Seoul's 100m-grid scale. Using these real Hiroshima-native events
+as the case studies satisfies all three of the user's objections at
+once — no Seoul bugs, no bug-hunting tone (framed as "what a productive
+AI+human collaboration looks like," not "AI failed"), and a positive
+throughline ("AI draws the map fast; this tutorial teaches the compass
+that tells you which direction on it is correct").
+**해결**: 이 노트북 자체가 이미 AI 코딩 어시스턴트와 협업해서 만들어졌고,
+그 포팅 과정에서 도메인 리터러시가 (더 빠른 문법이 아니라) 실제로
+차이를 만든 순간들이 이미 여러 건 문서화돼 있었다(위 Progress 참고):
+`region_id`/KEY_CODE가 실제로는 유일하지 않았던 것, 1인당 지표 분모가
+산간 지역 "접근성"을 부풀린 것, 서울 100m 격자 스케일 그대로 포팅한
+고도 공식이 31km짜리 기둥을 만든 것. 이 실제 히로시마 자체 사례들을
+케이스 스터디로 쓰면 사용자의 세 가지 반대 사항을 동시에 충족한다 —
+서울 버그 없음, 버그찾기 톤 없음("AI가 실패했다"가 아니라 "생산적인
+AI+인간 협업이 어떤 모습인가"로 프레이밍), 그리고 긍정적인 한 줄
+흐름("AI는 지도를 빠르게 그려준다; 이 튜토리얼은 그 지도 위에서 어느
+방향이 맞는지 알려주는 나침반을 가르친다").
+
+**What changed, concretely**: markdown-only edits to
+`hiroshima_tutorial.ipynb` (161 cells now, up from 159) — a new opening
+thesis cell before everything else; short added paragraphs to each of
+the four lecture intros tying that lecture's concept to "why this stays
+your job even with an AI assistant"; one new "A note on how this
+notebook was built" interlude cell (after the mountainous-fringe/per-
+capita insight) telling the `region_id` story explicitly through the
+AI-collaboration lens; short connecting sentences at the lecture-3
+"0% covered" nuance and the lecture-4 KPI-overstatement note; and a
+rewritten closing that ties all four flagged moments back to the
+compass thesis. **Zero code cells, outputs, or computed numbers were
+touched** — every number in this file remains exactly as verified.
+Also fixed, in passing, a stale "lonboard" reference in the closing
+paragraph left over from the earlier pydeck reversion (lecture 4 uses
+pydeck; the closing prose hadn't caught up). Verified via
+`nbformat.validate()` and a clean `git diff` (markdown-only). Committed
+and pushed as `5aa58bb`.
+**구체적으로 바뀐 것**: `hiroshima_tutorial.ipynb`에 markdown 셀만
+수정(159 → 161셀) — 맨 앞에 새 오프닝 테제 셀 추가; 4개 강의 인트로
+각각에 "AI 어시스턴트가 있어도 왜 이게 여전히 당신의 일인가"를 그
+강의 개념에 연결하는 짧은 문단 추가; 산간지역/1인당 지표 통찰 뒤에
+"이 노트북이 만들어진 과정에 대한 메모" 인터루드 셀 신규 삽입(
+`region_id` 사연을 AI 협업 관점으로 명시적으로 서술); 3강 "0% 커버"
+통찰과 4강 KPI 과대계상 노트에 짧은 연결 문장 추가; 클로징을
+재작성해 4개 표시 순간을 나침반 테제로 묶음. **코드 셀·출력·계산된
+수치는 전혀 건드리지 않음** — 이 파일의 모든 수치는 검증된 그대로다.
+겸사겸사 클로징 문단에 남아있던 옛 "lonboard" 언급(4강이 pydeck으로
+되돌아간 뒤 클로징 산문이 못 따라간 것)도 고침. `nbformat.validate()`와
+깨끗한 `git diff`(markdown만 변경)로 검증. `5aa58bb`로 커밋·푸시함.
+
+**Talk title changed accordingly**: the working title in this file's
+thesis section below ("Counted in Full") describes the abandoned plan
+only — the new notebook opening cell's title is **"Compass and Map:
+Spatial Literacy for the Vibe-Coding Era" / "나침반과 지도: 바이브코딩
+시대의 공간분석 리터러시,"** proposed as a default and open to the
+presenter's final call.
+**발표 제목도 그에 맞게 바뀜**: 아래 "발표의 테제" 섹션의 작업용 제목
+("Counted in Full")은 폐기된 기획을 가리킬 뿐이다 — 새 노트북 오프닝
+셀의 제목은 **"Compass and Map: Spatial Literacy for the Vibe-Coding
+Era" / "나침반과 지도: 바이브코딩 시대의 공간분석 리터러시"**로,
+기본안으로 제안했으며 발표자가 최종 확정하면 됨.
+
 ---
 
 ## Conventions
