@@ -784,6 +784,72 @@ Regenerate any of these with the scripts in `analysis/`.
   프로젝트 나머지 부분(app.py, 己斐上·海老園四丁目 배경지도 추출본)에서는
   그대로 유효 -- 이번 번복은 4강 렌더링 라이브러리에만 한정됨.
 - **GTFS / r5py is out of scope** for this talk. Mention as future work.
+- **AI/vibe-coding meta-narrative, added then reverted, 2026-08-19.** At
+  some point this session the notebook picked up an explicit framing
+  layer -- title "Compass and Map: Spatial Literacy for the Vibe-Coding
+  Era," a compass metaphor, and 9 paragraphs across all four lectures
+  structured as "an AI assistant computes X correctly, but only a human
+  catches Y." On a cold review, this was flagged as functionally the
+  same shape as the abandoned "Counted in Full" bug-hunting narrative
+  (see the goal-correction section at the top of this file) -- just with
+  "AI assistant" standing in for "Seoul's sloppy code" as the foil, in a
+  notebook whose actual goal is a normal tutorial ("이렇게 코드를 짜면
+  이런 지도가 나온다"), not a gotcha narrative. **User decision: discard
+  it.** Cell 0 rewritten as a plain intro (what the notebook covers, no
+  AI/compass language); the "note on how this notebook was built" cell
+  deleted outright (its one substantive point -- the region_id bug --
+  was already covered by Lecture 1's summary tip); the 6 remaining
+  AI-flavored tail paragraphs were either deleted or trimmed down to
+  whatever non-AI technical point they were carrying (e.g. "the two demo
+  areas aren't hand-picked, they fall out of the ranking" survived;
+  "ask an AI assistant to find the most underserved area..." didn't).
+  The closing section's AI/compass paragraph was rewritten around a
+  plain, still-true point instead: none of the four real bugs found in
+  this notebook raised an error, each only surfaced by running it end to
+  end and checking the actual result. Verified zero remaining
+  "AI assistant"/"compass"/"vibe-coding"/"나침반"/"바이브코딩" mentions
+  anywhere in the notebook (169 cells now, was 170). Same review also
+  flagged the ~3-hour agenda as optimistic given Lecture 2 is now the
+  densest lecture (fixed: gave it 40 min instead of 35, took 5 from
+  Lecture 1) and the total lack of a stated audience/prerequisite level
+  (fixed: added a "Who this is for" note -- basic Python assumed, no
+  prior GIS needed, Lectures 3-4 get noticeably more technical by
+  design). None of this touches the separate, still-standing decision
+  to keep each lecture's factual "Real-world tip" boxes (the actual bugs
+  found and fixed, e.g. the region_id dissolve, the +51.7% `.intersects()`
+  finding, the `nearest_nodes()` snapping issue, the `gdf_cand` filter
+  bug) -- those were never AI-framed to begin with and stay as-is.
+  **AI/바이브코딩 메타 내러티브, 추가됐다가 되돌림, 2026-08-19.** 이번
+  세션 어느 시점에 노트북에 명시적 프레이밍 층이 씌워졌다 -- 제목
+  "Compass and Map: Spatial Literacy for the Vibe-Coding Era", 나침반
+  비유, 그리고 4개 강의 전체에 걸쳐 "AI 어시스턴트는 여기까지는 정확히
+  계산하지만 이건 사람만 잡아낸다"는 구조의 문단 9개. 냉정한 재검토에서
+  이게 폐기된 "Counted in Full" 버그찾기 내러티브(이 파일 맨 위 goal
+  correction 섹션 참고)와 기능적으로 같은 모양이라는 지적이 나왔다 --
+  단지 "서울의 부실한 코드" 자리에 "AI 어시스턴트"가 들어간 것뿐이고,
+  이 노트북의 실제 목표는 "이렇게 코드를 짜면 이런 지도가 나온다"는
+  정상적인 튜토리얼이지 꼬투리잡기식 내러티브가 아니다. **사용자 결정:
+  버린다.** 셀 0을 AI·나침반 언어 없이 평범한 소개(노트북이 다루는
+  내용)로 다시 씀; "이 노트북이 만들어진 과정에 대한 메모" 셀은 통째로
+  삭제(그 안의 유일한 실질적 내용인 region_id 버그는 이미 1강 요약
+  팁에서 다루고 있었음); 나머지 AI 색채가 남은 꼬리 문단 6개는 삭제하거나
+  거기 들어있던 AI와 무관한 기술적 요점만 남기고 다듬음(예: "두 데모
+  지역은 손으로 고른 게 아니라 랭킹에서 나온 결과다"는 남기고, "AI
+  어시스턴트에게 가장 취약한 지역을 찾아달라고 하면..."은 뺌). 마무리
+  섹션의 AI·나침반 문단은 여전히 사실인 평범한 요점으로 다시 씀: 이
+  노트북에서 발견된 네 가지 실제 버그 중 어느 것도 에러를 내지 않았고,
+  전부 노트북을 처음부터 끝까지 실행해 실제 결과를 확인했을 때만
+  드러났다는 것. "AI assistant"/"compass"/"vibe-coding"/"나침반"/
+  "바이브코딩" 언급이 노트북 어디에도 남지 않은 것 확인함(169셀, 이전엔
+  170셀). 같은 검토에서 ~3시간 아젠다가 낙관적이라는 것도 지적됨 -- 2강이
+  지금 가장 밀도 높은 강의인데(수정: 35분→40분으로 올리고 1강에서
+  5분 가져옴), 대상 청중/사전지식 안내가 아예 없었음(수정: "대상 청중"
+  메모 추가 -- 기본 Python만 전제, GIS 사전지식 불필요, 3~4강은
+  의도적으로 더 기술적임을 명시). 이건 각 강의의 사실 기반 "실무 팁"
+  박스(region_id dissolve, +51.7% `.intersects()` 발견, `nearest_nodes()`
+  스냅 문제, `gdf_cand` 필터 버그 등 실제로 찾아 고친 버그들)를 그대로
+  유지하는 것과는 별개 결정이다 -- 그것들은 애초에 AI로 프레이밍된 적이
+  없었고 그대로 남는다.
 
 ---
 
