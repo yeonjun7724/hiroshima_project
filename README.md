@@ -1,24 +1,23 @@
 # Hiroshima 발표용 분석 패키지
 
-이 폴더는 실제 발표에 사용할 자료만 모은 독립 패키지입니다.
+이 저장소는 실제 발표에 사용할 자료를 `hiroshima_presentation/` 폴더에 모아둔 독립 패키지입니다.
 
 ## 발표 순서
 
-1. `hiroshima_presentation.ipynb`를 실행해 데이터와 분석 방법을 설명합니다.
-2. `outputs/01_bus_supply.png`에서 공급량 분포를 보여줍니다.
-3. `outputs/02_priority_areas.png`와 `outputs/top10_priority_areas.csv`에서 신규 교통시설 후보를 설명합니다.
-4. `presentation_script.md`를 발표 대본으로 사용합니다.
+1. `hiroshima_presentation/hiroshima_presentation.ipynb`를 실행해 데이터와 분석 방법을 설명합니다.
+2. `hiroshima_presentation/outputs/01_bus_supply.png`에서 공급량 분포를 보여줍니다.
+3. `hiroshima_presentation/outputs/02_priority_areas.png`와 `top10_priority_areas.csv`에서 신규 교통시설 후보를 설명합니다.
+4. `hiroshima_presentation/presentation_script.md`를 발표 대본으로 사용합니다.
 
 ## 실행
 
-이 폴더를 작업 디렉터리로 열고 다음 명령을 실행합니다.
-
 ```powershell
+cd hiroshima_presentation
 python -m pip install -r requirements.txt
 jupyter notebook hiroshima_presentation.ipynb
 ```
 
-인터넷 연결 없이도 1차 분석과 지도 출력은 실행됩니다. 보행 네트워크 분석은 이 패키지의 기존 `outputs/hiroshima_routes_all.gpkg` 결과를 참고용으로 포함했습니다.
+인터넷 연결 없이도 1차 분석과 지도 출력은 실행됩니다. 보행 네트워크 분석은 기존 `outputs/hiroshima_routes_all.gpkg` 결과를 참고용으로 포함했습니다.
 
 ## 포함 데이터
 
