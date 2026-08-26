@@ -1,10 +1,10 @@
 # Hiroshima 발표용 분석 패키지
 
-이 저장소는 실제 발표에 사용할 자료를 `hiroshima_presentation/` 폴더에 모아둔 독립 패키지입니다.
+이 저장소는 전체 `hiroshima_tutorial.ipynb`의 내용과 발표용 대체 데이터를 `hiroshima_presentation/` 폴더에 함께 보관합니다. 발표 폴더의 `hiroshima_presentation.ipynb`는 축약본이 아니라 전체 튜토리얼이며, 입력 데이터만 대체 데이터로 연결되어 있습니다.
 
 ## 발표 순서
 
-1. `hiroshima_presentation/hiroshima_presentation.ipynb`를 실행해 데이터와 분석 방법을 설명합니다.
+1. `hiroshima_presentation/hiroshima_presentation.ipynb`를 실행해 전체 분석 흐름을 설명합니다.
 2. `hiroshima_presentation/outputs/01_bus_supply.png`에서 공급량 분포를 보여줍니다.
 3. `hiroshima_presentation/outputs/02_priority_areas.png`와 `top10_priority_areas.csv`에서 신규 교통시설 후보를 설명합니다.
 4. `hiroshima_presentation/presentation_script.md`를 발표 대본으로 사용합니다.
@@ -21,11 +21,10 @@ jupyter notebook hiroshima_presentation.ipynb
 
 ## 포함 데이터
 
-- `data/hiroshima_city_admin.gpkg`: 히로시마시 소지역 경계와 분석에 사용한 기준 인구
-- `data/hiroshima_chome_population_2026_07.csv`: 히로시마시 공식 2026년 7월 町丁目별 인구 CSV
-- `data/hiroshima_gtfs_stops_all.gpkg`: 히로시마현 GTFS-JP 6개 사업자 정류장 통합본
-- `data/hiroshima_transport_jr.csv`, `data/hiroshima_transport_astramline.csv`: 역 원본 CSV
-- `data/hiroshima_alternative_stations.gpkg`: JR·Astram 역 대체 데이터
+- `data/hiroshima/hiroshima_city_admin.gpkg`: 히로시마시 소지역 경계와 기준 인구
+- `data/hiroshima/hiroshima_city_bus_stops.gpkg`: GTFS-JP 대체 버스 정류장
+- `data/hiroshima/hiroshima_city_stations.gpkg`: JR·Astram 대체 역 데이터
+- `data/hiroshima/`: basemap 스타일과 PMTiles를 포함한 발표용 입력 데이터
 
 ## 출처와 주의점
 
