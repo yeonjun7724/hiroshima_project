@@ -1,2 +1,0 @@
-﻿feed_publisher_name,feed_publisher_url,feed_lang,feed_start_date,feed_end_date,feed_version
-ＪＲバス中国,http://www.chugoku-jrbus.co.jp/,ja,20260815,20270215,20260815
