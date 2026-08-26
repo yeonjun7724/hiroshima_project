@@ -1,0 +1,623 @@
+﻿station_sid,same_pole_id,jorudan_code,pickup_and_dropoff_flg,stop_no,direction,stop_group_name
+6b7b7777-2773-41cb-a7c8-bf4203e818f1,1494001@HiroshimaArea,,3,,1 五月が丘・藤の木方面,広域公園前駅@HiroshimaArea
+086ac422-2080-4e71-851b-f7ed33ec5004,1494002@HiroshimaArea,,3,,2 広島方面　大塚方,広域公園前駅@HiroshimaArea
+9ded87f6-df56-42ae-82af-f00c171c7880,1495001@HiroshimaArea,,3,,免許センター方面,中大塚@HiroshimaArea
+df6a033d-7d0e-44ed-a62d-5d0bc7ee1d66,1495002@HiroshimaArea,,3,,広島方面,中大塚@HiroshimaArea
+7a618204-40e4-4113-b23d-145533b3c9c5,1496001@HiroshimaArea,,3,,広島方面,大塚駅@HiroshimaArea
+e10433ef-4941-4145-a3df-32a06a493fd1,1496002@HiroshimaArea,,3,,西風新都方面,大塚駅@HiroshimaArea
+34c519ed-b65f-4049-81ed-e423a23223bd,1937001@HiroshimaArea,,3,,1 五月が丘方面,ジ アウトレット 広島@HiroshimaArea
+7de24fc2-8a78-40af-9305-a3883992993d,1937003@HiroshimaArea,,3,,"3 横川駅前,広島バスセンター方面",ジアウトレット広島@HiroshimaArea
+bca489b0-4d26-4582-ae63-f2e4073fdd58,1995002@HiroshimaArea,,3,,美鈴・山田・ジアウトレット方面,井口一丁目@HiroshimaArea
+b4502d2d-c7f6-4a36-aebf-228932e7c479,1996001@HiroshimaArea,,3,,アルパーク方面,鈴が峰第三歩道橋@HiroshimaArea
+93185e6a-f735-4d02-ac8d-b4810e210aa9,1997001@HiroshimaArea,,3,,アルパーク方面,鈴が峰第二歩道橋@HiroshimaArea
+536c352a-2976-487f-9cf9-f5d51d6ec14f,1998001@HiroshimaArea,,3,,アルパーク方面,草津梅が台@HiroshimaArea
+71042564-8095-4e5f-ac99-3d303a98c1a7,2032001@HiroshimaArea,,3,,広島方面,山田入口@HiroshimaArea
+a9daaa3a-f379-400e-b803-c58613cb1f91,2032002@HiroshimaArea,,3,,五月が丘・ジアウトレット広島方面,山田入口@HiroshimaArea
+56f98634-62cc-40d8-bb40-2d89b9e8e638,2087001@HiroshimaArea,,3,,広島・ジアウトレット広島方面,鈴が峰住宅中@HiroshimaArea
+a7d59c41-273c-465a-b5b1-01cde7ebaf28,2087002@HiroshimaArea,,3,,五日市方面,鈴が峰住宅中@HiroshimaArea
+6d071e41-5217-4439-8e71-79478850c093,2125002@HiroshimaArea,,3,,五月が丘・ジ アウトレット広島方面,田方が丘団地@HiroshimaArea
+e236fa38-7d10-4317-a355-c82b9cb5d66a,2125002@HiroshimaArea,,3,,五月が丘・ジアウトレット広島方面,田方が丘団地@HiroshimaArea
+2926261c-ebf1-44ae-92c7-ebcc90c1ce8a,2135001@HiroshimaArea,,3,,アルパーク方面,新井口駅@HiroshimaArea
+7f24825e-e40d-47c7-bc78-7de7e32b20b2,2135002@HiroshimaArea,,3,,鈴が峰住宅方面,新井口駅@HiroshimaArea
+f8f27c63-10a2-4d4b-9a3a-6766f9cebc3c,2136001@HiroshimaArea,,3,,アルパーク方面,鈴が峰小学校下@HiroshimaArea
+617ecc81-2580-4a00-81e4-a00a9e7ef23e,2137001@HiroshimaArea,,3,,広島・ジアウトレット広島方面,鈴が峰住宅東@HiroshimaArea
+4f619126-9a5a-4e7c-93f4-4560cb933707,2137002@HiroshimaArea,,3,,五日市方面,鈴が峰住宅東@HiroshimaArea
+66421e5a-3d0a-42b9-b556-fa98c5490609,2203001@HiroshimaArea,,3,,くすの木台方面,市立大学前@HiroshimaArea
+db5b4f5d-c5d2-4246-9c1c-717f75ee2650,2203002@HiroshimaArea,,3,,広島方面,市立大学前@HiroshimaArea
+864bd462-1dc8-443f-b42e-df2461046b69,2203052@HiroshimaArea,,3,,広島方面,市立大学前@HiroshimaArea
+6c22ec0e-e91c-457b-a968-2c2b900e8368,2254001@HiroshimaArea,,3,,広島方面,西区役所前@HiroshimaArea
+5768d9b4-fc7a-42bd-adbc-57725b1ef872,2254002@HiroshimaArea,,3,,己斐方面,西区役所前@HiroshimaArea
+01ceadd0-071d-45af-b5bf-48001b05414f,2280001@HiroshimaArea,,3,,広島・ジ　アウトレット広島方面,鈴が峰住宅@HiroshimaArea
+3f3c03aa-4ccc-4342-a4ce-a68cc30f956e,2280002@HiroshimaArea,,3,,五日市方面,鈴が峰住宅@HiroshimaArea
+b95a5c16-e6f3-4bc7-be5f-3b34d4c18660,2281002@HiroshimaArea,,3,,五日市方面,鈴が峰住宅西@HiroshimaArea
+146533c4-f17e-4ea5-a0fb-4ab94fc32259,2414001@HiroshimaArea,,3,,広島方面,沼田料金所前@HiroshimaArea
+02a35f05-af33-4457-b052-94e621f45b7a,2414002@HiroshimaArea,,3,,西風新都方面,沼田料金所前@HiroshimaArea
+e72943a6-5d80-4b57-a566-74f4b0ff4de4,2494001@HiroshimaArea,,3,,広島方面,大宮（大宮大芝）@HiroshimaArea
+b3182f30-d2f7-4e20-a532-fdff006888eb,2496007@HiroshimaArea,,3,7,2号府中、4号仁保、23号大学病院、27号戸坂、広島駅,立町（あおぞら銀行前）@HiroshimaArea
+64b5d77f-5373-4634-8a28-89f3efc45da2,2512001@HiroshimaArea,,3,,広島方面,田方東陽台前@HiroshimaArea
+e9956584-f34b-409f-be3c-d530e859e7a2,2512002@HiroshimaArea,,3,,五月が丘・ジアウトレット広島方面,田方東陽台前@HiroshimaArea
+0997819c-74a3-44ea-b41e-17984e0a8486,7165101@HiroshimaArea,,3,,１　広島港方面,草津新町一丁目@HiroshimaArea
+ef1ef75b-0094-462d-8cd3-b9c58d2cdb7a,7165102@HiroshimaArea,,3,,2 アルパーク方面,草津新町一丁目@HiroshimaArea
+680504e3-7054-49b7-8fda-05405eca3783,2515002@HiroshimaArea,,3,,向洋方面,マツダスタジアム前@HiroshimaArea
+8c0d14c6-59a5-438f-bc94-818f94ab3121,2515001@HiroshimaArea,,3,,八丁堀方面,マツダスタジアム前@HiroshimaArea
+7c0d7833-be52-4c19-a2bb-d7186703ba45,0440004@HiroshimaArea,,3,,4 4 アルパーク方面,田方@HiroshimaArea
+577ed667-676f-45de-8bf8-406a326a0992,4601202@HiroshimaArea,,3,,深川台方面,高陽中学校前@HiroshimaArea
+82c3e826-ceec-4fee-90a6-0c74dc4d06a8,4601201@HiroshimaArea,,3,,広島方面,高陽中学校前@HiroshimaArea
+b945341f-aaac-45ea-a84e-f1367dd39d82,4601302@HiroshimaArea,,3,,深川台・可部方面,中深川@HiroshimaArea
+e458dda2-78bb-4769-90ff-6d75df9196ea,4601301@HiroshimaArea,,3,,広島方面,中深川@HiroshimaArea
+37d899b1-3e81-4d06-8e66-2218bdf9f234,4601402@HiroshimaArea,,3,,深川・可部方面,諸木峠@HiroshimaArea
+c751afa1-1726-45ad-8013-24b37aba63c6,4601401@HiroshimaArea,,3,,広島方面,諸木峠@HiroshimaArea
+1fa0c218-d4a8-4acb-871f-8eb7c6bf2f94,4603701@HiroshimaArea,,3,,広島方面,安田学園白島キャンパス@HiroshimaArea
+774c3c15-1f25-4373-b9fa-ab60e0a14fb6,4604403@HiroshimaArea,,3,,踏切　27・29号広島駅方面,大須賀町@HiroshimaArea
+3efce6ec-fff6-4584-a365-19d9be0dcb49,4604402@HiroshimaArea,,3,,広交車庫前　24・29号温品方面、32号高陽方面,大須賀町・常盤橋東@HiroshimaArea
+b8ff1529-cfed-438e-b66b-439d0062d340,4604802@HiroshimaArea,,3,,深川方面,地区センター@HiroshimaArea
+cf0ad35e-cf07-4ace-9dad-97a3c70cbaae,4604902@HiroshimaArea,,3,,深川方面,郵便局前@HiroshimaArea
+ce58f21d-5338-47b9-a199-9d09ac7f3488,4605702@HiroshimaArea,,3,,深川方面,寺迫公園@HiroshimaArea
+6d6fbe08-11ad-4c92-9938-ee4315a37564,4605801@HiroshimaArea,,3,,広島方面,柳ケ迫@HiroshimaArea
+d8ca5f42-b539-4dca-9e15-6f4a38a8e364,4605802@HiroshimaArea,,3,,深川方面,柳ケ迫@HiroshimaArea
+2b9b3839-7005-499e-ba58-72228213ee91,4605901@HiroshimaArea,,3,,広島方面,北山橋@HiroshimaArea
+cb06f89a-631f-4aec-b23c-951e61970d01,4605902@HiroshimaArea,,3,,深川方面,北山橋@HiroshimaArea
+49926151-4cff-4120-ad43-f84b47ad5743,4701401@HiroshimaArea,,3,,広島駅方面,広島港桟橋@HiroshimaArea
+b2970244-dd19-4d2d-85c8-b381dfa14776,4701402@HiroshimaArea,,3,,プリンスホテル方面,広島港桟橋@HiroshimaArea
+b2793fa6-92ec-4e65-8ca6-277bae06c8d2,4701402@HiroshimaArea,,3,,プリンスホテル方面,広島港桟橋@HiroshimaArea
+368a96c1-6535-4a7b-b0f2-ecd3966a6942,444701403@HiroshimaArea,,3,,降り場,広島港桟橋@HiroshimaArea
+b8333db8-807f-4e38-9976-bc4936c89ece,0485003@HiroshimaArea,,3,,3 田方方面,石内原田@HiroshimaArea
+02e039fd-1beb-461e-8082-128a0e9ca2d9,0485004@HiroshimaArea,,3,,4 五月が丘方面,石内原田@HiroshimaArea
+af3e7042-c39e-432a-ae2c-1db08e634536,0486001@HiroshimaArea,,3,,五日市駅方面,半坂@HiroshimaArea
+8d5b8960-d036-4df9-8dfe-372093f77729,0486002@HiroshimaArea,,3,,広島方面,半坂@HiroshimaArea
+2d4bb9e1-8316-4ec7-8409-1e7352cc133b,4901301@HiroshimaArea,,3,,井原方面,隠地@HiroshimaArea
+9840cadf-ece7-4374-855d-317677fa2c10,4901302@HiroshimaArea,,3,,広島方面,隠地@HiroshimaArea
+f22b560d-a445-4750-a5b0-c1a567a2b4a2,4901401@HiroshimaArea,,3,,井原方面,安芸中深川@HiroshimaArea
+9c024f0a-fc13-4c7d-b21b-816eefa974e0,4901402@HiroshimaArea,,3,,広島方面,安芸中深川@HiroshimaArea
+9f1f3c85-ee3d-48b7-b752-28607d9d3254,4901501@HiroshimaArea,,3,,井原方面,安芸庄原@HiroshimaArea
+09813792-8488-4115-a5f3-b245246fd07a,4901502@HiroshimaArea,,3,,広島方面,安芸庄原@HiroshimaArea
+830326b8-5c64-4977-b2b2-6008f274f73c,4901601@HiroshimaArea,,3,,井原方面,上庄原@HiroshimaArea
+35272117-a13e-471b-b01a-9f4566bb61f9,4901602@HiroshimaArea,,3,,広島方面,上庄原@HiroshimaArea
+648f67f4-1549-4684-83f0-4de25c51abcc,5002033@HiroshimaArea,,3,33,70-74号横川・古市、11・14号己斐方面,紙屋町@HiroshimaArea
+d001d69a-6a18-4964-8247-eb52c2a24d15,5002025@HiroshimaArea,,3,25,23号横川駅,紙屋町@HiroshimaArea
+9a9dbedd-a0b5-4652-a667-0edbf5b931ab,5002025@HiroshimaArea,,3,25,23号横川駅,紙屋町@HiroshimaArea
+55c58042-c735-4048-ae38-84c6ea3da302,5002027@HiroshimaArea,,3,,27 70-74広島駅方面,紙屋町@HiroshimaArea
+c633f7c4-b318-4756-8bba-edd655d0a0a2,5002023@HiroshimaArea,,3,23,23号大学病院、27号戸坂東浄方面,紙屋町@HiroshimaArea
+0664cbef-0765-4690-9ba8-4278eb69003c,5002030@HiroshimaArea,,3,30,3号観音、21号広島港、24号吉島,紙屋町@HiroshimaArea
+3072991e-3e6a-48aa-989d-d7d11dce4140,5002022@HiroshimaArea,,3,22,広島駅ゆき、6号牛田早稲田方面、21号向洋方面,紙屋町@HiroshimaArea
+1b7b94b2-3a3c-4acd-8f61-df532c186eb7,5002029@HiroshimaArea,,3,29,22号祇園大橋、25号井口方面,紙屋町@HiroshimaArea
+1695d7be-a6e4-4264-9077-590cc4959982,5003014@HiroshimaArea,,3,14,23号横川駅,八丁堀@HiroshimaArea
+90982a39-7ec7-49f9-b35a-6f453b971d70,5003002@HiroshimaArea,,3,2-3,2号府中、4号仁保、27号戸坂,八丁堀@HiroshimaArea
+243bb85d-a052-4d81-b319-4bc64ab64c16,5003001@HiroshimaArea,,3,1,29号温品、40号向洋、32号高陽、芸陽高速など,八丁堀@HiroshimaArea
+94bfa372-6d8d-4b54-b63b-4747f737a57d,5003000@HiroshimaArea,,3,0,広島バスセンターゆき,八丁堀@HiroshimaArea
+e9852fd8-7e86-49b9-bb25-f6cf31e770c6,5003005@HiroshimaArea,,3,5,広島駅ゆき,八丁堀@HiroshimaArea
+6d5d7cc4-9f2f-4311-b651-f78b8dba8235,5003004@HiroshimaArea,,3,4,まちのわループ・12号戸坂方面、26号広島駅,八丁堀@HiroshimaArea
+4e21b133-66ed-401b-9c27-2cff25806a5b,5003013@HiroshimaArea,,3,13,3号観音、21号広島港、22号横川、24号吉島、25号井口,八丁堀@HiroshimaArea
+59531f09-0137-42c3-8cce-54eafdececfd,5003012@HiroshimaArea,,3,12,まちのわループ・12号戸坂方面、23号横川駅、26号広島駅,八丁堀@HiroshimaArea
+4f6e5118-8b5a-4f2b-bc9e-2fdc6bd69b35,5003011@HiroshimaArea,,3,11,まちのわループ・12号仁保沖町方面　23号大学病院方面　26号旭町方面,八丁堀@HiroshimaArea
+3c6a92c8-b687-4f87-8cdb-1f682209b0b8,5004001@HiroshimaArea,,3,,広島駅方面,銀山町@HiroshimaArea
+f255bf04-d46a-42c3-8b3a-598bc9c22027,5004002@HiroshimaArea,,3,,紙屋町方面,銀山町@HiroshimaArea
+8a76d429-65d4-4d0c-bb86-713ef1989c11,5005001@HiroshimaArea,,3,1,1番のりば 広島駅方面,稲荷町@HiroshimaArea
+89a8f944-bd29-4381-985f-e41c127bcfa9,5005002@HiroshimaArea,,3,2,2番のりば 紙屋町方面,稲荷町@HiroshimaArea
+63885e72-3036-4ef4-bb9b-46734a625f81,5005003@HiroshimaArea,,3,3,3番のりば 平塚町方面,稲荷町@HiroshimaArea
+6ee1a6c6-8d99-4a39-862a-eaa197f168aa,5005004@HiroshimaArea,,3,4,4番のりば,稲荷町@HiroshimaArea
+565430e2-586b-4402-bc73-fd75e67e51a3,5006021@HiroshimaArea,,3,21,26号旭町方面,広島駅@HiroshimaArea
+96f7c4f8-42d3-4357-81fd-316ab6fdca8f,5006001@HiroshimaArea,,3,1,エキまちループ,広島駅@HiroshimaArea
+df7d65e1-0f6a-406f-927a-e4076a1c1397,5006023@HiroshimaArea,,3,23,21号向洋大原方面・27・29号市内ゆき,広島駅@HiroshimaArea
+ab6c8b5f-ec31-4edc-9006-db5bcd8ccd4d,5006020@HiroshimaArea,,3,20,27・29号新幹線口方面、32号高陽方面,広島駅@HiroshimaArea
+989ae39d-35ad-40d5-bf1f-83400773f41e,5006005@HiroshimaArea,,3,5,エキまちループ市役所ゆき,広島駅@HiroshimaArea
+7cd8f433-6654-4a50-bd3b-d96fa9a4b9fc,5006008@HiroshimaArea,,3,8,22号三滝方面、71号横川方面,広島駅@HiroshimaArea
+b6af692a-6ed0-45c2-8b8a-0287d946d421,5006004@HiroshimaArea,,3,4,まちのわループ・大学病院・旭町・県病院方面,広島駅@HiroshimaArea
+6d22b271-76ac-4327-a126-b8bcce3528da,5006003@HiroshimaArea,,3,3,21号広島港・グランドプリンス広島方面、25号己斐・井口方面,広島駅@HiroshimaArea
+585d14e2-ea5e-437b-bfd2-c8a203177ea8,5006017@HiroshimaArea,,3,23,21号向洋大原方面、芸陽高速、市内ゆき,広島駅@HiroshimaArea
+b53d4e9e-5d7f-4269-92c9-da81f84f2a3a,445006005@HiroshimaArea,,3,,降り場,広島駅@HiroshimaArea
+9d43a045-e91e-452b-b715-7188c398d53e,5006004@HiroshimaArea,,3,4,まちのわループ・大学病院・旭町・県病院方面,広島駅@HiroshimaArea
+a3bfe020-3f2b-41e4-9a85-298e3830ecae,5006006@HiroshimaArea,,3,6,24号平和記念公園・吉島方面、50号観音・アルパーク方面,広島駅@HiroshimaArea
+81e2d967-439f-4988-909c-3cdedd683575,4450060999@HiroshimaArea,,1,,,広島駅@HiroshimaArea
+a868bf2f-05e7-4006-956d-93a4090be00d,5007002@HiroshimaArea,,3,,県庁方面,東区役所前@HiroshimaArea
+ac562e6c-ffde-4bd0-bc38-d3c317a8368c,5008002@HiroshimaArea,,3,,県庁・牛田方面,広電曙営業所前@HiroshimaArea
+cac637b5-d6fa-4f6e-a6e1-6272c43b0818,5008001@HiroshimaArea,,3,,府中方面,広電曙営業所前@HiroshimaArea
+269dbee0-7072-46bb-aba3-1c4d67f13528,5009002@HiroshimaArea,,3,,県庁方面,曙町@HiroshimaArea
+e2954a3b-b026-49c2-8395-122e6b5fd736,5009001@HiroshimaArea,,3,,府中方面,曙町@HiroshimaArea
+2ae9c3f7-506f-453d-bc30-83fa2307a75d,5010002@HiroshimaArea,,3,,県庁方面,矢賀入口@HiroshimaArea
+3c827da2-517c-4d79-841c-372f679d9d50,5010001@HiroshimaArea,,3,,府中方面,矢賀入口@HiroshimaArea
+1d817f42-c5e5-4688-945c-b11325acdf02,5010102@HiroshimaArea,,3,,県庁方面,矢賀新町二丁目@HiroshimaArea
+70d13f69-4e91-43c1-b27a-5ef66d3e0495,5010101@HiroshimaArea,,3,,府中方面,矢賀新町二丁目@HiroshimaArea
+8b346ab9-fe03-4327-beb5-9cfed8c10fd4,5010202@HiroshimaArea,,3,,県庁方面,大須三丁目@HiroshimaArea
+8fe6b4e8-34de-40d2-99ab-a1800dddfb9d,5010201@HiroshimaArea,,3,,府中方面,大須三丁目@HiroshimaArea
+cb8aeaa9-5d90-4cf8-a46e-56ff44449ccd,5010302@HiroshimaArea,,3,,県庁方面,本町五丁目@HiroshimaArea
+87164ba6-c7f7-4036-8e76-a1367df30f5c,5010301@HiroshimaArea,,3,,府中方面,本町五丁目@HiroshimaArea
+47d6f6d2-836f-4a97-9346-f9fcf5db4b59,5010402@HiroshimaArea,,3,,県庁方面,本町四丁目@HiroshimaArea
+e85fdc5f-2179-49a7-ab8e-8c5892fb2697,5010401@HiroshimaArea,,3,,府中方面,本町四丁目@HiroshimaArea
+2c814a70-2b3a-4e50-b320-54176cea3179,5010502@HiroshimaArea,,3,,県庁方面,矢賀駅入口@HiroshimaArea
+06554596-7dcf-4b74-87d8-540e690ba87a,5010501@HiroshimaArea,,3,,府中方面,矢賀駅入口@HiroshimaArea
+c4afcee6-74b5-4f43-bb97-1ebf6bf27f2d,5011001@HiroshimaArea,,3,,府中方面,矢賀新町@HiroshimaArea
+4b959ba7-ba2e-4dcb-87da-36fc51967060,5012102@HiroshimaArea,,3,,府中方面,イオンモール広島府中@HiroshimaArea
+adf34f6f-9a7b-455e-9e50-2848d6ce40e8,5026001@HiroshimaArea,,3,,県庁方面,城ヶ丘入口@HiroshimaArea
+412e7d1e-0010-48f9-8265-9d9056151ff6,5026002@HiroshimaArea,,3,,府中方面,城ヶ丘入口@HiroshimaArea
+a22f35cb-6143-4126-8219-f29b5509306a,5027001@HiroshimaArea,,3,,県庁方面,府中変電所@HiroshimaArea
+e142e1ed-1ccb-43bc-98a6-35994db37968,5027002@HiroshimaArea,,3,,府中方面,府中変電所@HiroshimaArea
+1b843af3-f26a-489f-a5fa-f6a836630929,5027100@HiroshimaArea,,3,,小河原車庫方面,広電温品四丁目@HiroshimaArea
+bcff2b0e-8e7d-49ba-875d-fad5758e181e,5027101@HiroshimaArea,,3,,県庁方面,広電温品四丁目@HiroshimaArea
+6c849710-a8d3-401e-919d-cc806b8d5758,5028002@HiroshimaArea,,3,,牛田・紙屋町方面,愛宕町@HiroshimaArea
+4691ba4a-de82-4b8b-85c7-8a384fd0770f,5028003@HiroshimaArea,,3,,温品方面,愛宕町@HiroshimaArea
+4bb3561d-59ab-4862-bfdf-3f9aaadcd88b,5032032@HiroshimaArea,,3,32,32番のりば 北ゆき,本通り@HiroshimaArea
+58ead838-904c-4067-8db5-bc8e91925d38,5032031@HiroshimaArea,,3,31,31番のりば 南ゆき,本通り@HiroshimaArea
+14b43028-05f5-4b58-b2d8-0cb49dc9af4b,5033001@HiroshimaArea,,3,,南ゆき,袋町@HiroshimaArea
+666b8e62-424a-48c1-a214-a16f31551b10,5034002@HiroshimaArea,,3,,北ゆき,中電前@HiroshimaArea
+fc5d2eb2-59cd-42eb-b54c-1b60bffd5232,5034001@HiroshimaArea,,3,,南ゆき,中電前@HiroshimaArea
+d786a7da-49f6-44bd-8e91-77806d476cbc,5035002@HiroshimaArea,,3,,北ゆき,市役所前@HiroshimaArea
+4d6338f3-113e-4d26-bdae-2c0f0b5b501b,5035001@HiroshimaArea,,3,,南ゆき,市役所前@HiroshimaArea
+59cddcdf-7e5f-4edb-a24e-71e02b219b33,5048002@HiroshimaArea,,3,,広島駅方面,観音三菱前@HiroshimaArea
+e83335fb-2476-447e-b818-5009835cca97,5054002@HiroshimaArea,,3,,広島駅方面,的場町@HiroshimaArea
+c041c938-6562-41a2-bef8-03e7adc700cd,5054001@HiroshimaArea,,3,,大学病院・旭町・県病院方面,的場町@HiroshimaArea
+50f349c1-8c2a-4c38-b927-194520b7e889,5083001@HiroshimaArea,,3,,牛田・紙屋町方面,鶴羽根神社前@HiroshimaArea
+d6cef5af-bc1c-4fb8-bdcb-5ed47d3aea72,5083002@HiroshimaArea,,3,,戸坂東浄・小河原車庫方面,鶴羽根神社前@HiroshimaArea
+2d0189a0-13d9-43c7-8917-8dc65d4bbe26,5084001@HiroshimaArea,,3,,牛田・紙屋町方面,二葉の里@HiroshimaArea
+1807f4cc-2767-41d4-97c9-21e7a60eb035,5084002@HiroshimaArea,,3,,戸坂東浄方面,二葉の里@HiroshimaArea
+67b44683-2c83-480c-88fc-9239b0268c37,5085001@HiroshimaArea,,3,,牛田・紙屋町方面,東照宮入口（広島テレビ前）@HiroshimaArea
+f86c7e8a-e66b-4b29-adde-c7d7092b66cd,5085002@HiroshimaArea,,3,,戸坂東浄・小河原車庫方面,東照宮入口（広島テレビ前）@HiroshimaArea
+e7631615-98fc-446f-8f31-3700eb2be7ee,5086027@HiroshimaArea,,3,27,5号牛田方面、27・29号紙屋町方面,広島駅新幹線口@HiroshimaArea
+cd057725-49e1-4c49-af88-afcad106b860,5086028@HiroshimaArea,,3,28,27号戸坂東浄、29号小河原車庫方面,広島駅新幹線口@HiroshimaArea
+e9594b39-148c-4fe6-9d44-3470beff47b5,5086001@HiroshimaArea,,3,1,まちのわループ・牛田・曙営業所方面,広島駅新幹線口@HiroshimaArea
+7f3ec79a-47cf-4e17-9720-aa66c7ee4af2,445086004@HiroshimaArea,,3,,降り場,新幹線口@HiroshimaArea
+4c439678-ced2-4d05-911c-86c0e7f40fd5,5087002@HiroshimaArea,,3,,牛田・紙屋町方面,若草町@HiroshimaArea
+ea2dee66-577f-4052-aca2-767e87ae3795,5088002@HiroshimaArea,,3,,広島駅方面,段原一丁目@HiroshimaArea
+31e6bfe3-1576-4fa3-ace6-24997b2a1069,5088001@HiroshimaArea,,3,,大学病院・旭町・県病院方面,段原一丁目@HiroshimaArea
+e4b6d8a4-ee85-4bdf-a384-e0bcecd449b0,5090002@HiroshimaArea,,3,,横川方面,鶴見橋@HiroshimaArea
+9ec9ec52-6966-4571-99ed-3ee4674d1494,5090001@HiroshimaArea,,3,,大学病院方面,鶴見橋@HiroshimaArea
+bf8601f0-ff04-48cc-ab1b-523b6aaf4151,5091002@HiroshimaArea,,3,,横川方面,比治山橋@HiroshimaArea
+e274561d-e4d1-4cb0-8032-864e16162b00,5091001@HiroshimaArea,,3,,大学病院方面,比治山橋@HiroshimaArea
+afeb2a3d-ebb0-4ca7-878f-5ad47c8a65d6,5092004@HiroshimaArea,,3,,4番のりば 23号比治山橋方面,南区役所前@HiroshimaArea
+1833869e-aa4f-43af-96bb-6a223d8ee063,5092001@HiroshimaArea,,3,,1番のりば 7号東雲方面、23号大学病院,南区役所前@HiroshimaArea
+b1e3467c-d5aa-4cb4-8994-9f4c85548309,5093002@HiroshimaArea,,3,,市役所・横川駅方面,出汐町@HiroshimaArea
+4a680b4a-59a2-4054-90f9-b87cbd2f925b,5093001@HiroshimaArea,,3,,東雲方面,出汐町@HiroshimaArea
+7310bb5f-14ee-4d1d-b719-90a42780ab03,5094002@HiroshimaArea,,3,,広島駅・横川方面,出汐一丁目@HiroshimaArea
+46763234-d8bd-4526-b97d-19f7bbe9b03e,5094001@HiroshimaArea,,3,,大学病院・旭町・県病院方面,出汐一丁目@HiroshimaArea
+600aebaa-6e7c-4335-a535-4ca4f75779bc,5095001@HiroshimaArea,,3,1,1番のりば　23・横川駅,大学病院前@HiroshimaArea
+fa41f2d8-dd1d-42ac-8372-4355a552d4f8,5095003@HiroshimaArea,,3,3,3番のりば　広島駅方面,大学病院前@HiroshimaArea
+bcb9e6ab-0ace-4aa5-80ff-5c49400a6e0a,5095004@HiroshimaArea,,3,4,4番のりば 10・西広島駅・新幹線口方面,大学病院前@HiroshimaArea
+c598faf3-8c5f-4a28-b734-3d98ea9ed4b1,5095001@HiroshimaArea,,3,1,1番のりば　23・横川駅,大学病院前@HiroshimaArea
+97d1c498-cc77-4c04-b4d6-0ad826d7b32d,445101000@HiroshimaArea,,3,,降車ホーム,広島バスセンター@HiroshimaArea
+8863cd7e-67a3-490f-922f-4a9d83509698,0001010@HiroshimaArea,,3,10,10 29号温品・小河原方面,広島バスセンター@HiroshimaArea
+f8787c23-b762-4d30-aa82-e11389335a58,0010502@HiroshimaArea,,3,2,2番のりば 28号鈴が峰住宅方面,アルパーク@HiroshimaArea
+a5e46b83-6ec8-44e0-9f85-5e133fbae952,0010503@HiroshimaArea,,3,3,3番のりば 25号広島駅方面,アルパーク@HiroshimaArea
+b8132ed2-3e3c-4473-8750-42be412024c6,0010504@HiroshimaArea,,3,4,4番のりば 50号広島駅方面,アルパーク@HiroshimaArea
+0806996e-f4c8-459f-b4e3-f09595283e3e,0010505@HiroshimaArea,,3,5,5番のりば 28号LECT（レクト）方面,アルパーク@HiroshimaArea
+2ecb04d9-7bd2-417c-9eda-4a976b3da306,0010506@HiroshimaArea,,3,6,6 28号美鈴・山田団地、井口台、ジ アウトレット広島方面,アルパーク@HiroshimaArea
+45f9c5fd-b92a-4b05-aae7-070ce091d58c,0010507@HiroshimaArea,,3,,もみじ銀行前 25号広島駅方面(朝のみ),アルパーク@HiroshimaArea
+f7de1da6-7898-4368-a61a-ce105fff2480,0010508@HiroshimaArea,,3,,信用金庫前 25号井口方面,アルパーク@HiroshimaArea
+ca2d6994-acbd-4cfd-9e6e-c7044f78962c,0010501@HiroshimaArea,,3,,おりば,アルパーク@HiroshimaArea
+40ed956e-bb68-45bd-a172-79546dd04539,5116001@HiroshimaArea,,3,,牛田方面,皿山公園下@HiroshimaArea
+d7281d21-9b28-4f2a-88b3-9bb630ce2c08,5119004@HiroshimaArea,,3,,御幸橋・広島駅方面,舟入南@HiroshimaArea
+92dc648f-1a8e-40ff-9b0f-75ed00434ddc,5119003@HiroshimaArea,,3,,アルパーク方面,舟入南@HiroshimaArea
+5fcc43ef-f8c3-470b-87d9-3e2846f70632,5124002@HiroshimaArea,,3,2,2番のりば 23号大学病院方面,横川駅前@HiroshimaArea
+ed8a7250-18ab-4816-bb9d-9efc979596e4,@HiroshimaArea,,3,,,横川駅前@HiroshimaArea
+b8deadf0-f4bb-43e5-961d-923eda9f2574,5132001@HiroshimaArea,,3,1,1番のりば 22・25号広島駅方面,十日市@HiroshimaArea
+75b72577-bedb-4e5d-8cdd-bb86e62360f2,5132003@HiroshimaArea,,3,3,3番のりば 11・14・17号・25号西広島方面,十日市@HiroshimaArea
+ac8d268f-0002-446a-959e-890c1c1cda57,5132004@HiroshimaArea,,3,4,4番のりば 22・70-74号広島駅方面,十日市@HiroshimaArea
+b7495347-c32a-4dcb-9f5f-f8891201d2b9,5132005@HiroshimaArea,,3,5,5番のりば 22・70-74号北部方面,十日市@HiroshimaArea
+56f436f4-1369-41b6-98ed-eb2ff33f7c48,5133001@HiroshimaArea,,3,,広島駅方面,本川町@HiroshimaArea
+b706cb3f-9676-4016-a1ec-15efcb4f51e6,5133002@HiroshimaArea,,3,,十日市方面,本川町@HiroshimaArea
+bc4f9366-0f46-44cc-afce-c22ce9d883f1,5134034@HiroshimaArea,,3,34,十日市方面,原爆ドーム前@HiroshimaArea
+0c8f7dda-450a-4c06-8d42-64e494a19064,5135001@HiroshimaArea,,3,,東雲方面,国泰寺町二丁目@HiroshimaArea
+382769ed-2269-4e8d-a4f9-e5ccb0a2bbf8,5140103@HiroshimaArea,,3,3,3番のりば 21号洋光台方面,向洋本町@HiroshimaArea
+d1551236-87b4-40b7-a443-d7b63f27cfc0,5140104@HiroshimaArea,,3,4,4番のりば 21号広島駅方面,向洋本町@HiroshimaArea
+ccb9b209-08f1-47c1-bfac-5fcefe65091b,5140301@HiroshimaArea,,3,,向洋方面,向洋新町一丁目@HiroshimaArea
+824a399b-7091-4d71-a0dc-73855dcd15b5,5140302@HiroshimaArea,,3,,県庁方面,向洋新町一丁目@HiroshimaArea
+2185bd37-93ed-4c7f-890f-6ced469c1ff3,445140400@HiroshimaArea,,3,,降り場,向洋新町二丁目@HiroshimaArea
+43d70bbd-7b82-41eb-b503-d82bf743f9b4,5140402@HiroshimaArea,,3,,県庁方面,向洋新町二丁目@HiroshimaArea
+ec796d0d-e153-45f7-807e-ef7f119c8fe6,5141003@HiroshimaArea,,3,3,広島駅方面,天満町@HiroshimaArea
+8addd027-5c71-46e8-ae79-dab25abca209,5141004@HiroshimaArea,,3,4,草津方面,天満町@HiroshimaArea
+4054d01f-16bc-40da-9c32-5246b48e94f6,5148001@HiroshimaArea,,3,1,1番のりば 広島駅方面,女学院前@HiroshimaArea
+32348693-c709-4f4f-bee9-508a843de167,5148002@HiroshimaArea,,3,2,2番のりば　広島BC・八丁堀・大学病院方面,女学院前@HiroshimaArea
+43e7d5d0-5c82-4d6c-aee4-81bf25ad22b1,5148004@HiroshimaArea,,3,4,4番のりば 八丁堀方面,女学院前@HiroshimaArea
+e4216bd7-05d1-4208-be9b-2ed848749f20,5154006@HiroshimaArea,,3,5,広島駅・八丁堀・広島バスセンター方面,西広島駅・己斐@HiroshimaArea
+fac8cad6-da26-4d96-b537-6f90081f67b2,5154004@HiroshimaArea,,3,4,52・53号西方面、25号井口、14号高須台方面,西広島駅・己斐@HiroshimaArea
+1d8f3e02-bc92-4267-a885-05ee015775e3,5154001@HiroshimaArea,,3,1,急行市役所、25号広島駅、11・17号八丁堀方面、10号大学病院・旭町,西広島駅・己斐@HiroshimaArea
+45104e13-bc26-46ed-bf07-00e81843822d,5155001@HiroshimaArea,,3,1,広島方面,己斐本町二丁目@HiroshimaArea
+7119afe8-1d60-4cf5-ae52-60d9efe963bf,5155002@HiroshimaArea,,3,2,井口車庫方面,己斐本町二丁目@HiroshimaArea
+0ad08717-2f00-4c8f-863e-8a80be8e2e4b,5158001@HiroshimaArea,,3,1,1番のりば 大学病院方面,竹屋町@HiroshimaArea
+868166fd-3d02-4def-b28d-a898da7b9185,5159002@HiroshimaArea,,3,,横川方面,宝町@HiroshimaArea
+e49bede6-5dda-44b2-ba60-64c037393413,5159001@HiroshimaArea,,3,,大学病院方面,宝町@HiroshimaArea
+2b3f72bd-f316-4e86-941a-4903c9dd735e,5160002@HiroshimaArea,,3,,八丁堀方面,昭和町（旧道）@HiroshimaArea
+87547771-4b6d-4409-bcea-3227669ec368,5160001@HiroshimaArea,,3,,大学病院方面,昭和町（旧道）@HiroshimaArea
+d4818a02-0ce8-48e2-8275-0f5df53df3de,5161003@HiroshimaArea,,3,3,3番のりば 広島駅方面,出汐三丁目@HiroshimaArea
+5db091e2-e57e-46a0-9c9a-617db88ddf90,5161001@HiroshimaArea,,3,1,1番のりば　旭町・県病院方面,出汐三丁目@HiroshimaArea
+59384fda-6de2-4056-a8c9-c22c9fbdd0f2,5161002@HiroshimaArea,,3,2,2番のりば　広島駅・戸坂方面,出汐三丁目@HiroshimaArea
+6d7b492c-f656-4098-a0c4-5cf36d91d2a2,5162001@HiroshimaArea,,3,,県病院・日赤病院・新幹線口方面,旭町@HiroshimaArea
+f6ff09f4-d30b-4391-bf3f-5d84cb6765d2,5162002@HiroshimaArea,,3,,2番のりば　広島駅・戸坂方面,旭町@HiroshimaArea
+0225e294-d304-4472-8cb6-6ba68932ca36,5162101@HiroshimaArea,,3,,広島駅方面,西旭町@HiroshimaArea
+08a62b41-73c8-4ebd-b25b-a05cd2dd396a,5179201@HiroshimaArea,,3,,広島バスセンター方面,新白島駅@HiroshimaArea
+227e0e9c-f0d1-4b38-8677-2b84f61f80f3,5194003@HiroshimaArea,,3,,広島駅方面,戸坂中学校@HiroshimaArea
+43a68c15-24e4-4490-8e97-046045049359,5194001@HiroshimaArea,,3,,東浄小学校方面,戸坂中学校@HiroshimaArea
+853a37e3-b0db-419f-af37-0642bcbe8c09,5198002@HiroshimaArea,,3,,八丁堀・広島駅新幹線口方面,新天地@HiroshimaArea
+0c37402f-d1c2-49a4-8671-3086e891fe13,5198001@HiroshimaArea,,3,,仁保・大学病院方面,新天地@HiroshimaArea
+3b4f96aa-1116-4909-80a0-303b0dd1f353,5199003@HiroshimaArea,,3,,まちのわループ・12・23・26号八丁堀方面,富士見町@HiroshimaArea
+aae46d88-04a9-4eae-846a-e441fe96c39c,5199002@HiroshimaArea,,3,,段原・大学病院方面,富士見町@HiroshimaArea
+e66352d5-62fa-42b3-bae9-ad4beacaa7bc,5199102@HiroshimaArea,,3,,八丁堀方面,田中町@HiroshimaArea
+7bf83028-eeae-4556-ac96-27c0060820c5,5199101@HiroshimaArea,,3,,仁保方面,田中町@HiroshimaArea
+3ad92bf9-1523-4a8c-89ae-efd36ebc9727,5200002@HiroshimaArea,,3,,八丁堀・広島駅新幹線口方面,保健所前@HiroshimaArea
+131c2dcd-8936-45e1-8a52-c9621a673b0c,5200001@HiroshimaArea,,3,,仁保方面,保健所前@HiroshimaArea
+d378d536-853c-481a-8638-47bb1cdf4e84,5203005@HiroshimaArea,,3,5,5番のりば 50号アルパーク方面,御幸橋@HiroshimaArea
+a8411347-7024-401c-94d0-f6332cfc2e81,5203004@HiroshimaArea,,3,4,4番のりば　まちのわループ・21・50号広島駅方面,御幸橋@HiroshimaArea
+c0457249-113b-4b1b-9346-d51390cf27a3,5203003@HiroshimaArea,,3,3,3番のりば　まちのわループ・21号広島港方面,御幸橋@HiroshimaArea
+cee85516-7c85-4469-bd75-fc2e28c04252,5203000@HiroshimaArea,,1,,降り場,御幸橋@HiroshimaArea
+94d9b23b-e3c6-4d80-84b2-929d0088f5a0,5204002@HiroshimaArea,,3,,八丁堀・広島駅方面,皆実町六丁目@HiroshimaArea
+24207cf7-d90f-4f9b-ad37-8293791e0c21,5204001@HiroshimaArea,,3,,大学病院・仁保方面,皆実町六丁目@HiroshimaArea
+787edc43-ab06-487f-b691-74d49ddc930b,5205002@HiroshimaArea,,3,,戸坂・日赤病院・新幹線口方面,広大附属学校前@HiroshimaArea
+93e45666-6996-41b4-bf28-81b3da2a111b,5205001@HiroshimaArea,,3,,大学病院・仁保方面,広大附属学校前@HiroshimaArea
+12932f85-1787-4a18-acf8-2653e6a73b0d,5206002@HiroshimaArea,,3,,戸坂・日赤病院・新幹線口方面,西翠町@HiroshimaArea
+55695fb5-4385-4b00-8b1a-36c95c76768c,5206001@HiroshimaArea,,3,,大学病院・仁保方面,西翠町@HiroshimaArea
+4fe720bf-a571-4c89-99d9-5bfc5c161a44,5207002@HiroshimaArea,,3,,戸坂・日赤病院・新幹線口方面,県病院前@HiroshimaArea
+c48b121c-5555-4c32-8969-8a90f14ba340,5207001@HiroshimaArea,,3,,大学病院・仁保方面,県病院前@HiroshimaArea
+7c748cab-acfa-4730-9e9e-0e82d5c84545,5208003@HiroshimaArea,,3,3,大学病院・広島駅方面,県立広島大学前（広島キャンパス）@HiroshimaArea
+2959059f-21ea-4ef5-acdf-2bc3f615c49f,7116802@HiroshimaArea,,3,,広島港・宇品IC方面,県立広島大学（みなと新線）@HiroshimaArea
+cb25d619-b85d-4219-a10f-c57508a817c8,7116801@HiroshimaArea,,3,,大学病院・広島駅方面,県立広島大学（みなと新線）@HiroshimaArea
+ee5d2d1e-d8a1-46cf-80f6-78ff218f0189,5208002@HiroshimaArea,,3,2,東浄小学校・日赤病院・新幹線口方面,県立広島大学前（広島キャンパス）@HiroshimaArea
+d593e390-a102-412b-990e-7bb6a0270b50,5213001@HiroshimaArea,,3,,広島駅方面,平塚町@HiroshimaArea
+49c4f729-91b4-45c0-b437-3387b4b4d913,5213002@HiroshimaArea,,3,,市役所方面,平塚町@HiroshimaArea
+1468b68a-c670-4ccb-9e4c-a66295559658,5214001@HiroshimaArea,,3,,広島駅方面,並木通り入口@HiroshimaArea
+85a48794-f5b3-4f09-8bbd-e2b5d641953b,5214002@HiroshimaArea,,3,,市役所方面,並木通り入口@HiroshimaArea
+9c48ed4f-cad3-44ba-9a5d-88e2d9e02211,5237002@HiroshimaArea,,3,,広島駅方面,大学病院入口@HiroshimaArea
+7f7c8049-e65d-4562-807c-6697b80d2ec8,5237001@HiroshimaArea,,3,,大学病院・旭町・県病院方面,大学病院入口@HiroshimaArea
+33c02277-fa2a-499a-bdb3-28dab5168aa9,5238002@HiroshimaArea,,3,,広島駅方面,段原南@HiroshimaArea
+849a2672-cf20-4d9f-b285-40a8a5655865,5238001@HiroshimaArea,,3,,大学病院・旭町・県病院方面,段原南@HiroshimaArea
+43acdc35-5538-48c1-a96e-c4c942eaba04,5239002@HiroshimaArea,,3,2,2番のりば 23号横川方面,段原中央@HiroshimaArea
+50b0f8c4-572d-4271-bf68-c139b14a2f76,5239001@HiroshimaArea,,3,1,1番のりば 23号大病方面,段原中央@HiroshimaArea
+13988b49-fa47-4109-94e5-5835ee7b9194,5239003@HiroshimaArea,,3,3,3番のりば　大学病院・旭町・県病院方面,段原中央@HiroshimaArea
+cd7763f9-232c-4cc3-953b-2df933dfda89,5239004@HiroshimaArea,,3,4,4番のりば　まちのわループ・4号広島駅・県庁方面,段原中央@HiroshimaArea
+b843152a-2cd8-4dd5-9a56-db31e1f14efb,5259001@HiroshimaArea,,3,,江波三菱方面,江波本町@HiroshimaArea
+9e9bf895-241b-40c3-b0dd-c33ab347b744,5296001@HiroshimaArea,,3,,広島駅方面,白神社前@HiroshimaArea
+1836dd76-36fa-4623-bd43-50a34d2099a5,5296002@HiroshimaArea,,3,,市役所方面,白神社前@HiroshimaArea
+22c92b4a-88f8-4a59-8b25-d4f627970d50,0517002@HiroshimaArea,,3,,向洋方面,荒神町@HiroshimaArea
+72f46646-0dc2-4e56-b075-69f15e3140d6,0517001@HiroshimaArea,,3,,八丁堀方面,荒神町@HiroshimaArea
+dc0b51ca-f090-4380-8c83-22ac626dc54a,0518002@HiroshimaArea,,3,,向洋方面,西蟹屋@HiroshimaArea
+57382012-585f-4a0b-95d8-4472a2dc54aa,0519002@HiroshimaArea,,3,,向洋方面,広島バス大州車庫前@HiroshimaArea
+74331539-fd8e-4b3d-9e0b-e62d91e8160b,0519001@HiroshimaArea,,3,,八丁堀方面,広島バス大州車庫前@HiroshimaArea
+ce0e805d-fb30-4138-92d1-10f370535866,0520002@HiroshimaArea,,3,,向洋方面,大州四丁目@HiroshimaArea
+a161c2dd-8920-4fbb-a843-279db3557d9b,0520001@HiroshimaArea,,3,,八丁堀方面,大州四丁目@HiroshimaArea
+1583fb53-8516-4058-b63f-7fc7889bb617,0521002@HiroshimaArea,,3,,向洋・熊野・中野方面,新大州橋@HiroshimaArea
+eef0fa2f-5788-42e6-9033-3dfceeda7053,0521001@HiroshimaArea,,3,,八丁堀方面,新大州橋@HiroshimaArea
+497435ed-a44f-4272-b1e3-448f7876d891,0522002@HiroshimaArea,,3,,向洋方面,向洋駅前（マツダ本社前）@HiroshimaArea
+e7b21675-7141-4ce1-9e99-b00eef133588,0522001@HiroshimaArea,,3,,八丁堀方面,向洋駅前（マツダ本社前）@HiroshimaArea
+a2c91666-5809-460e-a623-65b246e68342,0641001@HiroshimaArea,,3,,22・70-74号　広島駅方面,広瀬町@HiroshimaArea
+b4595011-4ab4-43e7-ad14-7ce20c4bf901,0641003@HiroshimaArea,,3,,22号　祗園大橋方面,広瀬町@HiroshimaArea
+b97ffbfa-80b7-4687-ac0f-05dd5a7c974d,0653001@HiroshimaArea,,3,,広島駅方面,合同庁舎前@HiroshimaArea
+905c06a8-0a47-4ce6-81bf-a72ad29e9822,0656001@HiroshimaArea,,3,,広島駅方面,三篠町一丁目@HiroshimaArea
+f7918ba9-9f31-4c66-b033-7e774d37a84e,0656002@HiroshimaArea,,3,,可部方面,三篠町一丁目@HiroshimaArea
+fe019afb-5791-4e89-bcaf-58baf954e158,0657001@HiroshimaArea,,3,,広島駅方面,三篠町三丁目@HiroshimaArea
+bbffbab3-8868-42c0-a75b-076eef66a66f,0658001@HiroshimaArea,,3,,広島駅方面,大芝町@HiroshimaArea
+fb39f195-5e5a-4cdd-9652-b96819cd2f5e,7001001@HiroshimaArea,,3,,洋光台方面,青崎@HiroshimaArea
+a0e2c4a5-efe8-4a80-8c2c-43358ec16c49,7001002@HiroshimaArea,,3,,八丁堀方面,青崎@HiroshimaArea
+cd4b3431-10bd-41a4-82e3-a3b4b3586482,7002001@HiroshimaArea,,3,,洋光台方面,青崎小学校前@HiroshimaArea
+55b8c65c-7cef-4ddb-bd92-361fa6f7c0f8,7002002@HiroshimaArea,,3,,八丁堀方面,青崎小学校前@HiroshimaArea
+c5b03cc3-2f0d-41aa-8efc-91572856f124,7003001@HiroshimaArea,,3,,広島方面,山﨑病院北@HiroshimaArea
+6e4f12d1-a18c-432c-b0d7-77ab0dbecd26,7003002@HiroshimaArea,,3,,小河原車庫方面,山﨑病院北@HiroshimaArea
+815c4df6-3b79-40e0-ab37-8855891c0825,7015001@HiroshimaArea,,3,,広島方面,鮎信団地@HiroshimaArea
+d16ef8e7-c02a-4d5d-93b8-570bc14226d4,7015002@HiroshimaArea,,3,,小河原車庫方面,鮎信団地@HiroshimaArea
+543db115-9611-48ee-ba24-fea9d5d2a220,7018001@HiroshimaArea,,3,,温品方面,憩いの森口@HiroshimaArea
+6795124e-3019-4d45-80c3-19579dcfa721,7018002@HiroshimaArea,,3,,地区センター方面,憩いの森口@HiroshimaArea
+b449d6a9-ff43-4da0-aa2a-a462772acfea,7028001@HiroshimaArea,,3,,広島駅方面,井口車庫@HiroshimaArea
+19ece234-7f98-480e-ac0a-be20cd3f167f,447028001@HiroshimaArea,,3,,降り場,井口車庫@HiroshimaArea
+ae44354d-2cd7-4437-bd9a-51a3575304a8,7034701@HiroshimaArea,,3,,広島駅方面,宇品西三丁目@HiroshimaArea
+f82d447f-a727-4464-a909-82c32ed8e4c0,7034702@HiroshimaArea,,3,,プリンスホテル方面,宇品西三丁目@HiroshimaArea
+9e1487e7-648e-4ec9-be3d-ee928eae846f,7035001@HiroshimaArea,,3,,広島駅方面,宇品西四丁目@HiroshimaArea
+863162c3-5b8d-4e97-9f87-8c705d6a27bb,7035002@HiroshimaArea,,3,,プリンスホテル方面,宇品西四丁目@HiroshimaArea
+d3140932-0f93-4d6f-8b79-7bf5390fff98,7035502@HiroshimaArea,,3,,プリンスホテル方面,宇品西六丁目@HiroshimaArea
+16256b7f-be25-48ac-8ae6-ab118b0d9127,7036001@HiroshimaArea,,3,,広島駅方面,宇品町@HiroshimaArea
+c29ce3da-6ba6-4156-a1d1-7edf06f75e21,7036002@HiroshimaArea,,3,,広島港方面,宇品町@HiroshimaArea
+4e87993b-dce7-4c40-a934-770e756f0add,7037001@HiroshimaArea,,3,,広島方面,馬木料金所前@HiroshimaArea
+74c43df3-cdc2-48fc-bac2-51a226f9ec45,7038001@HiroshimaArea,,3,,広島駅方面,観音新町二丁目@HiroshimaArea
+1353b338-cf51-4f6b-b18b-d641f4268f66,7038002@HiroshimaArea,,3,,アルパーク方面,観音新町二丁目@HiroshimaArea
+3936cde0-74c7-4d00-ae58-229e987a3004,7043001@HiroshimaArea,,3,,向洋方面,猿猴橋通り@HiroshimaArea
+c4d1a4ec-9aac-41a5-92b1-c245fec3be22,7043002@HiroshimaArea,,3,,八丁堀方面,猿猴橋通り@HiroshimaArea
+d6797c36-9a6c-4868-9d61-760e96bd5c67,7052001@HiroshimaArea,,3,,広島方面,大内越峠@HiroshimaArea
+862c1155-d672-4e51-84af-cdb079a5d038,7052002@HiroshimaArea,,3,,温品方面,大内越峠@HiroshimaArea
+7521e510-0d0b-41d3-bec0-d4104b67aa74,7054001@HiroshimaArea,,3,,広島方面,大内越峠下@HiroshimaArea
+5d495239-1523-4d98-a61a-61291d74561b,7054002@HiroshimaArea,,3,,温品方面,大内越峠下@HiroshimaArea
+c8fb9b12-adbf-4468-bc77-8a345b3474c9,7056001@HiroshimaArea,,3,,洋光台方面,大原神社前@HiroshimaArea
+9363dafd-a0ab-43e4-96ac-652344ce36f3,7056002@HiroshimaArea,,3,,八丁堀方面,大原神社前@HiroshimaArea
+8398f046-a36e-4fb3-8820-fb0cbb7b744a,7057001@HiroshimaArea,,3,,洋光台方面,向洋大原（新停）@HiroshimaArea
+13f562b3-bca6-4c85-911e-477e2031fac3,7057002@HiroshimaArea,,3,,八丁堀方面,向洋大原（新停）@HiroshimaArea
+69dd90d9-476b-4c16-aafc-ada0497ba549,7058001@HiroshimaArea,,3,,広島方面,大平@HiroshimaArea
+3cb02374-e292-4b3f-b6b9-fa87a26969da,7058002@HiroshimaArea,,3,,小河原車庫方面,大平@HiroshimaArea
+77e98826-71c2-4532-8b86-6968da0df60c,7059001@HiroshimaArea,,3,,温品方面,小河原@HiroshimaArea
+5b6d80ca-d195-402c-bf59-a5cf2bbe336c,7059002@HiroshimaArea,,3,,地区センター方面,小河原@HiroshimaArea
+d9d6c52b-87ec-4f63-b1b9-f4b82eea83ae,7059002@HiroshimaArea,,3,,地区センター方面,小河原車庫（地区センター）@HiroshimaArea
+81f3f668-a0cf-45ed-ac55-3f17ea82ee18,7061001@HiroshimaArea,,3,,広島方面,小河原車庫@HiroshimaArea
+ead64f18-80ad-4c2d-bfc5-67f0fa1a42b1,7061001@HiroshimaArea,,3,,広島方面,小河原車庫@HiroshimaArea
+588872e7-6b1a-4997-acc3-5d7e018ca6be,7061002@HiroshimaArea,,3,,降り場,小河原車庫@HiroshimaArea
+cba1a70f-5ab3-4f2b-acd9-b9fd2ef54418,70610999@HiroshimaArea,,1,,,小河原車庫@HiroshimaArea
+aeee790a-ffa5-4c6b-9860-3a09235c7070,7067001@HiroshimaArea,,3,,広島駅方面,海岸二丁目@HiroshimaArea
+92024310-7299-4e78-80a3-75e85a26acf8,7067002@HiroshimaArea,,3,,広島港方面,海岸二丁目@HiroshimaArea
+c773d995-5e72-4568-9bd1-3d047fa0fe71,7074001@HiroshimaArea,,3,,広島方面,上氏の原@HiroshimaArea
+dd997528-a8bd-4e34-8454-a94fd2597843,7074002@HiroshimaArea,,3,,小河原車庫方面,上氏の原@HiroshimaArea
+9c7ff544-de38-4003-8f7b-8ccdbe801d1f,7078001@HiroshimaArea,,3,,広島方面,上温品@HiroshimaArea
+ea97841c-68cf-4d9d-816d-de87ed4daa3f,7080001@HiroshimaArea,,3,,広島方面,上温品北@HiroshimaArea
+ee2e7839-59b5-475b-8840-7817080c3622,7080002@HiroshimaArea,,3,,小河原車庫方面,上温品北@HiroshimaArea
+b3b1b314-217f-4bf0-a3d7-47501f3e3cc1,7081001@HiroshimaArea,,3,,広島方面,上温品小学校入口@HiroshimaArea
+891ab759-efad-4938-b8df-9d87ca0e3e44,7081002@HiroshimaArea,,3,,小河原車庫方面,上温品小学校入口@HiroshimaArea
+ed5559ef-af0e-44f1-a99c-cd2b0d983104,7092001@HiroshimaArea,,3,,広島駅方面,河原町@HiroshimaArea
+955ee6ca-ec6f-421a-bbcb-efadf590a7c4,7092002@HiroshimaArea,,3,,井口車庫方面,河原町@HiroshimaArea
+0bd5ff31-ec29-4a3a-9b8e-de668ddf187d,7093001@HiroshimaArea,,3,,広島駅方面,観音新町一丁目@HiroshimaArea
+008a8362-3812-45f8-a273-427587df4ac3,7093002@HiroshimaArea,,3,,アルパーク方面,観音新町一丁目@HiroshimaArea
+3ba8472f-3d63-4ca4-a899-50b7378df09a,7094001@HiroshimaArea,,3,,広島駅方面,広島バス本社前@HiroshimaArea
+e377169f-1d20-46ef-9172-2ed67e2cb2c4,7094002@HiroshimaArea,,3,,吉島方面,広島バス本社前@HiroshimaArea
+90bfb28d-42ee-4c88-8726-f9e2088adbd7,7097001@HiroshimaArea,,3,,広島方面,記念碑前@HiroshimaArea
+efd1da96-5031-4354-9001-51b9c089547e,7097002@HiroshimaArea,,3,,小河原車庫方面,記念碑前@HiroshimaArea
+36d19794-5069-4061-b481-4948cc587d32,7101001@HiroshimaArea,,3,,広島駅方面,草津東町@HiroshimaArea
+abea7d9e-5b21-4143-a014-9fca6d7a758a,7101002@HiroshimaArea,,3,,井口車庫方面,草津東町@HiroshimaArea
+9050498e-d3e0-4218-8e00-393dfe267268,7104001@HiroshimaArea,,3,,広島駅方面,草津南三丁目@HiroshimaArea
+ddf06016-fbf0-4314-b0a1-4c6b0708ed48,7104002@HiroshimaArea,,3,,井口車庫方面,草津南三丁目@HiroshimaArea
+81cbca88-277a-4cef-ae7d-9432cbd9bbbe,7106001@HiroshimaArea,,3,,広島駅方面,草津町@HiroshimaArea
+d130c4a9-c245-4c85-be9c-fe87c4ae4b07,7106002@HiroshimaArea,,3,,井口車庫方面,草津町@HiroshimaArea
+c241c66e-4a58-448e-93a7-6ff97519d624,7108001@HiroshimaArea,,3,,広島駅方面,草津南町@HiroshimaArea
+8c2b2135-0402-4e17-a094-cd291a349de7,7108002@HiroshimaArea,,3,,井口車庫方面,草津南町@HiroshimaArea
+aa568483-da33-4702-b540-09904a926012,7110001@HiroshimaArea,,3,,横川駅方面,楠木町@HiroshimaArea
+93876712-89e5-4a66-b20b-b89c9f29ee7d,7110002@HiroshimaArea,,3,,大学病院方面,楠木町@HiroshimaArea
+02fe67b0-7c88-4fb7-8d5d-6b56fc4f0cc2,7119002@HiroshimaArea,,3,,井口車庫方面,己斐橋@HiroshimaArea
+02ac7a29-bca9-417a-8bb6-b6b38d7573e6,7121001@HiroshimaArea,,3,,広島駅方面,己斐本町三丁目@HiroshimaArea
+2db06549-7f91-40ae-8997-702f53cead1a,7121002@HiroshimaArea,,3,,井口車庫方面,己斐本町三丁目@HiroshimaArea
+70537ed3-49b8-453b-8be1-c790c70b90dd,7122001@HiroshimaArea,,3,,広島駅方面,庚午北二丁目@HiroshimaArea
+5b1e774e-7e8e-49f2-a72a-452b629fd8ca,7122002@HiroshimaArea,,3,,井口車庫方面,庚午北二丁目@HiroshimaArea
+a9b680b8-2e41-4d60-acd6-a72b51492182,7123001@HiroshimaArea,,3,,広島駅方面,庚午北四丁目@HiroshimaArea
+a70fd2ae-12a4-4841-906b-a24d0074e76b,7123002@HiroshimaArea,,3,,井口車庫方面,庚午北四丁目@HiroshimaArea
+38a99a65-ca8e-4af1-9267-d980e78b265e,7124001@HiroshimaArea,,3,,広島駅方面,庚午住宅入口@HiroshimaArea
+92bf2a90-d175-4aec-84aa-3a485a8ab400,7124002@HiroshimaArea,,3,,井口車庫方面,庚午住宅入口@HiroshimaArea
+938dc014-f584-4a52-aac6-c854d778e533,7126001@HiroshimaArea,,3,,広島駅方面,庚午住宅@HiroshimaArea
+808f7d9a-4789-4e03-ae60-13ec7b5d9b6c,7127001@HiroshimaArea,,3,,広島駅方面,庚午中一丁目@HiroshimaArea
+8279e6be-61b6-494c-b27d-731d9fcb6e34,7127002@HiroshimaArea,,3,,井口車庫方面,庚午中一丁目@HiroshimaArea
+7166760b-af48-4bcf-b118-b63777e6b6f9,7128001@HiroshimaArea,,3,,広島駅方面,庚午中三丁目@HiroshimaArea
+00f6e909-05ea-490f-b2de-c04ec5b4e504,7128002@HiroshimaArea,,3,,井口車庫方面,庚午中三丁目@HiroshimaArea
+6acd2260-5d34-48e5-bbc2-1207c65be47e,7129001@HiroshimaArea,,3,,広島駅方面,庚午中四丁目@HiroshimaArea
+16688ffb-dafd-4210-af37-c27bcdbd64d5,7129002@HiroshimaArea,,3,,アルパーク方面,庚午中四丁目@HiroshimaArea
+a0a92c87-daf3-4a44-a06e-8cb507233ddb,7132001@HiroshimaArea,,3,,広島駅方面,加古町@HiroshimaArea
+f2152dac-d50b-4c9a-8685-ea0e4e1b06ff,7132002@HiroshimaArea,,3,,吉島方面,加古町@HiroshimaArea
+91707dce-2add-4fb0-a9ea-f1b2d2c19056,7135001@HiroshimaArea,,3,,広島駅方面,光南町@HiroshimaArea
+8b1ee98a-8eb3-4e6f-8321-1e3c36c10212,7135002@HiroshimaArea,,3,,吉島方面,光南町@HiroshimaArea
+a0b5daaf-e5fa-4dc8-ae29-a08ca7949f84,7137001@HiroshimaArea,,3,,洋光台方面,鹿籠@HiroshimaArea
+e7068829-b891-42df-8ec9-3c3eba7a09e8,7137002@HiroshimaArea,,3,,八丁堀方面,鹿籠@HiroshimaArea
+54cf1879-8f19-4f47-b3df-e5f2d772cb23,7140001@HiroshimaArea,,3,,広島方面,西善寺前@HiroshimaArea
+7f1db92a-a7bc-403d-88ea-c3253bc13c40,7140002@HiroshimaArea,,3,,小河原車庫方面,西善寺前@HiroshimaArea
+25c01248-8e05-477e-b30d-6f51a863d9d4,7141001@HiroshimaArea,,3,,広島駅方面,堺町@HiroshimaArea
+38959fb0-1852-4ea5-9972-0d3c852c0694,7141002@HiroshimaArea,,3,,井口車庫方面,堺町@HiroshimaArea
+e0db2f90-1ebc-445e-a9b6-ce113fc4fce4,7142001@HiroshimaArea,,3,,広島方面,五月ヶ丘@HiroshimaArea
+5405e774-ecfa-4a2c-9b10-0d0b707a815c,7142002@HiroshimaArea,,3,,小河原車庫方面,五月ヶ丘@HiroshimaArea
+072ec367-9e24-46e9-baa9-e45c55c33aea,7143001@HiroshimaArea,,3,,広島駅方面,サンプラザ前@HiroshimaArea
+c2dbdb87-7765-41a3-aba5-1edbb04d2b49,7143002@HiroshimaArea,,3,,井口車庫方面,サンプラザ前@HiroshimaArea
+0a82e601-5fd7-4685-97cc-785d83d2d4fc,7144001@HiroshimaArea,,3,,広島方面,三本松@HiroshimaArea
+806715c8-6b22-4a67-9341-829b8bc4460f,7144002@HiroshimaArea,,3,,温品方面,三本松@HiroshimaArea
+d8a26d76-cfd3-42fc-b82c-7add7dafeb92,7146001@HiroshimaArea,,3,,広島駅方面,シーサイド病院入口@HiroshimaArea
+41938a77-82ec-4f31-9c42-b2c0211dc291,7146002@HiroshimaArea,,3,,宇品方面,シーサイド病院入口@HiroshimaArea
+e1302af9-b8fa-4121-8bee-afba43fd4e5a,7148001@HiroshimaArea,,3,,広島駅方面,地蔵堂前@HiroshimaArea
+4e63d5ad-6f00-41fc-8b4c-95930594c0d2,7148002@HiroshimaArea,,3,,三滝観音方面,地蔵堂前@HiroshimaArea
+9d83eaee-1a30-465b-ad44-7efa423303f0,7151001@HiroshimaArea,,3,,広島駅方面,市民病院前@HiroshimaArea
+40fe94f7-fe54-455b-9877-9009f19560bd,7154001@HiroshimaArea,,3,,広島方面,下氏の原@HiroshimaArea
+4f61eaf8-9938-4bca-b8a4-fc72dc67c1c4,7154002@HiroshimaArea,,3,,小河原車庫方面,下氏の原@HiroshimaArea
+895cdd3e-205b-46aa-9db6-ec4986fb805b,7156001@HiroshimaArea,,3,,広島方面,下条@HiroshimaArea
+89062cf3-9b80-4dd5-903d-bf7fc8381100,7156002@HiroshimaArea,,3,,小河原車庫方面,下条@HiroshimaArea
+bf946bff-b303-4861-a844-4f36b818bff1,7158001@HiroshimaArea,,3,,広島方面,下温品@HiroshimaArea
+7e893f22-57a9-4858-9184-71ada42284f2,7158002@HiroshimaArea,,3,,小河原車庫方面,下温品@HiroshimaArea
+75cfcece-11f9-4556-b2a6-a27334caccbf,7159003@HiroshimaArea,,3,,矢賀・広島方面,下温品@HiroshimaArea
+da83eaf0-780f-4b35-b058-e985dbc239db,7160002@HiroshimaArea,,3,,小河原車庫方面,下温品ー出@HiroshimaArea
+475cfc6d-c7a4-4c0d-99fb-a6abb76f3066,7162001@HiroshimaArea,,3,,広島駅方面,修道学園入口@HiroshimaArea
+4b8d98fb-4685-4cf2-8481-c20012ec8c30,7162002@HiroshimaArea,,3,,アルパーク方面,修道学園入口@HiroshimaArea
+f2646dc7-16a8-4ae9-a093-1f5743d1260b,7163001@HiroshimaArea,,3,,26号旭町方面,縮景園入口@HiroshimaArea
+5a734cf3-ec2a-444d-8fdb-c5764f660138,7165001@HiroshimaArea,,3,,広島港方面,商工センター一丁目@HiroshimaArea
+2cbe797b-7891-40b6-b3ae-3d24e046e51f,7165002@HiroshimaArea,,3,,井口車庫方面,商工センター一丁目@HiroshimaArea
+9afe1eb1-1a53-4779-aa4f-7410c780db4d,7167001@HiroshimaArea,,3,,,商工センター二丁目@HiroshimaArea
+678e7ffe-3de0-40cd-9d63-c09bbbc41d82,7169001@HiroshimaArea,,3,,広島駅方面,商工センター三丁目@HiroshimaArea
+bed46cc8-fe19-4430-ac48-e4a582314d14,7169002@HiroshimaArea,,3,,井口車庫方面,商工センター三丁目@HiroshimaArea
+54d2311c-21d0-4a76-a071-0945cf9a6dab,7171001@HiroshimaArea,,3,,広島駅方面,商工センター六丁目@HiroshimaArea
+35d298d4-a02b-4a4b-9d72-18c65cd739fd,7171002@HiroshimaArea,,3,,井口車庫方面,商工センター六丁目@HiroshimaArea
+70bdcdd0-0393-4a2c-8ae5-f059d05e4567,7172001@HiroshimaArea,,3,,広島駅方面,商工センター七丁目@HiroshimaArea
+4b608d88-3a09-4831-8776-08b4073eb142,7172002@HiroshimaArea,,3,,井口車庫方面,商工センター七丁目@HiroshimaArea
+50bbc046-2bca-4f39-a813-4e0264441a3a,7174001@HiroshimaArea,,3,,広島駅方面,商工センター入口@HiroshimaArea
+4b708595-09d9-49af-b79b-3bc77ecbe217,7174002@HiroshimaArea,,3,,井口車庫方面,商工センター入口@HiroshimaArea
+e9a1dc90-d918-42e2-b1ba-ef414da30c84,7176001@HiroshimaArea,,3,,広島駅方面,広島県情報プラザ前@HiroshimaArea
+db09ef16-70ec-4dee-8f6a-f13add5cd221,7176002@HiroshimaArea,,3,,プリンスホテル方面,広島県情報プラザ前@HiroshimaArea
+76e2f7c1-4425-4434-b336-41c7e7a771d8,7196001@HiroshimaArea,,3,,温品方面,住田橋@HiroshimaArea
+9d57ae96-5293-44a7-875e-830962338e58,7196002@HiroshimaArea,,3,,地区センター方面,住田橋@HiroshimaArea
+620fcf7c-7927-4880-b78d-048569631012,7197001@HiroshimaArea,,3,,温品方面,住田橋北@HiroshimaArea
+8e4ade06-8d46-467c-8079-905ec17cb79b,7197002@HiroshimaArea,,3,,地区センター方面,住田橋北@HiroshimaArea
+647ab8d8-b29e-46e2-b456-18284e2be68a,7198001@HiroshimaArea,,3,,広島駅方面,住吉町@HiroshimaArea
+8c42ed4a-e61a-4d95-9ddc-0ceecf12d632,7198002@HiroshimaArea,,3,,吉島方面,住吉町@HiroshimaArea
+c2a370ca-d4f1-429d-b350-7fcd9db0858b,7199001@HiroshimaArea,,3,,広島駅方面,誓願寺前@HiroshimaArea
+5eed9aea-16c0-46db-963f-d28b847a97f2,7199002@HiroshimaArea,,3,,三滝観音方面,誓願寺前@HiroshimaArea
+8eb7c0ab-4189-47ec-9c13-8ba6bf8c68af,7202001@HiroshimaArea,,3,,広島駅方面,千田廟公園@HiroshimaArea
+7909b760-a029-4049-acf2-6f0476fbee67,7202002@HiroshimaArea,,3,,宇品方面,千田廟公園@HiroshimaArea
+72918a69-b0c5-4c2a-aeb4-275ad7dcc325,7203001@HiroshimaArea,,3,,広島方面,惣の谷@HiroshimaArea
+d8bcb70f-5658-4637-a239-233daa5b7244,7203002@HiroshimaArea,,3,,小河原車庫方面,惣の谷@HiroshimaArea
+ffb107cf-87c1-4324-9804-ff2f8151b774,7204001@HiroshimaArea,,3,,広島方面,第一病院前@HiroshimaArea
+f5c2e230-fc31-47d5-b439-316524297659,7204002@HiroshimaArea,,3,,戸坂東浄方面,第一病院前@HiroshimaArea
+b4f54ec4-824f-474f-8419-85068552214a,7208002@HiroshimaArea,,3,,広島港方面,鷹野橋@HiroshimaArea
+77615db9-3602-4adb-a022-42bfdb5355bc,7209001@HiroshimaArea,,3,,広島駅方面,鷹野橋商店街@HiroshimaArea
+d2f9dc77-96f7-49fd-bcf7-74708975788c,7209002@HiroshimaArea,,3,,プリンスホテル方面,鷹野橋商店街@HiroshimaArea
+7b314070-e354-4b79-ae71-fed1dbb9317e,7212001@HiroshimaArea,,3,,広島駅方面,宝町北@HiroshimaArea
+e6928426-3986-4a49-a6d0-19c560725388,7212002@HiroshimaArea,,3,,アルパーク方面,宝町北@HiroshimaArea
+ee7808c2-93f0-443e-ba40-e8c562e9e316,7215001@HiroshimaArea,,3,,八丁堀・広島駅方面,竹屋町西@HiroshimaArea
+c7c8d913-aed4-4e1c-8ab7-8c45b4dd060d,7215002@HiroshimaArea,,3,,アルパーク・大学病院方面,竹屋町西@HiroshimaArea
+fa33ce7b-d2c8-42a7-a258-673319dbf1b7,7228001@HiroshimaArea,,3,,広島方面,鶴江橋@HiroshimaArea
+45819f8b-7bdc-4edd-bdb3-691b3845d378,7232501@HiroshimaArea,,3,,広島駅方面,出汐二丁目@HiroshimaArea
+443e355e-1326-4183-ae16-df84baf853d5,7232502@HiroshimaArea,,3,,広島港・宇品IC方面,出汐二丁目@HiroshimaArea
+fb5929a9-e5cd-4e2e-890a-0da3f725df63,7239001@HiroshimaArea,,3,,広島方面,寺分@HiroshimaArea
+26969824-e636-4073-9562-029eec362b45,7239002@HiroshimaArea,,3,,小河原車庫方面,寺分@HiroshimaArea
+b9a630f2-efae-4831-b8a3-895ff6cfb485,7240001@HiroshimaArea,,3,,広島方面,寺分北@HiroshimaArea
+57a13fa1-52d4-4cb3-82f1-c7a83c0e7d0e,7240002@HiroshimaArea,,3,,小河原車庫方面,寺分北@HiroshimaArea
+c2fd3334-950d-4d12-880f-aff002b5d9a9,7247001@HiroshimaArea,,3,,広島方面,東浄ショッピングセンター前@HiroshimaArea
+8ca2d9a9-b36a-4816-9d8e-84f2287d4d2b,7247002@HiroshimaArea,,3,,戸坂東浄方面,東浄ショッピングセンター前@HiroshimaArea
+a3e7a987-fb87-4f7d-8397-8dcf20c46aad,7250001@HiroshimaArea,,3,,広島方面,豊芝入口@HiroshimaArea
+e3ca8260-65cb-4bb2-ab1b-7e546ca4a94b,7250002@HiroshimaArea,,3,,小河原車庫方面,豊芝入口@HiroshimaArea
+4cd3339d-9600-4242-8b38-8eccf161788d,7253001@HiroshimaArea,,3,,広島駅方面,中島小学校前@HiroshimaArea
+b6bcd3fe-aad6-4cc7-b540-fe707f5ac8fd,7253002@HiroshimaArea,,3,,吉島方面,中島小学校前@HiroshimaArea
+e187a1ec-6cd4-4c53-bac1-a17cb82de8fc,7256001@HiroshimaArea,,3,,広島方面,中山上町@HiroshimaArea
+855dd345-d780-4bf1-a0e3-3e07846eac94,7256002@HiroshimaArea,,3,,戸坂東浄方面,中山上町@HiroshimaArea
+d27f67b9-68bc-443d-aab5-624692d8e9d7,7257001@HiroshimaArea,,3,,広島方面,中山北町@HiroshimaArea
+8715cd09-c2df-433c-8991-d53a50ab07db,7257002@HiroshimaArea,,3,,戸坂東浄方面,中山北町@HiroshimaArea
+176a59c3-1b67-4d3d-87f0-ae60f66920fb,7259001@HiroshimaArea,,3,,広島方面,中山小学校前@HiroshimaArea
+44d67e87-d561-459c-ac7d-8351d8631a11,7259002@HiroshimaArea,,3,,小河原車庫方面,中山小学校前@HiroshimaArea
+01354789-0205-4557-b285-37a7717f8ed4,7260001@HiroshimaArea,,3,,広島方面,中山中町@HiroshimaArea
+892ea9e6-c555-4c6b-a346-683004680c61,7260002@HiroshimaArea,,3,,戸坂東浄方面,中山中町@HiroshimaArea
+eefc8c58-3979-4191-9329-776da9bcba05,7261001@HiroshimaArea,,3,,広島方面,中山西@HiroshimaArea
+4fee31f8-a132-470c-b18a-1fd857b401e0,7261002@HiroshimaArea,,3,,戸坂東浄方面,中山西@HiroshimaArea
+e0e8c194-0ce5-4db7-90df-cfa511095f94,7263001@HiroshimaArea,,3,,広島方面,中山踏切@HiroshimaArea
+af40865f-64bb-495e-9c44-91df95030a08,7263002@HiroshimaArea,,3,,戸坂東浄方面,中山踏切@HiroshimaArea
+65b8fea2-a110-4240-95a8-67ec6e5889cb,7263003@HiroshimaArea,,3,,広島バスセンター方面,中山踏切@HiroshimaArea
+7bda7f76-ab73-4339-b82b-39f282243404,7263004@HiroshimaArea,,3,,小河原車庫方面,中山踏切@HiroshimaArea
+4b1cade0-5d6a-4478-b789-cadebfc388e3,7266001@HiroshimaArea,,3,,広島方面,中山保育園前@HiroshimaArea
+b75a9dfa-a207-437b-8672-64420ade9d85,7266002@HiroshimaArea,,3,,戸坂東浄方面,中山保育園前@HiroshimaArea
+9fc09511-7868-42ba-869b-61c790802dc7,7272001@HiroshimaArea,,3,,広島方面,西の畑@HiroshimaArea
+ba0df841-d8b5-4065-9cf1-9c081229fe97,7272002@HiroshimaArea,,3,,小河原車庫方面,西の畑@HiroshimaArea
+85d2afb0-f630-4005-aa04-1609b8f26f1f,7273001@HiroshimaArea,,3,,大学病院方面,西白島@HiroshimaArea
+0be81a8e-94af-4dd2-a6a8-b093b01a3112,7273002@HiroshimaArea,,3,,横川駅方面,西白島@HiroshimaArea
+b2a34465-dd6e-4e3f-a5cb-ac9439509f73,4604401@HiroshimaArea,,3,,歩道橋　5・27・29号広島駅方面,常盤橋東@HiroshimaArea
+fc7c7e80-3a37-4f73-8fa4-6fb4a4525960,7276001@HiroshimaArea,,3,,八丁堀・広島駅方面,日赤病院前@HiroshimaArea
+dc6062d5-0369-4882-887c-da0e2eecb7b9,7276002@HiroshimaArea,,3,,宇品・大学病院方面,日赤病院前@HiroshimaArea
+49f52c7f-ed88-4feb-aa78-cc736edbfe75,7278001@HiroshimaArea,,3,,広島方面,温品四丁目@HiroshimaArea
+d5835188-7a5f-402b-9640-1f44f985674b,7278002@HiroshimaArea,,3,,小河原車庫方面,温品四丁目@HiroshimaArea
+df20429f-c6d3-4d09-abb1-9846370aa94a,7279001@HiroshimaArea,,3,,広島方面,温品口@HiroshimaArea
+63620ca0-4985-48da-9e2b-82a9df10516f,7279002@HiroshimaArea,,3,,小河原車庫方面,温品口@HiroshimaArea
+e12f7b86-2e7d-4c28-a2ff-4e8b2fee7d1f,7280001@HiroshimaArea,,3,,広島方面,温品小学校前@HiroshimaArea
+e42752a4-25fb-4796-b72f-d1a89bd4883d,7280002@HiroshimaArea,,3,,小河原車庫方面,温品小学校前@HiroshimaArea
+b48d605f-1fda-48c4-9ccc-7325443f326f,7281001@HiroshimaArea,,3,,広島方面,登石@HiroshimaArea
+5659b502-3a61-47a3-9e85-4b31a9ec34cf,7281002@HiroshimaArea,,3,,小河原車庫方面,登石@HiroshimaArea
+630589c2-289e-48e7-a186-419300e3f6cb,7282001@HiroshimaArea,,3,,広島駅方面,幟町@HiroshimaArea
+c8c04a97-342f-4304-9dd4-0c3664df7825,7285001@HiroshimaArea,,3,,26号旭町方面,幟町中学校前@HiroshimaArea
+38983138-6ca1-4c01-ab5f-ae96a811c616,7287001@HiroshimaArea,,3,,広島駅方面,羽衣町@HiroshimaArea
+ee3ae5b1-7034-49f2-bfa9-c057bf4df0a2,7287002@HiroshimaArea,,3,,吉島方面,羽衣町@HiroshimaArea
+df86caa4-ef00-4c00-ae8d-ba977b263025,7300001@HiroshimaArea,,3,,広島駅方面,保健所東@HiroshimaArea
+e7dc2c20-d7a3-499a-85e5-671222ca1645,7300002@HiroshimaArea,,3,,アルパーク方面,保健所東@HiroshimaArea
+54d3d293-5555-470f-8e6b-07dc6685d444,7301001@HiroshimaArea,,3,,大学病院・広島駅方面,東翠町@HiroshimaArea
+06dafdde-6987-4877-bc07-ed3788493a87,7301002@HiroshimaArea,,3,,県病院・日赤病院・新幹線口方面,東翠町@HiroshimaArea
+c81116c5-f30c-486c-8229-8bf4f823bc3f,7301502@HiroshimaArea,,3,,県立大学方面,比治山下@HiroshimaArea
+f0507c2a-0c7c-4cd7-8359-7e5d8159b353,7318501@HiroshimaArea,,3,,広島駅方面,市立広島特別支援学校@HiroshimaArea
+e4fb4bd7-0bf6-4968-a4f9-3285d7753e71,447318501@HiroshimaArea,,3,,降り場,市立広島特別支援学校@HiroshimaArea
+8ce862c9-b05c-4570-85dc-dc4c68dc633d,7319001@HiroshimaArea,,3,,広島駅方面,広商入口@HiroshimaArea
+b5ec3614-38af-4fb4-8109-9c76eb71439c,7319002@HiroshimaArea,,3,,アルパーク方面,広商入口@HiroshimaArea
+2cd958a7-2f04-4511-a32a-4159c9841be7,7325001@HiroshimaArea,,3,,八丁堀・広島駅方面,広電本社前@HiroshimaArea
+240cabc3-b6b5-41fe-9d33-cc2003b3cd7b,7325002@HiroshimaArea,,3,,宇品・大学病院方面,広電本社前@HiroshimaArea
+49eeddaf-a707-44f6-96cf-2b02270a81d8,7327001@HiroshimaArea,,3,,広島方面,福木小学校前@HiroshimaArea
+ac36be37-e761-4973-a94f-32ff4ad187d3,7327002@HiroshimaArea,,3,,小河原車庫方面,福木小学校前@HiroshimaArea
+9e17664b-7fd3-49c1-83ce-ffc9d535cd46,7328001@HiroshimaArea,,3,,広島駅方面,日赤病院西@HiroshimaArea
+bc471e75-d674-4cc6-a3bc-10173cb13779,7328002@HiroshimaArea,,3,,プリンスホテル方面,日赤病院西@HiroshimaArea
+b68f8dd3-f7f1-4be9-b2e7-b01cda13f9b8,7329001@HiroshimaArea,,3,,広島駅方面,福島町@HiroshimaArea
+790c7dde-49c3-473b-9f8e-86b324b3f000,7329002@HiroshimaArea,,3,,井口車庫方面,福島町@HiroshimaArea
+c610e20e-0c24-47a3-94b2-05ca7a463df5,7330001@HiroshimaArea,,3,,広島方面,福田@HiroshimaArea
+748b244b-92dc-416e-ba58-2240ee2e04d7,7330002@HiroshimaArea,,3,,小河原車庫方面,福田@HiroshimaArea
+4a647d73-356a-40c9-945c-f7790cbb2100,7339001@HiroshimaArea,,3,,広島駅方面,グランドプリンスホテル広島@HiroshimaArea
+93e9930e-d276-4e9c-aeb2-674784c29f8a,447339001@HiroshimaArea,,3,,降り場,グランドプリンスホテル広島@HiroshimaArea
+a8bf3a4b-e4da-4050-b6f9-3dd75bb56e75,7340001@HiroshimaArea,,3,,広島駅方面,ベイシティ宇品@HiroshimaArea
+8dae3706-2aaa-4e9d-8dd9-c362f2dbc29b,7340002@HiroshimaArea,,3,,プリンスホテル方面,ベイシティ宇品@HiroshimaArea
+a338d9ba-9c68-4810-8f97-ae47770f0084,7341001@HiroshimaArea,,3,,広島駅方面,平和記念公園@HiroshimaArea
+77ea1b26-8fef-4822-b1b5-78291515256e,7341002@HiroshimaArea,,3,,吉島方面,平和記念公園@HiroshimaArea
+5b154092-15a6-47f4-b9f8-5366f4f1612f,7343001@HiroshimaArea,,3,,広島方面,戸坂新町二丁目@HiroshimaArea
+d6583d85-a2a5-4b04-b94d-be95f2392c7d,7343002@HiroshimaArea,,3,,戸坂東浄方面,戸坂新町二丁目@HiroshimaArea
+98241909-b1d4-48d3-a754-2590a4b6e6c1,7345001@HiroshimaArea,,3,,広島方面,戸坂東浄団地@HiroshimaArea
+95b8c72d-3bb7-460b-8fa9-a5639358e36d,447345001@HiroshimaArea,,3,,降り場,戸坂東浄団地@HiroshimaArea
+1a117052-70a5-4903-9e78-220cfedfa29b,7346001@HiroshimaArea,,3,,広島駅方面,別院前@HiroshimaArea
+1b46d8fa-5465-485e-a1b5-4e8a9767558c,7346002@HiroshimaArea,,3,,祗園大橋方面,別院前@HiroshimaArea
+414a1d94-8d15-4c83-a6e5-5aa28bd7f8dc,7347001@HiroshimaArea,,3,,広島駅方面,放送会館前@HiroshimaArea
+119a34af-7a5a-48b7-bf1f-6fdfdb2eb19e,7347002@HiroshimaArea,,3,,吉島・井口方面,放送会館前@HiroshimaArea
+be5c2016-2a27-4e71-bbeb-614562768d1e,7361001@HiroshimaArea,,3,,広島方面,万休寺前@HiroshimaArea
+0d784040-b826-4c16-b396-edbd8f6ead20,7361002@HiroshimaArea,,3,,小河原車庫方面,万休寺前@HiroshimaArea
+98775b9e-8669-4ae4-950a-a7d97b163ac9,7364001@HiroshimaArea,,3,,広島駅方面,三篠北町@HiroshimaArea
+e0a38145-1b44-478e-8e5e-4043a159e745,7365001@HiroshimaArea,,3,,広島駅方面,三滝駅入口@HiroshimaArea
+e392aa2d-7201-476a-9bda-f77ce0a358a0,7365002@HiroshimaArea,,3,,三滝観音方面,三滝駅入口@HiroshimaArea
+1f033d68-19da-4092-82fc-cb0e37b59195,7366001@HiroshimaArea,,3,,広島駅方面,三滝大橋@HiroshimaArea
+a91497cd-f36c-4385-9589-5cfdb876b3c6,7366002@HiroshimaArea,,3,,三滝観音方面,三滝大橋@HiroshimaArea
+1e0fda58-5da2-425a-9a61-a0589225d719,7367001@HiroshimaArea,,3,,広島駅方面,三滝観音@HiroshimaArea
+05f70dc8-c84b-4647-8b3b-87439c9ac3a0,447367001@HiroshimaArea,,3,,降り場,三滝観音@HiroshimaArea
+1a4d6e01-c237-403d-bc3d-c17e52374a3f,7368001@HiroshimaArea,,3,,広島駅方面,三滝町@HiroshimaArea
+20fc85f9-79c4-4c49-9177-9c500db3adcf,7368002@HiroshimaArea,,3,,三滝観音方面,三滝町@HiroshimaArea
+20abe6c1-075e-4174-a454-3852d6dcd0ed,7369001@HiroshimaArea,,3,,広島駅方面,緑大橋西詰@HiroshimaArea
+e1c8a284-6eed-4684-8a35-3c340dbf2cb0,7369002@HiroshimaArea,,3,,井口車庫方面,緑大橋西詰@HiroshimaArea
+3add98ff-7283-4df7-ac32-b0e343f45e2a,7369502@HiroshimaArea,,3,,県立大学方面,翠二丁目@HiroshimaArea
+4dc7d206-861a-4303-9516-b5a012cd3f2a,7371002@HiroshimaArea,,3,,プリンスホテル方面,南千田西町@HiroshimaArea
+23247aff-32a0-4bb5-ac1c-e4f1619aec93,7372001@HiroshimaArea,,3,,広島駅方面,南鷹ノ橋@HiroshimaArea
+6649e1fc-7b57-4959-982c-69957aaa1389,7372002@HiroshimaArea,,3,,宇品方面,南鷹ノ橋@HiroshimaArea
+81be1d5e-db0c-4ffd-980a-1ba3fc3fcde5,7375501@HiroshimaArea,,3,,広島駅方面,皆実町四丁目@HiroshimaArea
+7e9e12b0-1378-481c-9c0b-53dc29770d5b,7375502@HiroshimaArea,,3,,県立大学方面,皆実町四丁目@HiroshimaArea
+0c6bce3b-4177-49fb-bea2-1399c139d644,7376502@HiroshimaArea,,3,,県立大学方面,皆実町五丁目@HiroshimaArea
+f6df2aa7-141b-4115-802f-d768c16d3364,7378001@HiroshimaArea,,3,,広島駅方面,南吉島@HiroshimaArea
+517b36d8-362f-4aa4-9f8d-5f815762ecff,7378002@HiroshimaArea,,3,,吉島方面,南吉島@HiroshimaArea
+e921bc37-119f-41ca-990c-16f4fe8093b6,7379001@HiroshimaArea,,3,,広島駅方面,都町@HiroshimaArea
+23f33c06-cc37-471b-a4cb-dc9472c07080,7379002@HiroshimaArea,,3,,井口車庫方面,都町@HiroshimaArea
+c15c3511-880a-446b-a15f-4d0f3f3087ca,7380001@HiroshimaArea,,3,,広島駅方面,御幸一丁目@HiroshimaArea
+20752389-1208-4992-8d5f-b24c6111627f,7380002@HiroshimaArea,,3,,宇品方面,御幸一丁目@HiroshimaArea
+0cdae6d1-8e90-4f37-903a-01e3f4859be5,7381001@HiroshimaArea,,3,,広島駅方面,御幸二丁目@HiroshimaArea
+baf571f6-22cc-4acd-9781-97da1968a6ab,7381002@HiroshimaArea,,3,,宇品方面,御幸二丁目@HiroshimaArea
+faf3a69b-272b-4baf-b7d1-ac31a51a3598,7382001@HiroshimaArea,,3,,広島駅方面,御幸二丁目南@HiroshimaArea
+91f628b5-16ad-4933-9dea-48376d0fdd33,7382002@HiroshimaArea,,3,,宇品方面,御幸二丁目南@HiroshimaArea
+ce199239-e5c5-427c-a60e-b64c659ae083,7383001@HiroshimaArea,,3,,広島駅方面,御幸三丁目@HiroshimaArea
+72d1d1a8-4aa9-45d3-9783-9813540ff363,7383002@HiroshimaArea,,3,,宇品方面,御幸三丁目@HiroshimaArea
+59be9071-943c-483e-9f46-422f9a6cfd16,7384001@HiroshimaArea,,3,,広島駅方面,御幸四丁目@HiroshimaArea
+7aea800f-7188-4bbc-9e74-8a7fdea94df5,7384002@HiroshimaArea,,3,,宇品方面,御幸四丁目@HiroshimaArea
+ce1c81ef-54db-4c4a-aaff-276593b03a42,7385001@HiroshimaArea,,3,,広島駅方面,御幸五丁目@HiroshimaArea
+9df3ab02-c47f-4a8d-a4da-b74add5050dd,7385002@HiroshimaArea,,3,,宇品方面,御幸五丁目@HiroshimaArea
+426b79b8-290d-4cdb-b219-e204a12aff97,7389001@HiroshimaArea,,3,,広島駅方面,御幸松@HiroshimaArea
+0f0bbfdb-54c1-4d84-9507-b076f0419b49,7389002@HiroshimaArea,,3,,宇品方面,御幸松@HiroshimaArea
+ecc0f389-8e3d-4197-90f6-f5b3a54bef79,447390000@HiroshimaArea,,3,,降り場,向洋大原@HiroshimaArea
+1eb53fb9-9cce-4813-83fd-894a74d14d28,7390002@HiroshimaArea,,3,,宇品方面,向洋大原@HiroshimaArea
+e56e8f31-e2fd-4ffd-9384-ee515a8af5f0,7394001@HiroshimaArea,,3,,広島駅方面,元宇品北@HiroshimaArea
+a6037659-5e9e-404d-82ef-001d247ff0bd,7394002@HiroshimaArea,,3,,宇品方面,元宇品北@HiroshimaArea
+816e3345-8124-4a7d-ad95-739cb9c83954,7395001@HiroshimaArea,,3,,広島駅方面,元宇品@HiroshimaArea
+0fae385b-3a0a-4355-8a33-f19d23438ee8,7395002@HiroshimaArea,,3,,宇品方面,元宇品@HiroshimaArea
+82e93027-43ba-4b65-a6d1-2c10f38b8913,7398001@HiroshimaArea,,3,,広島駅方面,元宇品口@HiroshimaArea
+ad5d098c-17fa-41df-961d-0a8c1b8d4615,7398002@HiroshimaArea,,3,,宇品方面,元宇品口@HiroshimaArea
+6f0b9b98-b42d-4cd2-bfd6-ea996bfe21da,7399001@HiroshimaArea,,3,,広島駅方面,元宇品小学校下@HiroshimaArea
+b808af00-5a09-4d0d-9bb0-d4fcda854dfb,7399002@HiroshimaArea,,3,,宇品方面,元宇品小学校下@HiroshimaArea
+d76e64d9-ac92-4d52-abb5-03f012a9e310,7401001@HiroshimaArea,,3,,横川駅方面,基町小学校前@HiroshimaArea
+bc24ade0-a653-472b-bfd7-a27a333b2a1f,7401002@HiroshimaArea,,3,,大学病院方面,基町小学校前@HiroshimaArea
+64c6e8cc-a6b4-4d0f-b907-969a696c9538,7402001@HiroshimaArea,,3,,横川駅方面,基町ショッピングセンター前@HiroshimaArea
+2abd63fc-03f7-43cd-b845-d93b46c2441d,7402002@HiroshimaArea,,3,,大学病院方面,基町ショッピングセンター前@HiroshimaArea
+f0586d66-b768-4a0a-ba45-4fd134a2f7da,7404001@HiroshimaArea,,3,,広島方面,矢賀四丁目@HiroshimaArea
+6552997d-2422-4057-8900-340adfc93121,7420001@HiroshimaArea,,3,,広島駅方面,郵便局前@HiroshimaArea
+11def315-b1ee-452c-8aa2-d840dd629b11,7420002@HiroshimaArea,,3,,宇品方面,郵便局前@HiroshimaArea
+e0c9b9ed-a196-4ff3-95b9-0f1a91b6872d,7423001@HiroshimaArea,,3,,洋光台方面,洋光台団地入口@HiroshimaArea
+afe8329e-5996-4840-8aa8-16bc2a8a837d,7423002@HiroshimaArea,,3,,八丁堀方面,洋光台団地入口@HiroshimaArea
+0659e135-3de7-4e14-b6ce-4c28e7c5f498,7424001@HiroshimaArea,,3,,洋光台方面,洋光台団地北@HiroshimaArea
+c24fdff7-9812-4921-91ff-193dee5255f4,7424002@HiroshimaArea,,3,,八丁堀方面,洋光台団地北@HiroshimaArea
+23975acf-5da5-4828-a5df-75fbeee82c8b,7425001@HiroshimaArea,,3,,洋光台方面,洋光台団地@HiroshimaArea
+c35c1675-3dc6-412d-850e-7240c553e1a2,7425002@HiroshimaArea,,3,,八丁堀方面,洋光台団地@HiroshimaArea
+c842af45-6a33-4add-8d83-6f5b0ba1d10a,7426001@HiroshimaArea,,3,,洋光台方面,洋光台団地中@HiroshimaArea
+52392055-2856-497b-bc7a-c4399c30866e,7426002@HiroshimaArea,,3,,八丁堀方面,洋光台団地中@HiroshimaArea
+83e3f2f1-291e-4469-9900-d4e0ff1822e0,7432001@HiroshimaArea,,3,,広島方面,横見谷@HiroshimaArea
+eed4bb14-a815-4db6-9787-621986548909,7432002@HiroshimaArea,,3,,小河原車庫方面,横見谷@HiroshimaArea
+fc6badd1-25a1-4bc8-993c-2f95c66dcaf6,7433001@HiroshimaArea,,3,,広島駅方面,吉島一丁目@HiroshimaArea
+f6db507a-b568-4868-b174-49606e87663c,7433002@HiroshimaArea,,3,,吉島方面,吉島一丁目@HiroshimaArea
+399f550d-48c5-45b6-a9f9-adfc07d6e5ef,7434001@HiroshimaArea,,3,,広島駅方面,吉島二丁目@HiroshimaArea
+3430222c-aa9f-400b-a6f6-e2dd73934cbc,7434002@HiroshimaArea,,3,,吉島方面,吉島二丁目@HiroshimaArea
+d3356599-1e80-4a6b-a58f-af26d27ef13e,7435001@HiroshimaArea,,3,,広島駅方面,吉島営業所@HiroshimaArea
+4b955b9f-72f8-47e1-aec4-61405d478fd2,447435001@HiroshimaArea,,3,,降り場,吉島営業所@HiroshimaArea
+8b3054f6-22a4-4142-ac17-a6f125d5db63,7436001@HiroshimaArea,,3,,広島駅方面,吉島町@HiroshimaArea
+2c7957c6-02b8-4dc5-af9f-f45dc4aa4c5e,7436002@HiroshimaArea,,3,,吉島方面,吉島町@HiroshimaArea
+134f428b-c0df-40fd-8cfa-3aa514d89dbf,7437001@HiroshimaArea,,3,,広島駅方面,吉島西@HiroshimaArea
+2f18ee7d-db76-49ca-8468-738feb420a19,7437002@HiroshimaArea,,3,,アルパーク方面,吉島西@HiroshimaArea
+4ab3b3a4-b6df-474d-9277-be4c96428460,7438001@HiroshimaArea,,3,,広島駅方面,吉島東@HiroshimaArea
+8ff61f09-8b01-47e2-8a08-f5c4effbdfe5,7439001@HiroshimaArea,,3,,広島駅方面,吉島病院@HiroshimaArea
+9a8354a6-2317-48a0-b1d7-f63e492c06e2,447439001@HiroshimaArea,,3,,降り場,吉島病院@HiroshimaArea
+0496290c-7fdd-4a7a-9ae7-1c8c2906c816,7439501@HiroshimaArea,,3,,広島駅方面,吉島アパート前@HiroshimaArea
+657069ae-aac8-4bf8-8c92-b79c685a72bf,7439502@HiroshimaArea,,3,,吉島方面,吉島アパート前@HiroshimaArea
+694164ab-0ed5-449f-888c-759d3f89c137,7440001@HiroshimaArea,,3,,広島駅方面,吉島病院入口@HiroshimaArea
+06f3b54d-7665-4e52-9ccc-a9c5ae2a9c73,7440002@HiroshimaArea,,3,,吉島方面,吉島病院入口@HiroshimaArea
+8e96fa47-4f27-4259-bf2b-a97071215ab9,7441001@HiroshimaArea,,3,,広島駅方面,広島南特別支援学校前@HiroshimaArea
+b2e40649-1a78-4d61-b0d2-810ad5d3a965,7441002@HiroshimaArea,,3,,吉島方面,広島南特別支援学校前@HiroshimaArea
+4c7cad92-32ac-4b43-8519-ba4bec55e4e6,7099102@HiroshimaArea,,3,,アルパーク方面,ＬＥＣＴ@HiroshimaArea
+0ab3a09e-dcda-49e5-866f-8ac2a14bd077,447499101@HiroshimaArea,,3,,降り場,LECT@HiroshimaArea
+4154be5c-6fdc-48ef-8eb9-e5aac5a50458,5162302@HiroshimaArea,,3,,大学病院・広島駅方面,翠町第二公園前@HiroshimaArea
+23b099b8-afdf-4e52-a43b-6cc7664ba40d,5162301@HiroshimaArea,,3,,県病院・日赤病院・新幹線口方面,翠町第二公園前@HiroshimaArea
+c6d47ac9-7aa7-4b4d-8c3d-f94429b87827,7034301@HiroshimaArea,,3,,広島駅方面,宇品海岸三丁目@HiroshimaArea
+7ad180a9-b754-4624-b13a-99de1e179630,7034302@HiroshimaArea,,3,,広島港方面,宇品海岸三丁目@HiroshimaArea
+bef7d730-1403-4f77-bb1c-021529b8106a,7121501@HiroshimaArea,,3,,広島駅方面,港湾合同庁舎前@HiroshimaArea
+54e044e6-933f-4398-8f64-fc10b7a63326,7121502@HiroshimaArea,,3,,広島港方面,港湾合同庁舎前@HiroshimaArea
+ae2b43f3-d1bd-4cf6-a4da-b52c65991aad,7115501@HiroshimaArea,,3,,広島駅方面,競輪場前@HiroshimaArea
+abff2740-20f8-4a56-be25-725cbefedb30,7115502@HiroshimaArea,,3,,広島港方面,競輪場前@HiroshimaArea
+e22bf35b-1679-443d-9dca-1db0f6c16091,7035701@HiroshimaArea,,3,,広島駅方面,宇品東五丁目@HiroshimaArea
+476bd20d-e067-4ced-9a55-f80cc1ed2f68,7035702@HiroshimaArea,,3,,広島港・宇品IC方面,宇品東五丁目@HiroshimaArea
+b79f700d-2a40-4a95-86ea-cbf049f39639,7035601@HiroshimaArea,,3,,広島駅方面,宇品東一丁目@HiroshimaArea
+6dbe9846-4241-4434-b605-650fee6afa56,7035602@HiroshimaArea,,3,,広島港方面,宇品東一丁目@HiroshimaArea
+9f50b82d-60eb-4315-8c2a-0c18bf05193a,5162202@HiroshimaArea,,3,,大学病院・広島駅方面,旭二丁目@HiroshimaArea
+93b67586-346a-4216-bb5b-30b09cb15832,5124009@HiroshimaArea,,3,9,9番のりば 22・70-74号広島駅・広島バスセンターゆき,横川駅前@HiroshimaArea
+02ff1aca-de0c-4e48-b9d3-bda90a6c16a5,5124008@HiroshimaArea,,3,8,8番のりば 22号三滝ゆき,横川駅前@HiroshimaArea
+fb77adf7-14b3-45e4-af20-2710e3917767,5124007@HiroshimaArea,,3,7,7番のりば 22号広島駅ゆき,横川駅前@HiroshimaArea
+44f0ac6a-dde2-49db-ad99-d3792e2d91f7,5124006@HiroshimaArea,,3,6,6番のりば 22・70-74号祇園・古市・可部方面,横川駅前@HiroshimaArea
+c59dbe92-2f2e-43e5-86fc-008593f32234,7504100@HiroshimaArea,,3,,向洋方面,エディオンピースウイング広島@HiroshimaArea
+c574464e-224d-45b2-ab4c-fadb65378f28,@HiroshimaArea,,1,,,エディオンピースウイング広島@HiroshimaArea
+b808d019-f8db-4cd6-87d2-33feb7550f82,7504200@HiroshimaArea,,3,,広島駅方面,広島港湾振興事務所@HiroshimaArea
+0702e5f1-ec52-46fb-accd-dfef1308d349,7504201@HiroshimaArea,,3,,降り場,広島港湾振興事務所@HiroshimaArea

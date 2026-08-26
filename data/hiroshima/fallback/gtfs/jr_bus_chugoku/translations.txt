@@ -1,0 +1,1924 @@
+﻿trans_id,lang,translation
+ＪＲバス中国,ja,ＪＲバス中国
+ＪＲバス中国,ja-Hrkt,ジェイアールバスチュウゴク
+ＪＲバス中国,en,Chugoku JR Bus Company
+西条駅,ja,西条駅
+西条駅,ja-Hrkt,さいじょうえき
+西条駅,en,Saijo Sta.
+西条駅,ko,사이조 역
+西条駅,zh-cn,西条站
+西条駅,zh-tw,西條站
+中央公園前,ja,中央公園前
+中央公園前,ja-Hrkt,ちゅうおうこうえんまえ
+中央公園前,en,Chuo Koen-mae (Chuo Park)
+中央公園前,ko,추오 공원
+中央公園前,zh-cn,中央公园前
+中央公園前,zh-tw,中央公園前
+西条昭和町,ja,西条昭和町
+西条昭和町,ja-Hrkt,さいじょうしょうわまち
+西条昭和町,en,Saijo Showamachi
+西条昭和町,ko,사이조 쇼와마치
+西条昭和町,zh-cn,西条昭和町
+西条昭和町,zh-tw,西條昭和町
+石ヶ瀬橋,ja,石ヶ瀬橋
+石ヶ瀬橋,ja-Hrkt,いしがせばし
+石ヶ瀬橋,en,Ishigasebashi
+石ヶ瀬橋,ko,이시가세바시
+石ヶ瀬橋,zh-cn,石濑桥
+石ヶ瀬橋,zh-tw,石瀨橋
+西条小学校前,ja,西条小学校前
+西条小学校前,ja-Hrkt,さいじょうしょうがっこうまえ
+西条小学校前,en,Saijo Shogakko-mae (Saijo Elementary School)
+西条小学校前,ko,사이조 초등학교 앞
+西条小学校前,zh-cn,西条小学前
+西条小学校前,zh-tw,西條小學前
+江熊,ja,江熊
+江熊,ja-Hrkt,えぐま
+江熊,en,Eguma
+江熊,ko,에구마
+江熊,zh-cn,江熊
+江熊,zh-tw,江熊
+市立中央図書館前,ja,市立中央図書館前
+市立中央図書館前,ja-Hrkt,ちゅうおうとしょかんまえ
+市立中央図書館前,en,Chuo Toshokan-mae (Chuo Library)
+市立中央図書館前,ko,중앙도서관
+市立中央図書館前,zh-cn,中央图书馆前
+市立中央図書館前,zh-tw,中央圖書館前
+中央図書館前,ja,中央図書館前
+中央図書館前,ja-Hrkt,ちゅうおうとしょかんまえ
+中央図書館前,en,Chuo Toshokan-mae (Chuo Library)
+中央図書館前,ko,중앙도서관
+中央図書館前,zh-cn,中央图书馆前
+中央図書館前,zh-tw,中央圖書館前
+鏡山公園入口,ja,鏡山公園入口
+鏡山公園入口,ja-Hrkt,かがみやまこうえんいりぐち
+鏡山公園入口,en,Kagamiyama Koen-iriguchi (Kagamiyama Park)
+鏡山公園入口,ko,가가미야마 공원
+鏡山公園入口,zh-cn,镜山公园入口
+鏡山公園入口,zh-tw,鏡山公園入口
+池ノ上学生宿舎前,ja,池ノ上学生宿舎前
+池ノ上学生宿舎前,ja-Hrkt,いけのうえがくせいしゅくしゃまえ
+池ノ上学生宿舎前,en,Ikenoue Gakusei Shukusha-mae
+池ノ上学生宿舎前,ko,이케노우에 가쿠세이 슈쿠샤 마에
+池ノ上学生宿舎前,zh-cn,池之上学生宿舍前
+池ノ上学生宿舎前,zh-tw,池之上學生宿舍前
+広大中央口,ja,広大中央口
+広大中央口,ja-Hrkt,ひろだいちゅうおうぐち
+広大中央口,en,Hirodai-chuo-guchi (Hiroshima Univ. Central Entrance)
+広大中央口,ko,히로다이 추오 구치
+広大中央口,zh-cn,广大中央口
+広大中央口,zh-tw,廣大中央口
+広大北口,ja,広大北口
+広大北口,ja-Hrkt,ひろだいきたぐち
+広大北口,en,Hirodai-kitaguchi (Hiroshima Univ. North Entrance)
+広大北口,ko,히로다이 키타구치
+広大北口,zh-cn,广大北口
+広大北口,zh-tw,廣大北口
+広大二神口,ja,広大二神口
+広大二神口,ja-Hrkt,ひろだいふたがみぐち
+広大二神口,en,Hirodai-futagami-guchi (Hiroshima Univ. Futagami-guchi)
+広大二神口,ko,히로다이 후타가미 구치
+広大二神口,zh-cn,广大二神口
+広大二神口,zh-tw,廣大二神口
+広大西口,ja,広大西口
+広大西口,ja-Hrkt,ひろだいにしぐち
+広大西口,en,Hirodai-nishiguchi (Hiroshima Univ. West Entrance)
+広大西口,ko,히로다이 니시구치
+広大西口,zh-cn,广大西口
+広大西口,zh-tw,廣大西口
+大学会館前,ja,大学会館前
+大学会館前,ja-Hrkt,だいがくかいかんまえ
+大学会館前,en,Daigaku Kaikan-mae
+大学会館前,ko,다이가쿠 카이칸 마에
+大学会館前,zh-cn,大学会馆前
+大学会館前,zh-tw,大學會館前
+ががら口,ja,ががら口
+ががら口,ja-Hrkt,ががらぐち
+ががら口,en,Gagara-guchi
+ががら口,ko,가가라 구치
+ががら口,zh-cn,GAGARA口
+ががら口,zh-tw,GAGARA口
+広大東口,ja,広大東口
+広大東口,ja-Hrkt,ひろだいひがしぐち
+広大東口,en,Hirodai-higashiguchi (Hiroshima Univ. East Entrance)
+広大東口,ko,히로다이 히가시구치
+広大東口,zh-cn,广大东口
+広大東口,zh-tw,廣大東口
+山中池,ja,山中池
+山中池,ja-Hrkt,やまなかいけ
+山中池,en,Yamanakaike
+山中池,ko,야마나카이케
+山中池,zh-cn,山中池
+山中池,zh-tw,山中池
+八本松駅,ja,八本松駅
+八本松駅,ja-Hrkt,はちほんまつえき
+八本松駅,en,Hachihonmatsu Sta.
+八本松駅,ko,하치혼마쓰 역
+八本松駅,zh-cn,八本松站
+八本松駅,zh-tw,八本松站
+上曽場,ja,上曽場
+上曽場,ja-Hrkt,かみそば
+上曽場,en,Kamisoba
+上曽場,ko,가미소바
+上曽場,zh-cn,上曾场
+上曽場,zh-tw,上曾場
+中学校前,ja,中学校前
+中学校前,ja-Hrkt,ちゅうがっこうまえ
+中学校前,en,Chugakko-mae (Junior High School)
+中学校前,ko,중학교
+中学校前,zh-cn,中学前
+中学校前,zh-tw,中學前
+日興団地入口,ja,日興団地入口
+日興団地入口,ja-Hrkt,にっこうだんちいりぐち
+日興団地入口,en,Nikko Danchi-iriguchi
+日興団地入口,ko,닛코 단치 이리구치
+日興団地入口,zh-cn,日兴团地入口
+日興団地入口,zh-tw,日興團地入口
+記念橋,ja,記念橋
+記念橋,ja-Hrkt,きねんばし
+記念橋,en,Kinembashi
+記念橋,ko,기넨바시 （하치혼마쓰 요시카와 센) （기넨바시 다리)（하치혼마쓰 요시카와 선)
+記念橋,zh-cn,记念桥（八本松吉川线）
+記念橋,zh-tw,記念橋（八本松吉川線）
+宮西,ja,宮西
+宮西,ja-Hrkt,みやにし
+宮西,en,Miyanishi
+宮西,ko,미야니시
+宮西,zh-cn,宫西
+宮西,zh-tw,宮西
+宮の前,ja,宮の前
+宮の前,ja-Hrkt,みやのまえ
+宮の前,en,Miyanomae
+宮の前,ko,미야노 마에
+宮の前,zh-cn,宫之前
+宮の前,zh-tw,宮之前
+農業技術センター,ja,農業技術センター
+農業技術センター,ja-Hrkt,のうぎょうぎじゅつせんたーまえ
+農業技術センター,en,Nogyo Gijutsu Center
+農業技術センター,ko,노교 기주쓰 센터
+農業技術センター,zh-cn,农业技术中心
+農業技術センター,zh-tw,農業技術中心
+農業技術センター前,ja,農業技術センター前
+農業技術センター前,ja-Hrkt,のうぎょうぎじゅつせんたーまえ
+農業技術センター前,en,Nogyo Gijutsu Center
+農業技術センター前,ko,노교 기주쓰 센터
+農業技術センター前,zh-cn,农业技术中心
+農業技術センター前,zh-tw,農業技術中心
+下原,ja,下原
+下原,ja-Hrkt,しもばら
+下原,en,Shimobara
+下原,ko,시모바라
+下原,zh-cn,下原
+下原,zh-tw,下原
+千野丸,ja,千野丸
+千野丸,ja-Hrkt,せんのまる
+千野丸,en,Sennomaru
+千野丸,ko,센노마루
+千野丸,zh-cn,千野丸
+千野丸,zh-tw,千野丸
+西側,ja,西側
+西側,ja-Hrkt,にしがわ
+西側,en,Nishigawa
+西側,ko,니시가와
+西側,zh-cn,西侧
+西側,zh-tw,西側
+下見大池,ja,下見大池
+下見大池,ja-Hrkt,したみおおいけ
+下見大池,en,Shitamioike
+下見大池,ko,시타미 오이케
+下見大池,zh-cn,下见大池
+下見大池,zh-tw,下見大池
+東広島駅,ja,東広島駅
+東広島駅,ja-Hrkt,ひがしひろしまえき
+東広島駅,en,Higashi-hiroshima Sta.
+東広島駅,ko,히가시히로시마 역
+東広島駅,zh-cn,东广岛站
+東広島駅,zh-tw,東廣島站
+末釜,ja,末釜
+末釜,ja-Hrkt,すえがま
+末釜,en,Suegama
+末釜,ko,스에가마
+末釜,zh-cn,末釜
+末釜,zh-tw,末釜
+千年池,ja,千年池
+千年池,ja-Hrkt,せんねんいけ
+千年池,en,Sennenike
+千年池,ko,센넨이케
+千年池,zh-cn,千年池
+千年池,zh-tw,千年池
+松原池,ja,松原池
+松原池,ja-Hrkt,まつばらいけ
+松原池,en,Matsubaraike
+松原池,ko,마쓰바라이케
+松原池,zh-cn,松原池
+松原池,zh-tw,松原池
+扇ノ池,ja,扇ノ池
+扇ノ池,ja-Hrkt,おうぎのいけ
+扇ノ池,en,Oginoike
+扇ノ池,ko,오기노이케
+扇ノ池,zh-cn,扇之池
+扇ノ池,zh-tw,扇之池
+三升原,ja,三升原
+三升原,ja-Hrkt,さんじょうばら
+三升原,en,Sanjobara
+三升原,ko,산조바라
+三升原,zh-cn,三升原
+三升原,zh-tw,三升原
+東広島運動公園,ja,東広島運動公園
+東広島運動公園,ja-Hrkt,ひがしひろしまうんどうこうえん
+東広島運動公園,en,Higashi-hiroshima Undo Koen (Higashi-Hiroshima Sports Park)
+東広島運動公園,ko,히가시히로시마 운동 공원
+東広島運動公園,zh-cn,东广岛运动公园
+東広島運動公園,zh-tw,東廣島運動公園
+栄町,ja,栄町
+栄町,ja-Hrkt,さかえまち
+栄町,en,Saijo Sakaemachi
+栄町,ko,사이조 사카에마치
+栄町,zh-cn,西条荣町
+栄町,zh-tw,西條榮町
+西条朝日町,ja,西条朝日町
+西条朝日町,ja-Hrkt,さいじょうあさひまち
+西条朝日町,en,Saijo Asahimachi
+西条朝日町,ko,사이조 아사히마치
+西条朝日町,zh-cn,西条朝日町
+西条朝日町,zh-tw,西條朝日町
+大坪通,ja,大坪通
+大坪通,ja-Hrkt,おおつぼどおり
+大坪通,en,Otsubo-dori
+大坪通,ko,오쓰보 도리
+大坪通,zh-cn,大坪通
+大坪通,zh-tw,大坪通
+助実,ja,助実
+助実,ja-Hrkt,すけざね
+助実,en,Sukezane
+助実,ko,스케자네
+助実,zh-cn,助实
+助実,zh-tw,助實
+和泉,ja,和泉
+和泉,ja-Hrkt,いずみ
+和泉,en,Izumi
+和泉,ko,이즈미
+和泉,zh-cn,和泉
+和泉,zh-tw,和泉
+卯之留,ja,卯之留
+卯之留,ja-Hrkt,うのとめ
+卯之留,en,Unotome
+卯之留,ko,우노토메
+卯之留,zh-cn,卯之留
+卯之留,zh-tw,卯之留
+御薗宇,ja,御薗宇
+御薗宇,ja-Hrkt,みそのう
+御薗宇,en,Misono
+御薗宇,ko,미소노우
+御薗宇,zh-cn,御薗宇
+御薗宇,zh-tw,御薗宇
+産総研前,ja,産総研前
+産総研前,ja-Hrkt,さんそうけんまえ
+産総研前,en,Sansoken-mae
+産総研前,ko,산소켄 마에
+産総研前,zh-cn,产总研前
+産総研前,zh-tw,產總研前
+中国電力前,ja,中国電力前
+中国電力前,ja-Hrkt,ちゅうごくでんりょくまえ
+中国電力前,en,Chugoku Denryoku-mae
+中国電力前,ko,주고쿠 덴료쿠 마에
+中国電力前,zh-cn,中国电力前
+中国電力前,zh-tw,中國電力前
+サイエンス北,ja,サイエンス北
+サイエンス北,ja-Hrkt,さいえんすきた
+サイエンス北,en,Science-kita
+サイエンス北,ko,사이엔스 키타
+サイエンス北,zh-cn,Science北
+サイエンス北,zh-tw,Science北
+酒類総合研究所前,ja,酒類総合研究所前
+酒類総合研究所前,ja-Hrkt,しゅるいそうごうけんきゅうしょまえ
+酒類総合研究所前,en,Shurui Sogokenkyusho-mae
+酒類総合研究所前,ko,슈루이 소고켄큐쇼 마에
+酒類総合研究所前,zh-cn,酒类总合研究所前
+酒類総合研究所前,zh-tw,酒類總合研究所前
+水源地前,ja,水源地前
+水源地前,ja-Hrkt,すいげんちまえ
+水源地前,en,Suigenchi-mae
+水源地前,ko,스이겐치 마에
+水源地前,zh-cn,水源池前
+水源地前,zh-tw,水源池前
+西条農高前,ja,西条農高前
+西条農高前,ja-Hrkt,さいじょうのうこうまえ
+西条農高前,en,Saijo Noko-mae (Saijyo Agricultural High School)
+西条農高前,ko,사이조 농업고등학교
+西条農高前,zh-cn,西条农业高中前
+西条農高前,zh-tw,西條農業高中前
+東子,ja,東子
+東子,ja-Hrkt,あずまこ
+東子,en,Azumako
+東子,ko,아즈마코
+東子,zh-cn,东子
+東子,zh-tw,東子
+小滝原,ja,小滝原
+小滝原,ja-Hrkt,こたきばら
+小滝原,en,Kotakibara
+小滝原,ko,고타키바라
+小滝原,zh-cn,小泷原
+小滝原,zh-tw,小瀧原
+早稲木地蔵前,ja,早稲木地蔵前
+早稲木地蔵前,ja-Hrkt,わせぎじぞうまえ
+早稲木地蔵前,en,Wasegi Jizo-mae
+早稲木地蔵前,ko,와세기 지조 마에
+早稲木地蔵前,zh-cn,早稻木地藏前
+早稲木地蔵前,zh-tw,早稻木地藏前
+下三永広島ガス前,ja,下三永広島ガス前
+下三永広島ガス前,ja-Hrkt,しもみながひろしまがすまえ
+下三永広島ガス前,en,Shimo-minaga Hiroshima Gas-mae
+下三永広島ガス前,ko,시모미나가 히로시마 가스 마에
+下三永広島ガス前,zh-cn,下三永广岛瓦斯前
+下三永広島ガス前,zh-tw,下三永廣島瓦斯前
+ゴルフ場入口,ja,ゴルフ場入口
+ゴルフ場入口,ja-Hrkt,ごるふじょういりぐち
+ゴルフ場入口,en,Golf-jo-iriguchi (Golf Course Entrance)
+ゴルフ場入口,ko,골프 조 이리구치
+ゴルフ場入口,zh-cn,高尔夫球场入口
+ゴルフ場入口,zh-tw,高爾夫球場入口
+ゴルフ場下,ja,ゴルフ場下
+ゴルフ場下,ja-Hrkt,ごるふじょうした
+ゴルフ場下,en,Golf-jo-Shita (Golf Course-Shita)
+ゴルフ場下,ko,골프 조 시타
+ゴルフ場下,zh-cn,高尔夫球场下
+ゴルフ場下,zh-tw,高爾夫球場下
+高岡,ja,高岡
+高岡,ja-Hrkt,たかおか
+高岡,en,Takaoka
+高岡,ko,다카오카
+高岡,zh-cn,高冈
+高岡,zh-tw,高岡
+大沢,ja,大沢
+大沢,ja-Hrkt,おおさわ
+大沢,en,Osawa
+大沢,ko,오사와
+大沢,zh-cn,大泽
+大沢,zh-tw,大澤
+板城,ja,板城
+板城,ja-Hrkt,いたき
+板城,en,Itaki
+板城,ko,이타키
+板城,zh-cn,板城
+板城,zh-tw,板城
+馬木,ja,馬木
+馬木,ja-Hrkt,うまき
+馬木,en,Umaki
+馬木,ko,우마키
+馬木,zh-cn,马木
+馬木,zh-tw,馬木
+樋ノ詰橋,ja,樋ノ詰橋
+樋ノ詰橋,ja-Hrkt,ひのつめばし
+樋ノ詰橋,en,Hinotsumebashi
+樋ノ詰橋,ko,히노쓰메바시
+樋ノ詰橋,zh-cn,樋乃诘桥
+樋ノ詰橋,zh-tw,樋乃詰橋
+小多田,ja,小多田
+小多田,ja-Hrkt,おただ
+小多田,en,Otada
+小多田,ko,오타다
+小多田,zh-cn,小多田
+小多田,zh-tw,小多田
+上黒瀬,ja,上黒瀬
+上黒瀬,ja-Hrkt,かみくろせ
+上黒瀬,en,Kami-kurose
+上黒瀬,ko,가미 쿠로세
+上黒瀬,zh-cn,上黑濑
+上黒瀬,zh-tw,上黑瀨
+南方,ja,南方
+南方,ja-Hrkt,みなみかた
+南方,en,Minamikata
+南方,ko,미나미카타
+南方,zh-cn,南方
+南方,zh-tw,南方
+賀茂医療センター前,ja,賀茂医療センター前
+賀茂医療センター前,ja-Hrkt,かもいりょうせんたーまえ
+賀茂医療センター前,en,Kamo Iryo Center-mae (Kamo Medical Center)
+賀茂医療センター前,ko,가모 의료센터
+賀茂医療センター前,zh-cn,贺茂医疗中心前
+賀茂医療センター前,zh-tw,賀茂醫療中心前
+黒瀬高校前,ja,黒瀬高校前
+黒瀬高校前,ja-Hrkt,くろせこうこうまえ
+黒瀬高校前,en,Kurose Koko-mae (Kurose High School)
+黒瀬高校前,ko,구로세 고등학교
+黒瀬高校前,zh-cn,黑濑高中前
+黒瀬高校前,zh-tw,黑瀨高中前
+賀茂医療センター口,ja,賀茂医療センター口
+賀茂医療センター口,ja-Hrkt,かもいりょうせんたーぐち
+賀茂医療センター口,en,Kamo Iryo Center-guchi (Kamo Medical Center)
+賀茂医療センター口,ko,가모 의료센터
+賀茂医療センター口,zh-cn,贺茂医疗中心前
+賀茂医療センター口,zh-tw,賀茂醫療中心前
+乃美尾,ja,乃美尾
+乃美尾,ja-Hrkt,のみのお
+乃美尾,en,Nominoo
+乃美尾,ko,노미노오
+乃美尾,zh-cn,乃美尾
+乃美尾,zh-tw,乃美尾
+西門前,ja,西門前
+西門前,ja-Hrkt,にしもんぜん
+西門前,en,Nishi-monzen
+西門前,ko,니시몬젠
+西門前,zh-cn,西门前
+西門前,zh-tw,西門前
+黒瀬中学校前,ja,黒瀬中学校前
+黒瀬中学校前,ja-Hrkt,くろせちゅうがっこうまえ
+黒瀬中学校前,en,Kurose Chugakko-mae (Kurose Junior High School)
+黒瀬中学校前,ko,구로세 중학교
+黒瀬中学校前,zh-cn,黑濑中学前
+黒瀬中学校前,zh-tw,黑瀨中學前
+丸山,ja,丸山
+丸山,ja-Hrkt,まるやま
+丸山,en,Maruyama
+丸山,ko,마루야마
+丸山,zh-cn,丸山
+丸山,zh-tw,丸山
+黒瀬支所前,ja,黒瀬支所前
+黒瀬支所前,ja-Hrkt,くろせししょまえ
+黒瀬支所前,en,Kurose Shisho-mae (Kurose Branch)
+黒瀬支所前,ko,구로세 지소
+黒瀬支所前,zh-cn,黑濑支所前
+黒瀬支所前,zh-tw,黑瀨支所前
+中黒瀬,ja,中黒瀬
+中黒瀬,ja-Hrkt,なかくろせ
+中黒瀬,en,Nakagurose
+中黒瀬,ko,나카쿠로세
+中黒瀬,zh-cn,中黑濑
+中黒瀬,zh-tw,中黑瀨
+楢原,ja,楢原
+楢原,ja-Hrkt,ならはら
+楢原,en,Narabara
+楢原,ko,나라바라
+楢原,zh-cn,楢原
+楢原,zh-tw,楢原
+中黒瀬小学校前,ja,中黒瀬小学校前
+中黒瀬小学校前,ja-Hrkt,なかくろせしょうがっこうまえ
+中黒瀬小学校前,en,Nakagurose Shogakko-mae (Nakagurose Elementary School)
+中黒瀬小学校前,ko,나카쿠로세 초등학교
+中黒瀬小学校前,zh-cn,中黑濑小学前
+中黒瀬小学校前,zh-tw,中黑瀨小學前
+くろせハイライフ前,ja,くろせハイライフ前
+くろせハイライフ前,ja-Hrkt,くろせはいらいふまえ
+くろせハイライフ前,en,Kurose Highlife-mae
+くろせハイライフ前,ko,구로세 하이라이후 마에
+くろせハイライフ前,zh-cn,黑濑Highlife前
+くろせハイライフ前,zh-tw,黑瀨Highlife前
+黒瀬中央団地前,ja,黒瀬中央団地前
+黒瀬中央団地前,ja-Hrkt,くろせちゅうおうだんちまえ
+黒瀬中央団地前,en,Kurose Chuo Danchi-mae
+黒瀬中央団地前,ko,구로세 추오단치 마에
+黒瀬中央団地前,zh-cn,黑濑中央团地前
+黒瀬中央団地前,zh-tw,黑瀨中央團地前
+鷹原,ja,鷹原
+鷹原,ja-Hrkt,たかはら
+鷹原,en,Takahara
+鷹原,ko,다카하라
+鷹原,zh-cn,鹰原
+鷹原,zh-tw,鷹原
+庚ハイツ,ja,庚ハイツ
+庚ハイツ,ja-Hrkt,かのえはいつ
+庚ハイツ,en,Kanoe Heights
+庚ハイツ,ko,가노에 하이츠
+庚ハイツ,zh-cn,庚公寓
+庚ハイツ,zh-tw,庚公寓
+狐ヶ城,ja,狐ヶ城
+狐ヶ城,ja-Hrkt,こがじょう
+狐ヶ城,en,Kogajo
+狐ヶ城,ko,고가죠
+狐ヶ城,zh-cn,狐城
+狐ヶ城,zh-tw,狐城
+松ヶ丘団地,ja,松ヶ丘団地
+松ヶ丘団地,ja-Hrkt,まつがおかだんち
+松ヶ丘団地,en,Matsugaoka Danchi
+松ヶ丘団地,ko,마쓰가오카 단치
+松ヶ丘団地,zh-cn,松丘团地
+松ヶ丘団地,zh-tw,松丘團地
+春日野二丁目,ja,春日野二丁目
+春日野二丁目,ja-Hrkt,かすがのにちょうめ
+春日野二丁目,en,Kasugano-nichome
+春日野二丁目,ko,가스가노 2초메
+春日野二丁目,zh-cn,春日野二丁目
+春日野二丁目,zh-tw,春日野二丁目
+春日野西,ja,春日野西
+春日野西,ja-Hrkt,かすがのにし
+春日野西,en,Kasugano-nishi
+春日野西,ko,가스가노 니시
+春日野西,zh-cn,春日野西
+春日野西,zh-tw,春日野西
+春日野一丁目,ja,春日野一丁目
+春日野一丁目,ja-Hrkt,かすがのいっちょうめ
+春日野一丁目,en,Kasugano-itchome (Kasugano 1)
+春日野一丁目,ko,가스가노 1초메
+春日野一丁目,zh-cn,春日野一丁目
+春日野一丁目,zh-tw,春日野一丁目
+康成病院前,ja,康成病院前
+康成病院前,ja-Hrkt,こうせいびょういんまえ
+康成病院前,en,Kosei Byoin-mae (Kosei Hospital)
+康成病院前,ko,고세이 병원
+康成病院前,zh-cn,康成病院前
+康成病院前,zh-tw,康成病院前
+楢原中央,ja,楢原中央
+楢原中央,ja-Hrkt,ならはらちゅうおう
+楢原中央,en,Narahara-chuo
+楢原中央,ko,나라하라 추오
+楢原中央,zh-cn,楢原中央
+楢原中央,zh-tw,楢原中央
+北上保田,ja,北上保田
+北上保田,ja-Hrkt,きたかんぼうだ
+北上保田,en,Kita-kamboda
+北上保田,ko,기타칸보다
+北上保田,zh-cn,北上保田
+北上保田,zh-tw,北上保田
+上保田,ja,上保田
+上保田,ja-Hrkt,かんぼうだ
+上保田,en,Kamboda
+上保田,ko,간보다
+上保田,zh-cn,上保田
+上保田,zh-tw,上保田
+広島国際大学,ja,広島国際大学
+広島国際大学,ja-Hrkt,ひろしまこくさいだいがく
+広島国際大学,en,Hiroshima Kokusai Daigaku (Hiroshima International Univ.)
+広島国際大学,ko,히로시마국제대학
+広島国際大学,zh-cn,广岛国际大学
+広島国際大学,zh-tw,廣島國際大學
+明治橋,ja,明治橋
+明治橋,ja-Hrkt,めいじばし
+明治橋,en,Meijibashi
+明治橋,ko,메이지바시
+明治橋,zh-cn,明治桥
+明治橋,zh-tw,明治橋
+市飯田,ja,市飯田
+市飯田,ja-Hrkt,いちいいだ
+市飯田,en,Ichi-iida
+市飯田,ko,이치이다
+市飯田,zh-cn,市饭田
+市飯田,zh-tw,市飯田
+八幡橋,ja,八幡橋
+八幡橋,ja-Hrkt,はちまんばし
+八幡橋,en,Hachimanbashi
+八幡橋,ko,하치만바시
+八幡橋,zh-cn,八幡桥
+八幡橋,zh-tw,八幡橋
+呉記念病院前,ja,呉記念病院前
+呉記念病院前,ja-Hrkt,くれきねんびょういんまえ
+呉記念病院前,en,Kure Kinen Byoin-mae (Kure Kinen Hospital)
+呉記念病院前,ko,구레 기념병원
+呉記念病院前,zh-cn,吴记念病院
+呉記念病院前,zh-tw,吳記念病院
+郷原畑,ja,郷原畑
+郷原畑,ja-Hrkt,ごうばらはた
+郷原畑,en,Gobara Hata
+郷原畑,ko,고바라하타
+郷原畑,zh-cn,乡原畑
+郷原畑,zh-tw,鄉原畑
+郷原,ja,郷原
+郷原,ja-Hrkt,ごうはら
+郷原,en,Gohara
+郷原,ko,고하라
+郷原,zh-cn,乡原
+郷原,zh-tw,鄉原
+浜田橋,ja,浜田橋
+浜田橋,ja-Hrkt,はまだばし
+浜田橋,en,Hamadabashi
+浜田橋,ko,하마다바시
+浜田橋,zh-cn,滨田桥
+浜田橋,zh-tw,濱田橋
+渡川,ja,渡川
+渡川,ja-Hrkt,わたりがわ
+渡川,en,Watarigawa
+渡川,ko,와타리가와
+渡川,zh-cn,渡川
+渡川,zh-tw,渡川
+大積橋,ja,大積橋
+大積橋,ja-Hrkt,おおつみばし
+大積橋,en,Otsumibashi
+大積橋,ko,오쓰미바시
+大積橋,zh-cn,大积桥
+大積橋,zh-tw,大積橋
+広島文化学園大学,ja,広島文化学園大学
+広島文化学園大学,ja-Hrkt,ひろしまぶんかがくえんだいがく
+広島文化学園大学,en,Hiroshima Bunka Gakuen Daigaku
+広島文化学園大学,ko,히로시마 문화학원 대학
+広島文化学園大学,zh-cn,广岛文化学园大学
+広島文化学園大学,zh-tw,廣島文化學園大學
+下高,ja,下高
+下高,ja-Hrkt,しもこう
+下高,en,Shimoko
+下高,ko,시모코
+下高,zh-cn,下高
+下高,zh-tw,下高
+広二級峡,ja,広二級峡
+広二級峡,ja-Hrkt,ひろにきゅうきょう
+広二級峡,en,Hironikyukyo
+広二級峡,ko,히로니큐쿄
+広二級峡,zh-cn,广二级峡
+広二級峡,zh-tw,廣二級峽
+大津江橋,ja,大津江橋
+大津江橋,ja-Hrkt,おおつえばし
+大津江橋,en,Otsuebashi
+大津江橋,ko,오쓰에바시
+大津江橋,zh-cn,大津江桥
+大津江橋,zh-tw,大津江橋
+上石内,ja,上石内
+上石内,ja-Hrkt,かみいしうち
+上石内,en,Kami-ishiuchi
+上石内,ko,가미이시우치
+上石内,zh-cn,上石内
+上石内,zh-tw,上石內
+石内橋,ja,石内橋
+石内橋,ja-Hrkt,いしうちばし
+石内橋,en,Ishiuchibashi
+石内橋,ko,이시우치바시
+石内橋,zh-cn,石内桥
+石内橋,zh-tw,石內橋
+徳丸,ja,徳丸
+徳丸,ja-Hrkt,とくまる
+徳丸,en,Tokumaru
+徳丸,ko,도쿠마루
+徳丸,zh-cn,德丸
+徳丸,zh-tw,德丸
+町田,ja,町田
+町田,ja-Hrkt,まちだ
+町田,en,Machida
+町田,ko,마치다
+町田,zh-cn,町田
+町田,zh-tw,町田
+塩焼,ja,塩焼
+塩焼,ja-Hrkt,しやき
+塩焼,en,Shiyaki
+塩焼,ko,시야키
+塩焼,zh-cn,盐烧
+塩焼,zh-tw,鹽燒
+弁天橋,ja,弁天橋
+弁天橋,ja-Hrkt,べんてんばし
+弁天橋,en,Bentembashi
+弁天橋,ko,벤텐바시
+弁天橋,zh-cn,弁天桥
+弁天橋,zh-tw,弁天橋
+中新開,ja,中新開
+中新開,ja-Hrkt,なかしんがい
+中新開,en,Naka-shingai
+中新開,ko,나카신가이
+中新開,zh-cn,中新开
+中新開,zh-tw,中新開
+北大新開,ja,北大新開
+北大新開,ja-Hrkt,きたおおしんがい
+北大新開,en,Kita-oshingai
+北大新開,ko,기타오신가이
+北大新開,zh-cn,北大新开
+北大新開,zh-tw,北大新開
+広商店街,ja,広商店街
+広商店街,ja-Hrkt,ひろしょうてんがい
+広商店街,en,Hiro Shotengai (Hiro Shopping Street)
+広商店街,ko,히로 상가
+広商店街,zh-cn,广商业街
+広商店街,zh-tw,廣商業街
+広交叉点,ja,広交叉点
+広交叉点,ja-Hrkt,ひろこうさてん
+広交叉点,en,Hiro Kosaten
+広交叉点,ko,히로 코사텐
+広交叉点,zh-cn,广交叉点
+広交叉点,zh-tw,廣交叉點
+広駅,ja,広駅
+広駅,ja-Hrkt,ひろえき
+広駅,en,Hiro Sta.
+広駅,ko,히로 역
+広駅,zh-cn,广站
+広駅,zh-tw,廣站
+広市民センター,ja,広市民センター
+広市民センター,ja-Hrkt,ひろしみんせんたー
+広市民センター,en,Hiro Shimin Center (Hiro Citizen Center)
+広市民センター,ko,히로 시민센터
+広市民センター,zh-cn,广市民中心
+広市民センター,zh-tw,廣市民中心
+先小倉,ja,先小倉
+先小倉,ja-Hrkt,さきおぐら
+先小倉,en,Sakiogura
+先小倉,ko,사키오구라
+先小倉,zh-cn,先小仓
+先小倉,zh-tw,先小倉
+阿賀海岸通,ja,阿賀海岸通
+阿賀海岸通,ja-Hrkt,あがかいがんどおり
+阿賀海岸通,en,Aga Kaigan-dori (Aga Kaigan Ave.)
+阿賀海岸通,ko,아가 카이간 도리
+阿賀海岸通,zh-cn,阿贺海岸通
+阿賀海岸通,zh-tw,阿賀海岸通
+郷,ja,郷
+郷,ja-Hrkt,ごう
+郷,en,Go
+郷,ko,고
+郷,zh-cn,乡
+郷,zh-tw,鄉
+呉本通五丁目,ja,呉本通五丁目
+呉本通五丁目,ja-Hrkt,くれほんどおりごちょうめ
+呉本通五丁目,en,Kure-hondori-gochome (Kure-hondori 5)
+呉本通五丁目,ko,구레혼도리 5초메
+呉本通五丁目,zh-cn,吴本通五丁目
+呉本通五丁目,zh-tw,吳本通五丁目
+四ツ道路,ja,四ツ道路
+四ツ道路,ja-Hrkt,よつどうろ
+四ツ道路,en,Yotsudoro
+四ツ道路,ko,요쓰 도로
+四ツ道路,zh-cn,四道路
+四ツ道路,zh-tw,四道路
+四道路・四ツ道路,ja,四道路・四ツ道路
+四道路・四ツ道路,ja-Hrkt,よつどうろ
+四道路・四ツ道路,en,Yotsudoro
+四道路・四ツ道路,ko,요쓰 도로
+四道路・四ツ道路,zh-cn,四道路
+四道路・四ツ道路,zh-tw,四道路
+呉駅前,ja,呉駅前
+呉駅前,ja-Hrkt,くれえきまえ
+呉駅前,en,Kure Sta.
+呉駅前,ko,구레 역
+呉駅前,zh-cn,吴站前
+呉駅前,zh-tw,吳站前
+二神山,ja,二神山
+二神山,ja-Hrkt,ふたがみやま
+二神山,en,Futagamiyama
+二神山,ko,후타가미야마
+二神山,zh-cn,二神山
+二神山,zh-tw,二神山
+中郷,ja,中郷
+中郷,ja-Hrkt,なかごう
+中郷,en,Nakago
+中郷,ko,나카고
+中郷,zh-cn,中乡
+中郷,zh-tw,中鄉
+郷田,ja,郷田
+郷田,ja-Hrkt,ごうた
+郷田,en,Gota
+郷田,ko,고타
+郷田,zh-cn,乡田
+郷田,zh-tw,鄉田
+郷曽,ja,郷曽
+郷曽,ja-Hrkt,ごうそ
+郷曽,en,Goso
+郷曽,ko,고소
+郷曽,zh-cn,乡曾
+郷曽,zh-tw,鄉曾
+安芸大河内,ja,安芸大河内
+安芸大河内,ja-Hrkt,あきおおかわち
+安芸大河内,en,Aki Okochi
+安芸大河内,ko,아키 오코치
+安芸大河内,zh-cn,安芸大河内
+安芸大河内,zh-tw,安芸大河內
+西条東,ja,西条東
+西条東,ja-Hrkt,さいじょうひがし
+西条東,en,Saijo-higashi
+西条東,ko,사이조 히가시
+西条東,zh-cn,西条东
+西条東,zh-tw,西條東
+下寺家,ja,下寺家
+下寺家,ja-Hrkt,したじけ
+下寺家,en,Shitajike
+下寺家,ko,시타지케
+下寺家,zh-cn,下寺家
+下寺家,zh-tw,下寺家
+友待橋,ja,友待橋
+友待橋,ja-Hrkt,ともまちばし
+友待橋,en,Tomomachibashi
+友待橋,ko,도모마치바시
+友待橋,zh-cn,友待桥
+友待橋,zh-tw,友待橋
+市田橋,ja,市田橋
+市田橋,ja-Hrkt,いちだばし
+市田橋,en,Ichidabashi
+市田橋,ko,이치다바시
+市田橋,zh-cn,市田桥
+市田橋,zh-tw,市田橋
+上寺家,ja,上寺家
+上寺家,ja-Hrkt,うわじけ
+上寺家,en,Uwajike
+上寺家,ko,우와지케
+上寺家,zh-cn,上寺家
+上寺家,zh-tw,上寺家
+大沢田池,ja,大沢田池
+大沢田池,ja-Hrkt,おおさわだいけ
+大沢田池,en,Osawadaike
+大沢田池,ko,오사와다이케
+大沢田池,zh-cn,大泽田池
+大沢田池,zh-tw,大澤田池
+東広島医療センター,ja,東広島医療センター
+東広島医療センター,ja-Hrkt,ひがしひろしまいりょうせんたー
+東広島医療センター,en,Higashi-hiroshima Iryo Center (Higashi-hiroshima Medical Center)
+東広島医療センター,ko,히가시히로시마 의료센터
+東広島医療センター,zh-cn,东广岛医疗中心
+東広島医療センター,zh-tw,東廣島醫療中心
+尾形,ja,尾形
+尾形,ja-Hrkt,おがた
+尾形,en,Ogata
+尾形,ko,오가타
+尾形,zh-cn,尾形
+尾形,zh-tw,尾形
+蓮花寺橋,ja,蓮花寺橋
+蓮花寺橋,ja-Hrkt,れんげじばし
+蓮花寺橋,en,Rengejibashi
+蓮花寺橋,ko,렌게지바시
+蓮花寺橋,zh-cn,莲花寺桥
+蓮花寺橋,zh-tw,蓮花寺橋
+黄幡,ja,黄幡
+黄幡,ja-Hrkt,おうばん
+黄幡,en,Oban
+黄幡,ko,오반
+黄幡,zh-cn,黄幡
+黄幡,zh-tw,黃幡
+下見,ja,下見
+下見,ja-Hrkt,したみ
+下見,en,Shitami
+下見,ko,시타미
+下見,zh-cn,下见
+下見,zh-tw,下見
+鴻の巣,ja,鴻の巣
+鴻の巣,ja-Hrkt,こうのす
+鴻の巣,en,Konosu
+鴻の巣,ko,고노스
+鴻の巣,zh-cn,鸿乃巢
+鴻の巣,zh-tw,鴻乃巢
+明顕寺前,ja,明顕寺前
+明顕寺前,ja-Hrkt,みょうけんじまえ
+明顕寺前,en,Myokenji-mae (Myokenji Temple)
+明顕寺前,ko,묘켄지 마에
+明顕寺前,zh-cn,明显寺前
+明顕寺前,zh-tw,明顯寺前
+体育館前,ja,体育館前
+体育館前,ja-Hrkt,たいいくかんまえ
+体育館前,en,Taiikukan-mae
+体育館前,ko,체육관
+体育館前,zh-cn,体育馆前
+体育館前,zh-tw,體育館前
+呉本通三丁目,ja,呉本通三丁目
+呉本通三丁目,ja-Hrkt,くれほんどおりさんちょうめ
+呉本通三丁目,en,Kure-hondori-sanchome (Kure-hondori 3)
+呉本通三丁目,ko,구레혼도리 3초메
+呉本通三丁目,zh-cn,吴本通三丁目
+呉本通三丁目,zh-tw,吳本通三丁目
+呉本通四丁目,ja,呉本通四丁目
+呉本通四丁目,ja-Hrkt,くれほんどおりよんちょうめ
+呉本通四丁目,en,Kure-hondori-yonchome (Kure-hondori 4)
+呉本通四丁目,ko,구레혼도리 4초메
+呉本通四丁目,zh-cn,吴本通四丁目
+呉本通四丁目,zh-tw,吳本通四丁目
+呉本通六丁目,ja,呉本通六丁目
+呉本通六丁目,ja-Hrkt,くれほんどおりろくちょうめ
+呉本通六丁目,en,Kure-hondori-rokuchome (Kure-hondori 6)
+呉本通六丁目,ko,구레혼도리 6초메
+呉本通六丁目,zh-cn,吴本通六丁目
+呉本通六丁目,zh-tw,吳本通六丁目
+呉本通八丁目,ja,呉本通八丁目
+呉本通八丁目,ja-Hrkt,くれほんどおりはっちょうめ
+呉本通八丁目,en,Kure-hondori-hatchome (Kure-hondori 8)
+呉本通八丁目,ko,구레 혼도리 8초메
+呉本通八丁目,zh-cn,吴本通八丁目
+呉本通八丁目,zh-tw,吳本通八丁目
+西畑,ja,西畑
+西畑,ja-Hrkt,にしはた
+西畑,en,Nishihata
+西畑,ko,니시하타
+西畑,zh-cn,西畑
+西畑,zh-tw,西畑
+中畑,ja,中畑
+中畑,ja-Hrkt,なかはた
+中畑,en,Nakahata
+中畑,ko,나카하타
+中畑,zh-cn,中畑
+中畑,zh-tw,中畑
+原,ja,原
+原,ja-Hrkt,はら
+原,en,Hara
+原,ko,하라
+原,zh-cn,原
+原,zh-tw,原
+阿賀駅前,ja,阿賀駅前
+阿賀駅前,ja-Hrkt,あがえきまえ
+阿賀駅前,en,Aga Sta.
+阿賀駅前,ko,아가 역
+阿賀駅前,zh-cn,阿贺站前
+阿賀駅前,zh-tw,阿賀站前
+寺家,ja,寺家
+寺家,ja-Hrkt,じけ
+寺家,en,Jige
+寺家,ko,지게
+寺家,zh-cn,寺家
+寺家,zh-tw,寺家
+寺家駅,ja,寺家駅
+寺家駅,ja-Hrkt,じけ
+寺家駅,en,Jige
+寺家駅,ko,지게
+寺家駅,zh-cn,寺家
+寺家駅,zh-tw,寺家
+西条西本町,ja,西条西本町
+西条西本町,ja-Hrkt,さいじょうにしほんまち
+西条西本町,en,Saijo Nishi-honmachi
+西条西本町,ko,사이조 니시 혼마치
+西条西本町,zh-cn,西条西本町
+西条西本町,zh-tw,西條西本町
+芸陽バス前,ja,芸陽バス前
+芸陽バス前,ja-Hrkt,げいようばすまえ
+芸陽バス前,en,Geiyo Bus-mae
+芸陽バス前,ko,게이요 버스 마에
+芸陽バス前,zh-cn,艺阳巴士前
+芸陽バス前,zh-tw,藝陽巴士前
+西条駅北口,ja,西条駅北口
+西条駅北口,ja-Hrkt,さいじょうえききたぐち
+西条駅北口,en,Saijo Sta. North Entrance
+西条駅北口,ko,사이조 역
+西条駅北口,zh-cn,西条站北口
+西条駅北口,zh-tw,西条站北口
+兼広,ja,兼広
+西楢原,ja,西楢原
+みそのうにじいろ保育園前,ja,みそのうにじいろ保育園前
+みそのうにじいろ保育園前,ja-Hrkt,みそのうにじいろほいくえんまえ
+みそのうにじいろ保育園前,en,Misonou Nijiiro Hoikuen-mae (Misonou Nijiiro Nursery)
+みそのうにじいろ保育園前,ko,미소노우 니지이로 보육원
+みそのうにじいろ保育園前,zh-cn,御薗宇虹色保育园前
+みそのうにじいろ保育園前,zh-tw,御薗宇虹色保育園前
+ゆめタウン東広島前,ja,ゆめタウン東広島前
+ゆめタウン東広島前,ja-Hrkt,ゆめたうんひがしひろしままえ
+ゆめタウン東広島前,en,Youme Town Higashi-hiroshima-mae
+ゆめタウン東広島前,ko,유메타운 히가시히로시마 마에
+ゆめタウン東広島前,zh-cn,Youme Town东广岛前
+ゆめタウン東広島前,zh-tw,Youme Town東廣島前
+のぞみ整形外科前,ja,のぞみ整形外科前
+のぞみ整形外科前,ja-Hrkt,のぞみせいけいげかまえ
+のぞみ整形外科前,en,Nozomi Seikeigeka-mae (Nozomi Orthopedic Hospital)
+のぞみ整形外科前,ko,노조미 정형외과
+のぞみ整形外科前,zh-cn,NOZOMI整形外科前
+のぞみ整形外科前,zh-tw,NOZOMI整形外科前
+福祉センター前,ja,福祉センター前
+福祉センター前,ja-Hrkt,ふくしせんたーまえ
+福祉センター前,en,Fukushi Center-mae (Welfare Center)
+福祉センター前,ko,복지센터
+福祉センター前,zh-cn,福祉中心前
+福祉センター前,zh-tw,福祉中心前
+円城寺北,ja,円城寺北
+円城寺北,ja-Hrkt,えんじょうじきた
+円城寺北,en,Enjoji-kita (Enjoji Temple North)
+円城寺北,ko,엔조지 절
+円城寺北,zh-cn,圆城寺北
+円城寺北,zh-tw,圓城寺北
+円城寺南,ja,円城寺南
+円城寺南,ja-Hrkt,えんじょうじみなみ
+円城寺南,en,Enjoji-minami (Enjoji Temple South)
+円城寺南,ko,엔조지 절
+円城寺南,zh-cn,圆城寺南
+円城寺南,zh-tw,圓城寺南
+城信,ja,城信
+城信,ja-Hrkt,じょうしん
+城信,en,Joshin
+城信,ko,조신
+城信,zh-cn,城信
+城信,zh-tw,城信
+賀茂ボール前,ja,賀茂ボール前
+賀茂ボール前,ja-Hrkt,かもぼーるまえ
+賀茂ボール前,en,Kamo-ball-mae
+賀茂ボール前,ko,가모 볼 마에
+賀茂ボール前,zh-cn,贺茂保龄前
+賀茂ボール前,zh-tw,賀茂保齡前
+松賀中学校入口,ja,松賀中学校入口
+松賀中学校入口,ja-Hrkt,まつがちゅがっこういりぐち
+松賀中学校入口,en,Matsuga Chugakko-iriguchi (Matsuga Junior High School)
+松賀中学校入口,ko,마쓰가 중학교
+松賀中学校入口,zh-cn,松贺中学入口
+松賀中学校入口,zh-tw,松賀中學入口
+フジグラン前,ja,フジグラン前
+フジグラン前,ja-Hrkt,ふじぐらんまえ
+フジグラン前,en,Fuji Grand-mae
+フジグラン前,ko,후지 그랜드 마에
+フジグラン前,zh-cn,Fuji GRAND前
+フジグラン前,zh-tw,Fuji GRAND前
+上戸,ja,上戸
+上戸,ja-Hrkt,うわど
+上戸,en,Uwado
+上戸,ko,우와도
+上戸,zh-cn,上户
+上戸,zh-tw,上戶
+西条中央三丁目,ja,西条中央三丁目
+西条中央三丁目,ja-Hrkt,さいじょうちゅうおうさんちょうめ
+西条中央三丁目,en,Saijo-chuo-sanchome
+西条中央三丁目,ko,사이조 추오 3초메
+西条中央三丁目,zh-cn,西条中央三丁目
+西条中央三丁目,zh-tw,西條中央三丁目
+西条中央五丁目,ja,西条中央五丁目
+西条中央五丁目,ja-Hrkt,さいじょうちゅうおうごちょうめ
+西条中央五丁目,en,Saijo-chuo-gochome
+西条中央五丁目,ko,사이조 추오 5초메
+西条中央五丁目,zh-cn,西条中央五丁目
+西条中央五丁目,zh-tw,西條中央五丁目
+西条中央六丁目,ja,西条中央六丁目
+西条中央六丁目,ja-Hrkt,さいじょうちゅうおうろくちょうめ
+西条中央六丁目,en,Saijo-chuo-rokuchome
+西条中央六丁目,ko,사이조 추오 6초메
+西条中央六丁目,zh-cn,西条中央六丁目
+西条中央六丁目,zh-tw,西條中央六丁目
+東広島市中央図書館,ja,東広島市中央図書館
+東広島市中央図書館,ja-Hrkt,ひがしひろしましちゅうおうとしょかん
+東広島市中央図書館,en,Higashi-hiroshimashi Chuo Toshokan (Higashi-hiroshima City Central Library)
+東広島市中央図書館,ko,히가시히로시마 시 중앙도서관
+東広島市中央図書館,zh-cn,东广岛市中央图书馆
+東広島市中央図書館,zh-tw,東廣島市中央圖書館
+東広島市立中央図書館,ja,東広島市立中央図書館
+東広島市立中央図書館,ja-Hrkt,ひがしひろしましちゅうおうとしょかん
+東広島市立中央図書館,en,Higashi-hiroshimashi Chuo Toshokan (Higashi-hiroshima City Central Library)
+東広島市立中央図書館,ko,히가시히로시마 시 중앙도서관
+東広島市立中央図書館,zh-cn,东广岛市中央图书馆
+東広島市立中央図書館,zh-tw,東廣島市中央圖書館
+三ツ城古墳前,ja,三ツ城古墳前
+三ツ城古墳前,ja-Hrkt,みつじょうこふんまえ
+三ツ城古墳前,en,Mitsujo Kofun-mae
+三ツ城古墳前,ko,미쓰조 코훈 마에
+三ツ城古墳前,zh-cn,三城古坟前
+三ツ城古墳前,zh-tw,三城古墳前
+西条中央七丁目,ja,西条中央七丁目
+西条中央七丁目,ja-Hrkt,さいじょうちゅうおうななちょうめ
+西条中央七丁目,en,Saijo-chuo-nanachome
+西条中央七丁目,ko,사이조 추오 7초메
+西条中央七丁目,zh-cn,西条中央七丁目
+西条中央七丁目,zh-tw,西條中央七丁目
+江熊西,ja,江熊西
+江熊西,ja-Hrkt,えぐまにし
+江熊西,en,Eguma-nishi
+江熊西,ko,에구마 니시
+江熊西,zh-cn,江熊西
+江熊西,zh-tw,江熊西
+淨福寺橋,ja,淨福寺橋
+浄福寺橋,ja,浄福寺橋
+浄福寺橋,ja-Hrkt,じょうふくじばし
+淨福寺橋,ja-Hrkt,じょうふくじばし
+広島バスセンター,ja,広島バスセンター
+広島バスセンター,ja-Hrkt,ひろしまばすせんたー
+広島バスセンター,en,Hiroshima Bus Center
+広島バスセンター,ko,히로시마 버스센터
+広島バスセンター,zh-cn,广岛巴士中心
+広島バスセンター,zh-tw,廣島公車中心
+八丁堀,ja,八丁堀
+八丁堀,ja-Hrkt,はっちょうぼり
+八丁堀,en,Hatchobori
+八丁堀,ko,핫초보리
+八丁堀,zh-cn,八丁堀
+八丁堀,zh-tw,八丁堀
+本通り,ja,本通り
+本通り,ja-Hrkt,ほんどおり
+本通り,en,Hon-dori (Hon-dori Ave.)
+本通り,ko,혼도리
+本通り,zh-cn,本通
+本通り,zh-tw,本通
+中電前,ja,中電前
+中電前,ja-Hrkt,ちゅうでんまえ
+中電前,en,Chuden-mae
+中電前,ko,주덴 마에
+中電前,zh-cn,中电前
+中電前,zh-tw,中電前
+市役所前,ja,市役所前
+市役所前,ja-Hrkt,しやくしょまえ
+市役所前,en,Shiyakusho-mae (City Hall)
+市役所前,ko,시청
+市役所前,zh-cn,市政府前
+市役所前,zh-tw,市政府前
+南区役所前,ja,南区役所前
+南区役所前,ja-Hrkt,みなみくやくしょまえみなみまちいっちょうめ
+南区役所前,en,Minami Kuyakusho-mae (Minami Ward Office)
+南区役所前,ko,미나미 구청
+南区役所前,zh-cn,南区政府前
+南区役所前,zh-tw,南區政府前
+大学病院南門,ja,大学病院南門
+大学病院南門,ja-Hrkt,だいがくびょういんみなみもん
+大学病院南門,en,Daigaku Byoin-minamimon (Univ. Hospital South Gate)
+大学病院南門,ko,대학병원 미나미몬
+大学病院南門,zh-cn,大学医院南门
+大学病院南門,zh-tw,大學醫院南門
+柞木,ja,柞木
+柞木,ja-Hrkt,ほうそぎ
+柞木,en,Hosogi
+柞木,ko,호소기
+柞木,zh-cn,柞木
+柞木,zh-tw,柞木
+広島空港,ja,広島空港
+広島空港,ja-Hrkt,ひろしまくうこう
+広島空港,en,Hiroshima Airport
+広島空港,ko,히로시마 공항
+広島空港,zh-cn,广岛空港
+広島空港,zh-tw,廣島空港
+広島駅新幹線口,ja,広島駅新幹線口
+広島駅新幹線口,ja-Hrkt,ひろしまえきしんかんせんぐち
+広島駅新幹線口,en,Hiroshima Sta. Shinkansen Entrance
+広島駅新幹線口,ko,히로시마 역 신칸센 출입구
+広島駅新幹線口,zh-cn,广岛站新干线口
+広島駅新幹線口,zh-tw,廣島站新幹線口
+横川駅前,ja,横川駅前
+横川駅前,ja-Hrkt,よこがわえきまえ
+横川駅前,en,Yokogawa Sta.
+横川駅前,ko,요코가와 역
+横川駅前,zh-cn,横川站前
+横川駅前,zh-tw,橫川站前
+別院前,ja,別院前
+別院前,ja-Hrkt,べついんまえ
+別院前,en,Betsuin-mae
+別院前,ko,베쓰인 마에
+別院前,zh-cn,别院前
+別院前,zh-tw,別院前
+広瀬町,ja,広瀬町
+広瀬町,ja-Hrkt,ひろせまち
+広瀬町,en,Hirose-machi
+広瀬町,ko,히로세마치
+広瀬町,zh-cn,广濑町
+広瀬町,zh-tw,廣瀨町
+広島駅,ja,広島駅
+広島駅,ja-Hrkt,ひろしまえき
+広島駅,en,Hiroshima Sta.
+広島駅,ko,히로시마 역
+広島駅,zh-cn,广岛站
+広島駅,zh-tw,廣島站
+研創前,ja,研創前
+研創前,ja-Hrkt,けんそうまえ
+研創前,en,Kenso-mae
+研創前,ko,겐소 마에
+研創前,zh-cn,研创前
+研創前,zh-tw,研創前
+研創入口,ja,研創入口
+研創入口,ja-Hrkt,けんそういりぐち
+研創入口,en,Kenso-iriguchi
+研創入口,ko,겐소 이리구치
+研創入口,zh-cn,研创入口
+研創入口,zh-tw,研創入口
+上深川駅前,ja,上深川駅前
+上深川駅前,ja-Hrkt,かみふかわえきまえ
+上深川駅前,en,Kami-fukawa Sta.
+上深川駅前,ko,가미후카와 역
+上深川駅前,zh-cn,上深川站前
+上深川駅前,zh-tw,上深川站前
+上庄原,ja,上庄原
+上庄原,ja-Hrkt,かみしょうばら
+上庄原,en,Kami-shobara
+上庄原,ko,가미쇼바라
+上庄原,zh-cn,上庄原
+上庄原,zh-tw,上莊原
+安芸庄原,ja,安芸庄原
+安芸庄原,ja-Hrkt,あきしょうばら
+安芸庄原,en,Aki Shobara
+安芸庄原,ko,아키 쇼바라
+安芸庄原,zh-cn,安艺庄原
+安芸庄原,zh-tw,安藝莊原
+安芸中深川,ja,安芸中深川
+安芸中深川,ja-Hrkt,あきなかふかわ
+安芸中深川,en,Aki Naka-fukawa
+安芸中深川,ko,아키 나카후카와
+安芸中深川,zh-cn,安艺中深川
+安芸中深川,zh-tw,安藝中深川
+隠地,ja,隠地
+隠地,ja-Hrkt,おんぢ
+隠地,en,Onji
+隠地,ko,온지
+隠地,zh-cn,隐地
+隠地,zh-tw,隱地
+憩いの森口,ja,憩いの森口
+憩いの森口,ja-Hrkt,いこいのもりぐち
+憩いの森口,en,Ikoinomori-guchi
+憩いの森口,ko,이코이노모리 구치
+憩いの森口,zh-cn,憩之森口
+憩いの森口,zh-tw,憩之森口
+憩の森口,ja,憩の森口
+憩の森口,ja-Hrkt,いこいのもりぐち
+憩の森口,en,Ikoinomori-guchi
+憩の森口,ko,이코이노모리 구치
+憩の森口,zh-cn,憩之森口
+憩の森口,zh-tw,憩之森口
+高陽中学校前,ja,高陽中学校前
+高陽中学校前,ja-Hrkt,こうようちゅうがっこうまえ
+高陽中学校前,en,Koyo Chugakko-mae (Koyo Junior High School)
+高陽中学校前,ko,고요 중학교
+高陽中学校前,zh-cn,高阳中学前
+高陽中学校前,zh-tw,高陽中學前
+中深川,ja,中深川
+中深川,ja-Hrkt,なかふかわ
+中深川,en,Naka-fukawa
+中深川,ko,나카 후카와
+中深川,zh-cn,中深川
+中深川,zh-tw,中深川
+諸木峠,ja,諸木峠
+諸木峠,ja-Hrkt,もろきだお
+諸木峠,en,Moroki-dao
+諸木峠,ko,모로키다오
+諸木峠,zh-cn,诸木峠
+諸木峠,zh-tw,諸木峠
+諸木,ja,諸木
+諸木,ja-Hrkt,もろき
+諸木,en,Moroki
+諸木,ko,모로키
+諸木,zh-cn,诸木
+諸木,zh-tw,諸木
+上岩の上,ja,上岩の上
+上岩の上,ja-Hrkt,かみいわのうえ
+上岩の上,en,Kami-iwanoue
+上岩の上,ko,가미이와노우에
+上岩の上,zh-cn,上岩之上
+上岩の上,zh-tw,上巖之上
+岩の上,ja,岩の上
+岩の上,ja-Hrkt,いわのうえ
+岩の上,en,Iwanoue
+岩の上,ko,이와노우에
+岩の上,zh-cn,岩之上
+岩の上,zh-tw,巖之上
+高陽台,ja,高陽台
+高陽台,ja-Hrkt,こうようだい
+高陽台,en,Koyodai
+高陽台,ko,고요다이
+高陽台,zh-cn,高阳台
+高陽台,zh-tw,高陽臺
+高陽台上,ja,高陽台上
+高陽台上,ja-Hrkt,こうようだいかみ
+高陽台上,en,Koyodai-kami
+高陽台上,ko,고요다이 카미
+高陽台上,zh-cn,高阳台上
+高陽台上,zh-tw,高陽臺上
+高陽台中,ja,高陽台中
+高陽台中,ja-Hrkt,こうようだいなか
+高陽台中,en,Koyodai-naka
+高陽台中,ko,고요다이 나카
+高陽台中,zh-cn,高阳台中
+高陽台中,zh-tw,高陽臺中
+高陽台入口,ja,高陽台入口
+高陽台入口,ja-Hrkt,こうようだいいりぐち
+高陽台入口,en,Koyodai-iriguchi
+高陽台入口,ko,고요다이 이리구치
+高陽台入口,zh-cn,高阳台入口
+高陽台入口,zh-tw,高陽臺入口
+落合小学校前,ja,落合小学校前
+落合小学校前,ja-Hrkt,おちあいしょうがっこうまえ
+落合小学校前,en,Ochiai Shogakko-mae (Ochiai Elementary School)
+落合小学校前,ko,오치아이 초등학교
+落合小学校前,zh-cn,落合小学前
+落合小学校前,zh-tw,落合小學前
+落合集会所前,ja,落合集会所前
+落合集会所前,ja-Hrkt,おちあいしゅうかいしょまえ
+落合集会所前,en,Ochiai Shukaisho-mae
+落合集会所前,ko,오치아이 슈카이쇼 마에
+落合集会所前,zh-cn,落合集会所前
+落合集会所前,zh-tw,落合集會所前
+中岩の上,ja,中岩の上
+中岩の上,ja-Hrkt,なかいわのうえ
+中岩の上,en,Naka-iwanoue
+中岩の上,ko,나카이와노우에
+中岩の上,zh-cn,中岩之上
+中岩の上,zh-tw,中巖之上
+下岩の上,ja,下岩の上
+下岩の上,ja-Hrkt,しもいわのうえ
+下岩の上,en,Shimo-iwanoue
+下岩の上,ko,시모이와노우에
+下岩の上,zh-cn,下岩之上
+下岩の上,zh-tw,下巖之上
+矢口が丘上,ja,矢口が丘上
+矢口が丘上,ja-Hrkt,やぐちがおかかみ
+矢口が丘上,en,Yaguchigaoka-kami
+矢口が丘上,ko,야구치가오카 카미
+矢口が丘上,zh-cn,矢口丘上
+矢口が丘上,zh-tw,矢口丘上
+口田中学校前,ja,口田中学校前
+口田中学校前,ja-Hrkt,くちたちゅうがっこうまえ
+口田中学校前,en,Kuchita Chugakko-mae (Kuchita Junior High School)
+口田中学校前,ko,구치타 중학교
+口田中学校前,zh-cn,口田中学前
+口田中学校前,zh-tw,口田中學前
+矢口が丘中,ja,矢口が丘中
+矢口が丘中,ja-Hrkt,やぐちがおかなか
+矢口が丘中,en,Yaguchigaoka-naka
+矢口が丘中,ko,야구치가오카 나카
+矢口が丘中,zh-cn,矢口丘中
+矢口が丘中,zh-tw,矢口丘中
+矢口が丘入口,ja,矢口が丘入口
+矢口が丘入口,ja-Hrkt,やぐちがおかいりぐち
+矢口が丘入口,en,Yaguchigaoka-iriguchi
+矢口が丘入口,ko,야구치가오카 이리구치
+矢口が丘入口,zh-cn,矢口丘入口
+矢口が丘入口,zh-tw,矢口丘入口
+矢口上,ja,矢口上
+矢口上,ja-Hrkt,やぐちかみ
+矢口上,en,Yaguchi-kami
+矢口上,ko,야구치 카미
+矢口上,zh-cn,矢口上
+矢口上,zh-tw,矢口上
+矢口,ja,矢口
+矢口,ja-Hrkt,やぐち
+矢口,en,Yaguchi
+矢口,ko,야구치
+矢口,zh-cn,矢口
+矢口,zh-tw,矢口
+口田,ja,口田
+口田,ja-Hrkt,くちた
+口田,en,Kuchita
+口田,ko,구치타
+口田,zh-cn,口田
+口田,zh-tw,口田
+上小田,ja,上小田
+上小田,ja-Hrkt,かみおだ
+上小田,en,Kamioda
+上小田,ko,가미오다
+上小田,zh-cn,上小田
+上小田,zh-tw,上小田
+小田教円寺前,ja,小田教円寺前
+小田教円寺前,ja-Hrkt,おだきょうえんじまえ
+小田教円寺前,en,Oda Kyoenji-mae (Oda Kyoenji Temple)
+小田教円寺前,ko,오다교엔지마에
+小田教円寺前,zh-cn,小田教圆寺前
+小田教円寺前,zh-tw,小田教圓寺前
+中小田,ja,中小田
+中小田,ja-Hrkt,なかおだ
+中小田,en,Naka-oda
+中小田,ko,나카오다
+中小田,zh-cn,中小田
+中小田,zh-tw,中小田
+下小田,ja,下小田
+下小田,ja-Hrkt,しもおだ
+下小田,en,Shimo-oda
+下小田,ko,시모오다
+下小田,zh-cn,下小田
+下小田,zh-tw,下小田
+上千足,ja,上千足
+上千足,ja-Hrkt,かみせんぞく
+上千足,en,Kami-senzoku
+上千足,ko,가미센조쿠
+上千足,zh-cn,上千足
+上千足,zh-tw,上千足
+千足,ja,千足
+千足,ja-Hrkt,せんぞく
+千足,en,Senzoku
+千足,ko,센조쿠
+千足,zh-cn,千足
+千足,zh-tw,千足
+下千足,ja,下千足
+下千足,ja-Hrkt,しもせんぞく
+下千足,en,Shimo-senzoku
+下千足,ko,시모센조쿠
+下千足,zh-cn,下千足
+下千足,zh-tw,下千足
+広島ゴルフ場,ja,広島ゴルフ場
+広島ゴルフ場,ja-Hrkt,ひろしまごるふじょうまえ
+広島ゴルフ場,en,Hiroshima Golf-jo-mae (Hiroshima Golf Course)
+広島ゴルフ場,ko,히로시마 골프 조
+広島ゴルフ場,zh-cn,广岛高尔夫球场
+広島ゴルフ場,zh-tw,廣島高爾夫球場
+広島ゴルフ場前,ja,広島ゴルフ場前
+広島ゴルフ場前,ja-Hrkt,ひろしまごるふじょうまえ
+広島ゴルフ場前,en,Hiroshima Golf-jo-mae (Hiroshima Golf Course)
+広島ゴルフ場前,ko,히로시마 골프 조
+広島ゴルフ場前,zh-cn,广岛高尔夫球场
+広島ゴルフ場前,zh-tw,廣島高爾夫球場
+天水,ja,天水
+天水,ja-Hrkt,あまず
+天水,en,Amazu
+天水,ko,아마즈
+天水,zh-cn,天水
+天水,zh-tw,天水
+牛田新町四丁目,ja,牛田新町四丁目
+牛田新町四丁目,ja-Hrkt,うしたしんまちよんちょうめ
+牛田新町四丁目,en,Ushita-shinmachi-yonchome (Ushita-shinmachi 4)
+牛田新町四丁目,ko,우시타 신마치 4초메
+牛田新町四丁目,zh-cn,牛田新町四丁目
+牛田新町四丁目,zh-tw,牛田新町四丁目
+不動院,ja,不動院
+不動院,ja-Hrkt,ふどういん
+不動院,en,Fudoin
+不動院,ko,후도인
+不動院,zh-cn,不动院
+不動院,zh-tw,不動院
+牛田新町二丁目,ja,牛田新町二丁目
+牛田新町二丁目,ja-Hrkt,うしたしんまちにちょうめ
+牛田新町二丁目,en,Ushita-shinmachi-nichome (Ushita-shinmachi 2)
+牛田新町二丁目,ko,우시타 신마치 2초메
+牛田新町二丁目,zh-cn,牛田新町二丁目
+牛田新町二丁目,zh-tw,牛田新町二丁目
+牛田新町一丁目,ja,牛田新町一丁目
+牛田新町一丁目,ja-Hrkt,うしたしんまちいっちょうめ
+牛田新町一丁目,en,Ushita-shinmachi-itchome (Ushita-shinmachi 1)
+牛田新町一丁目,ko,우시타 신마치 1초메
+牛田新町一丁目,zh-cn,牛田新町一丁目
+牛田新町一丁目,zh-tw,牛田新町一丁目
+東区スポーツセンター入口,ja,東区スポーツセンター入口
+東区スポーツセンター入口,ja-Hrkt,ひがしくすぽーつせんたーいりぐち
+東区スポーツセンター入口,en,Higashiku Sports Center-iriguchi
+東区スポーツセンター入口,ko,히가시쿠 스포츠센터 이리구치
+東区スポーツセンター入口,zh-cn,东区体育中心入口
+東区スポーツセンター入口,zh-tw,東區體育中心入口
+安田学園白島キャンパス,ja,安田学園白島キャンパス
+安田学園白島キャンパス,ja-Hrkt,やすだがくえんはくしまきゃんぱす
+安田学園白島キャンパス,en,Yasuda Gakuen Hakushima Campus
+安田学園白島キャンパス,ko,야스다학원 하쿠시마 캠퍼스
+安田学園白島キャンパス,zh-cn,安田学园 白岛校区
+安田学園白島キャンパス,zh-tw,安田學園 白島校區
+基町,ja,基町
+基町,ja-Hrkt,もとまち
+基町,en,Motomachi
+基町,ko,모토마치
+基町,zh-cn,基町
+基町,zh-tw,基町
+合同庁舎前,ja,合同庁舎前
+合同庁舎前,ja-Hrkt,ごうどうちょうしゃまえ
+合同庁舎前,en,Godochosha-mae (Joint Government Building)
+合同庁舎前,ko,합동청사
+合同庁舎前,zh-cn,合同政府办公楼前
+合同庁舎前,zh-tw,合同政府辦公樓前
+女学院前,ja,女学院前
+女学院前,ja-Hrkt,じょがくいんまえ
+女学院前,en,Jogakuin-mae (Jogakuin High School)
+女学院前,ko,여학원
+女学院前,zh-cn,女学院前
+女学院前,zh-tw,女學院前
+工兵橋,ja,工兵橋
+工兵橋,ja-Hrkt,こうへいばし
+工兵橋,en,Koheibashi
+工兵橋,ko,고헤이바시
+工兵橋,zh-cn,工兵桥
+工兵橋,zh-tw,工兵橋
+牛田大橋,ja,牛田大橋
+牛田大橋,ja-Hrkt,うしたおおはし
+牛田大橋,en,Ushita-ohashi
+牛田大橋,ko,우시타 오하시
+牛田大橋,zh-cn,牛田大桥
+牛田大橋,zh-tw,牛田大橋
+神田橋,ja,神田橋
+神田橋,ja-Hrkt,かんだばし
+神田橋,en,Jindembashi
+神田橋,ko,진덴바시
+神田橋,zh-cn,神田桥
+神田橋,zh-tw,神田橋
+饒津裏,ja,饒津裏
+饒津裏,ja-Hrkt,にぎつうら
+饒津裏,en,Nigitsu-ura
+饒津裏,ko,니기쓰 우라
+饒津裏,zh-cn,饶津里
+饒津裏,zh-tw,饒津裏
+饒津,ja,饒津
+饒津,ja-Hrkt,にぎつ
+饒津,en,Nigitsu
+饒津,ko,니기쓰
+饒津,zh-cn,饶津
+饒津,zh-tw,饒津
+常盤橋東,ja,常盤橋東
+常盤橋東,ja-Hrkt,ときわばしひがし
+常盤橋東,en,Tokiwabashi-higashi
+常盤橋東,ko,도키와바시 히가시
+常盤橋東,zh-cn,常盘桥东
+常盤橋東,zh-tw,常盤橋東
+常磐橋東,ja,常磐橋東
+常磐橋東,ja-Hrkt,ときわばしひがし
+常磐橋東,en,Tokiwabashi-higashi
+常磐橋東,ko,도키와바시 히가시
+常磐橋東,zh-cn,常盘桥东
+常磐橋東,zh-tw,常盤橋東
+大須賀町・常盤橋東,ja,大須賀町・常盤橋東
+大須賀町・常盤橋東,ja-Hrkt,おおすがちょう・ときわばしひがし
+大須賀町・常盤橋東,en,Osugacho/Tokiwabashi-higashi
+大須賀町・常盤橋東,ko,오스가초·도키와바시 히가시
+大須賀町・常盤橋東,zh-cn,大须贺町・常盘桥东
+大須賀町・常盤橋東,zh-tw,大須賀町・常盤橋東
+高陽車庫,ja,高陽車庫
+高陽車庫,ja-Hrkt,こうようしゃこ
+高陽車庫,en,Koyo Shako (Koyo Depot)
+高陽車庫,ko,고요 차고
+高陽車庫,zh-cn,高阳车库
+高陽車庫,zh-tw,高陽車庫
+奥田橋,ja,奥田橋
+奥田橋,ja-Hrkt,おくだばし
+奥田橋,en,Okudabashi
+奥田橋,ko,오쿠다바시
+奥田橋,zh-cn,奥田桥
+奥田橋,zh-tw,奧田橋
+地区センター,ja,地区センター
+地区センター,ja-Hrkt,ちくせんたー
+地区センター,en,Chiku Center
+地区センター,ko,지쿠 센터
+地区センター,zh-cn,地区中心
+地区センター,zh-tw,地區中心
+西山公園前,ja,西山公園前
+西山公園前,ja-Hrkt,にしやまこうえんまえ
+西山公園前,en,Nishiyama Koen-mae (Nishiyama Park)
+西山公園前,ko,니시야마 공원
+西山公園前,zh-cn,西山公园前
+西山公園前,zh-tw,西山公園前
+下深川駅前,ja,下深川駅前
+下深川駅前,ja-Hrkt,しもふかわえきまえ
+下深川駅前,en,Shimo-fukawa Sta.
+下深川駅前,ko,시모후카와 역
+下深川駅前,zh-cn,下深川站前
+下深川駅前,zh-tw,下深川站前
+下庄,ja,下庄
+下庄,ja-Hrkt,しもじょう
+下庄,en,Shimojo
+下庄,ko,시모조
+下庄,zh-cn,下庄
+下庄,zh-tw,下莊
+堂願橋,ja,堂願橋
+堂願橋,ja-Hrkt,どうがんばし
+堂願橋,en,Dogambashi
+堂願橋,ko,도간바시
+堂願橋,zh-cn,堂愿桥
+堂願橋,zh-tw,堂願橋
+近隣センター,ja,近隣センター
+近隣センター,ja-Hrkt,きんりんせんたー
+近隣センター,en,Kinrin Center-mae
+近隣センター,ko,긴린 센터
+近隣センター,zh-cn,近邻中心前
+近隣センター,zh-tw,近鄰中心前
+落合中学校前,ja,落合中学校前
+落合中学校前,ja-Hrkt,おちあいちゅうがっこうまえ
+落合中学校前,en,Ochiai Chugakko-mae (Ochiai Junior High School)
+落合中学校前,ko,오치아이 중학교
+落合中学校前,zh-cn,落合中学前
+落合中学校前,zh-tw,落合中學前
+寺迫公園前,ja,寺迫公園前
+寺迫公園前,ja-Hrkt,てらさここうえんまえ
+寺迫公園前,en,Terasako Koen-mae (Terasako Park)
+寺迫公園前,ko,데라사코 공원
+寺迫公園前,zh-cn,寺迫公园前
+寺迫公園前,zh-tw,寺迫公園前
+寺迫公園,ja,寺迫公園
+寺迫公園,ja-Hrkt,てらさここうえん
+寺迫公園,en,Terasako Koen (Terasako Park)
+寺迫公園,ko,데라사코 공원
+寺迫公園,zh-cn,寺迫公园
+寺迫公園,zh-tw,寺迫公園
+柳ヶ迫,ja,柳ヶ迫
+柳ヶ迫,ja-Hrkt,やながさこ
+柳ヶ迫,en,Yanagasako
+柳ヶ迫,ko,야나가사코
+柳ヶ迫,zh-cn,柳迫
+柳ヶ迫,zh-tw,柳迫
+柳ケ迫,ja,柳ケ迫
+柳ケ迫,ja-Hrkt,やながさこ
+柳ケ迫,en,Yanagasako
+柳ケ迫,ko,야나가사코
+柳ケ迫,zh-cn,柳迫
+柳ケ迫,zh-tw,柳迫
+北山橋,ja,北山橋
+北山橋,ja-Hrkt,きたやまばし
+北山橋,en,Kitayamabashi
+北山橋,ko,기타야마바시
+北山橋,zh-cn,北山桥
+北山橋,zh-tw,北山橋
+郵便局前,ja,郵便局前
+郵便局前,ja-Hrkt,ゆうびんきょくまえ
+郵便局前,en,Yubinkyoku-mae (Post Office)
+郵便局前,ko,우체국
+郵便局前,zh-cn,邮局前
+郵便局前,zh-tw,郵局前
+県立美術館前,ja,県立美術館前
+県立美術館前,ja-Hrkt,けんりつびじゅつかんまえ
+県立美術館前,en,Hiroshima Prefectural Art Museum
+県立美術館前,ko,현립미술관
+県立美術館前,zh-cn,县立美术馆前
+県立美術館前,zh-tw,縣立美術館前
+ひろしま美術館前,ja,ひろしま美術館前
+ひろしま美術館前,ja-Hrkt,ひろしまびじゅつかんまえ
+原爆ドーム前,ja,原爆ドーム前
+原爆ドーム前,ja-Hrkt,げんばくどーむまえ
+平和公園前,ja,平和公園前
+平和公園前,ja-Hrkt,へいわこうえんまえ
+現代美術館前,ja,現代美術館前
+現代美術館前,ja-Hrkt,げんだいびじゅつかんまえ
+広島城,ja,広島城
+広島城,ja-Hrkt,ひろしまじょう
+新白島駅,ja,新白島駅
+新白島駅,ja-Hrkt,しんはくしまえき
+新白島駅,en,Shin-hakushima Sta.
+新白島駅,ko,신하쿠시마 역
+新白島駅,zh-cn,新白岛站
+新白島駅,zh-tw,新白島站
+並木通り入口,ja,並木通り入口
+並木通り入口,ja-Hrkt,なみきどおりいりぐち
+新天地,ja,新天地
+新天地,ja-Hrkt,しんてんち
+防府駅,ja,防府駅
+防府駅,ja-Hrkt,ほうふえき
+防府駅前,ja,防府駅前
+防府駅前,ja-Hrkt,ほうふえきまえ
+八王子,ja,八王子
+八王子,ja-Hrkt,はちおうじ
+千日町,ja,千日町
+千日町,ja-Hrkt,せんにちまち
+新橋,ja,新橋
+新橋,ja-Hrkt,しんばし
+新橋,en,Shimbashi
+新橋,ko,신바시
+新橋,zh-cn,新桥
+新橋,zh-tw,新橋
+右田,ja,右田
+右田,ja-Hrkt,みぎた
+勝坂,ja,勝坂
+勝坂,ja-Hrkt,かっさか
+上勝坂,ja,上勝坂
+上勝坂,ja-Hrkt,かみかっさか
+洞道北口,ja,洞道北口
+洞道北口,ja-Hrkt,どうどうきたぐち
+上鯖山,ja,上鯖山
+上鯖山,ja-Hrkt,かみさばやま
+禅昌寺前,ja,禅昌寺前
+禅昌寺前,ja-Hrkt,ぜんしょうじまえ
+下鯖山,ja,下鯖山
+下鯖山,ja-Hrkt,しもさばやま
+八反田,ja,八反田
+八反田,ja-Hrkt,はったんだ
+鳴滝,ja,鳴滝
+鳴滝,ja-Hrkt,なるたき
+鯖地,ja,鯖地
+鯖地,ja-Hrkt,さばじ
+柊,ja,柊
+柊,ja-Hrkt,ひいらぎ
+大内中学校前,ja,大内中学校前
+大内中学校前,ja-Hrkt,おおうちちゅうがっこうまえ
+矢田,ja,矢田
+矢田,ja-Hrkt,やた
+光円寺前,ja,光円寺前
+光円寺前,ja-Hrkt,こうえんじまえ
+大内小学校前,ja,大内小学校前
+大内小学校前,ja-Hrkt,おおうちしょうがっこうまえ
+御堀橋,ja,御堀橋
+御堀橋,ja-Hrkt,みほりばし
+宮島町,ja,宮島町
+宮島町,ja-Hrkt,みやじまちょう
+白石,ja,白石
+白石,ja-Hrkt,しらいし
+白石,en,Shiraishi
+白石,ko,시라이시
+白石,zh-cn,白石
+白石,zh-tw,白石
+山口県庁前,ja,山口県庁前
+山口県庁前,ja-Hrkt,やまぐちけんちょうまえ
+美術館前,ja,美術館前
+美術館前,ja-Hrkt,びじゅつかんまえ
+美術館前,en,Bijutsukan-mae (Art Museum)
+美術館前,ko,미술관
+美術館前,zh-cn,美术馆前
+美術館前,zh-tw,美術館前
+米屋町,ja,米屋町
+米屋町,ja-Hrkt,こめやちょう
+今市通,ja,今市通
+今市通,ja-Hrkt,いまいちどおり
+山口駅,ja,山口駅
+山口駅,ja-Hrkt,やまぐちえき
+ゆめタウン山口,ja,ゆめタウン山口
+ゆめタウン山口,ja-Hrkt,ゆめたうんやまぐち
+昭和町,ja,昭和町
+昭和町,ja-Hrkt,しょうわまち
+昭和町,en,Showacho
+昭和町,ko,쇼와초
+昭和町,zh-cn,昭和町
+昭和町,zh-tw,昭和町
+中国電力・ｙａｂ前,ja,中国電力・ｙａｂ前
+中国電力・ｙａｂ前,ja-Hrkt,ちゅうごくでんりょくまえ
+商工会館前,ja,商工会館前
+商工会館前,ja-Hrkt,しょうこうかいかんまえ
+情報芸術センター前,ja,情報芸術センター前
+情報芸術センター前,ja-Hrkt,じょうほうげいじゅつせんたーまえ
+ＮＴＴ山口前,ja,ＮＴＴ山口前
+ＮＴＴ山口前,ja-Hrkt,えぬてぃーてぃーやまぐちまえ
+湯田温泉通,ja,湯田温泉通
+湯田温泉通,ja-Hrkt,ゆだおんせんどおり
+下湯田,ja,下湯田
+下湯田,ja-Hrkt,しもゆだ
+湯田温泉駅入口,ja,湯田温泉駅入口
+湯田温泉駅入口,ja-Hrkt,ゆだおんせんえきいりぐち
+あいわたせ,ja,あいわたせ
+あいわたせ,ja-Hrkt,あいわたせ
+台,ja,台
+台,ja-Hrkt,だい
+台,en,Dai
+台,ko,다이
+台,zh-cn,台
+台,zh-tw,臺
+山口大学,ja,山口大学
+山口大学,ja-Hrkt,やまぐちだいがく
+山口大学前,ja,山口大学前
+山口大学前,ja-Hrkt,やまぐちだいがくまえ
+山口市民会館前,ja,山口市民会館前
+山口市民会館前,ja-Hrkt,しみんかいかんまえ
+山口市民会館前,en,Shimin Kaikan-mae (Civic Hall)
+山口市民会館前,ko,시민 카이칸 마에
+山口市民会館前,zh-cn,市民会馆前
+山口市民会館前,zh-tw,市民會館前
+市民会館前,ja,市民会館前
+市民会館前,ja-Hrkt,しみんかいかんまえ
+市民会館前,en,Shimin Kaikan-mae (Civic Hall)
+市民会館前,ko,시민 카이칸 마에
+市民会館前,zh-cn,市民会馆前
+市民会館前,zh-tw,市民會館前
+新山口駅,ja,新山口駅
+新山口駅,ja-Hrkt,しんやまぐちえき
+スポーツの森前,ja,スポーツの森前
+スポーツの森前,ja-Hrkt,すぽーつのもりまえ
+宮野新橋,ja,宮野新橋
+宮野新橋,ja-Hrkt,みやのしんばし
+宮野新橋,en,Shimbashi
+宮野新橋,ko,신바시
+宮野新橋,zh-cn,新桥
+宮野新橋,zh-tw,新橋
+佐々並,ja,佐々並
+佐々並,ja-Hrkt,ささなみ
+明木,ja,明木
+明木,ja-Hrkt,あきらぎ
+萩バスセンター,ja,萩バスセンター
+萩バスセンター,ja-Hrkt,はぎばすせんたー
+東萩駅,ja,東萩駅
+東萩駅,ja-Hrkt,ひがしはぎえき
+東萩駅前,ja,東萩駅前
+東萩駅前,ja-Hrkt,ひがしはぎえき
+野田学園前,ja,野田学園前
+野田学園前,ja-Hrkt,のだがくえんまえ
+山口自衛隊前,ja,山口自衛隊前
+山口自衛隊前,ja-Hrkt,じえいたいまえ
+山口自衛隊前,en,Jieitai-mae
+山口自衛隊前,ko,지에타이 마에
+山口自衛隊前,zh-cn,自卫队前
+山口自衛隊前,zh-tw,自衛隊前
+自衛隊前,ja,自衛隊前
+自衛隊前,ja-Hrkt,じえいたいまえ
+自衛隊前,en,Jieitai-mae
+自衛隊前,ko,지에타이 마에
+自衛隊前,zh-cn,自卫队前
+自衛隊前,zh-tw,自衛隊前
+日赤前,ja,日赤前
+日赤前,ja-Hrkt,にっせきまえ
+日赤前,en,Nisseki-mae (Red Cross Hospital)
+日赤前,ko,닛세키 마에
+日赤前,zh-cn,日赤前
+日赤前,zh-tw,日赤前
+三の宮,ja,三の宮
+三の宮,ja-Hrkt,さんのみや
+折本,ja,折本
+折本,ja-Hrkt,おりもと
+宮野駅前,ja,宮野駅前
+宮野駅前,ja-Hrkt,みやのえきまえ
+県宮野庁舎前,ja,県宮野庁舎前
+県宮野庁舎前,ja-Hrkt,けんみやのちょうしゃまえ
+宮野中学校前,ja,宮野中学校前
+宮野中学校前,ja-Hrkt,みやのちゅうがっこうまえ
+本宮野,ja,本宮野
+本宮野,ja-Hrkt,ほんみやの
+七房,ja,七房
+七房,ja-Hrkt,ななふさ
+奥湯田温泉口,ja,奥湯田温泉口
+奥湯田温泉口,ja-Hrkt,おくゆだおんせんぐち
+向田橋,ja,向田橋
+向田橋,ja-Hrkt,むかいだばし
+宮野大峠,ja,宮野大峠
+宮野大峠,ja-Hrkt,みやのおおたお
+上小木原,ja,上小木原
+上小木原,ja-Hrkt,かみこぎはら
+下小木原,ja,下小木原
+下小木原,ja-Hrkt,しもこぎはら
+日南瀬,ja,日南瀬
+日南瀬,ja-Hrkt,ひなたせ
+中作,ja,中作
+中作,ja-Hrkt,なかのつくり
+大迫口,ja,大迫口
+大迫口,ja-Hrkt,おおさこぐち
+板橋口,ja,板橋口
+板橋口,ja-Hrkt,いたばしぐち
+小松ヶ谷,ja,小松ヶ谷
+小松ヶ谷,ja-Hrkt,こまつがたに
+与三原,ja,与三原
+与三原,ja-Hrkt,よさはら
+根引,ja,根引
+根引,ja-Hrkt,ねびけ
+新茶屋,ja,新茶屋
+新茶屋,ja-Hrkt,しんちゃや
+新茶屋,en,Shin-chaya
+新茶屋,ko,신차야
+新茶屋,zh-cn,新茶屋
+新茶屋,zh-tw,新茶屋
+中の峠,ja,中の峠
+中の峠,ja-Hrkt,なかのたお
+釿切,ja,釿切
+釿切,ja-Hrkt,ちょうのぎり
+古戦場,ja,古戦場
+古戦場,ja-Hrkt,こせんじょう
+同前,ja,同前
+同前,ja-Hrkt,どうぜん
+小野山,ja,小野山
+小野山,ja-Hrkt,おのやま
+角力場,ja,角力場
+角力場,ja-Hrkt,すもうば
+菅蓋,ja,菅蓋
+菅蓋,ja-Hrkt,すげふた
+下菅蓋,ja,下菅蓋
+下菅蓋,ja-Hrkt,しもすげふた
+牛地,ja,牛地
+牛地,ja-Hrkt,うしじ
+蔵屋,ja,蔵屋
+蔵屋,ja-Hrkt,くらや
+瓜作,ja,瓜作
+瓜作,ja-Hrkt,うりつくり
+佐古,ja,佐古
+佐古,ja-Hrkt,さこ
+長門峡北口,ja,長門峡北口
+長門峡北口,ja-Hrkt,ちょうもんきょうきたぐち
+長門峡北入口,ja,長門峡北入口
+長門峡北入口,ja-Hrkt,ちょうもんきょうきたぐち
+立野渡,ja,立野渡
+立野渡,ja-Hrkt,たつのわたし
+霧口,ja,霧口
+霧口,ja-Hrkt,きりぐち
+沖原,ja,沖原
+沖原,ja-Hrkt,おきはら
+萩駅,ja,萩駅
+萩駅,ja-Hrkt,はぎえき
+萩駅前,ja,萩駅前
+萩駅前,ja-Hrkt,はぎえき
+橋本町,ja,橋本町
+橋本町,ja-Hrkt,はしもとまち
+松ヶ鼻,ja,松ヶ鼻
+松ヶ鼻,ja-Hrkt,まつがはな
+松ヶ鼻,en,Matsugahana
+松ヶ鼻,ko,마쓰가하나
+松ヶ鼻,zh-cn,松鼻
+松ヶ鼻,zh-tw,松鼻
+吉敷郵便局前,ja,吉敷郵便局前
+吉敷郵便局前,ja-Hrkt,よしきゆうびんきょくまえ
+吉敷,ja,吉敷
+吉敷,ja-Hrkt,よしき
+赤田,ja,赤田
+赤田,ja-Hrkt,あかだ
+赤田公民館前,ja,赤田公民館前
+赤田公民館前,ja-Hrkt,あかだこうみんかんまえ
+四ノ宮前,ja,四ノ宮前
+四ノ宮前,ja-Hrkt,しのみやまえ
+中尾口,ja,中尾口
+中尾口,ja-Hrkt,なかおぐち
+秋吉,ja,秋吉
+秋吉,ja-Hrkt,あきよし
+随徳,ja,随徳
+随徳,ja-Hrkt,ずいとく
+隨徳,ja,隨徳
+隨徳,ja-Hrkt,ずいとく
+秋芳洞,ja,秋芳洞
+秋芳洞,ja-Hrkt,あきよしどう
+秋吉小学校前,ja,秋吉小学校前
+秋吉小学校前,ja-Hrkt,あきよししょうがっこうまえ
+下八重,ja,下八重
+下八重,ja-Hrkt,しもやえ
+上八重,ja,上八重
+上八重,ja-Hrkt,かみやえ
+八重ヶ原,ja,八重ヶ原
+八重ヶ原,ja-Hrkt,やえがはら
+平ヶ谷,ja,平ヶ谷
+平ヶ谷,ja-Hrkt,ひらがたに
+紅葉橋,ja,紅葉橋
+紅葉橋,ja-Hrkt,もみじばし
+紅葉橋,en,Momijibashi
+紅葉橋,ko,모미지바시
+紅葉橋,zh-cn,红叶桥
+紅葉橋,zh-tw,紅葉橋
+大田中央,ja,大田中央
+大田中央,ja-Hrkt,おおだちゅうおう
+温湯,ja,温湯
+温湯,ja-Hrkt,ぬくゆ
+長門高山,ja,長門高山
+長門高山,ja-Hrkt,ながとたかやま
+綾木,ja,綾木
+綾木,ja-Hrkt,あやぎ
+四ノ瀬,ja,四ノ瀬
+四ノ瀬,ja-Hrkt,しのせ
+薬王寺,ja,薬王寺
+薬王寺,ja-Hrkt,やくおうじ
+景平,ja,景平
+景平,ja-Hrkt,かげひら
+下大石,ja,下大石
+下大石,ja-Hrkt,しもおおいし
+長門大石,ja,長門大石
+長門大石,ja-Hrkt,ながとおおいし
+吉敷畑,ja,吉敷畑
+吉敷畑,ja-Hrkt,よしきはた
+黒谷口,ja,黒谷口
+黒谷口,ja-Hrkt,くろたにぐち
+秋吉台,ja,秋吉台
+秋吉台,ja-Hrkt,あきよしだい
+千坊,ja,千坊
+千坊,ja-Hrkt,せんぼう
+千坊,en,Sembo
+千坊,ko,센보
+千坊,zh-cn,千坊
+千坊,zh-tw,千坊
+萩・明倫センター,ja,萩・明倫センター
+萩・明倫センター,ja-Hrkt,はぎめいりんせんたー
+高井,ja,高井
+高井,ja-Hrkt,たかい
+高井,en,Takai
+高井,ko,다카이
+高井,zh-cn,高井
+高井,zh-tw,高井
+高井県営住宅前,ja,高井県営住宅前
+高井県営住宅前,ja-Hrkt,たかいけんえいじゅうたくまえ
+高井県営住宅前,en,Kenei Jutaku-mae
+高井県営住宅前,ko,겐에이 주타구 마에
+高井県営住宅前,zh-cn,县营住宅前
+高井県営住宅前,zh-tw,縣營住宅前
+総合医療センター,ja,総合医療センター
+総合医療センター,ja-Hrkt,そうごういりょうせんたーまえ
+総合医療センター前,ja,総合医療センター前
+総合医療センター前,ja-Hrkt,そうごういりょうせんたーまえ
+美東病院,ja,美東病院
+美東病院,ja-Hrkt,みとうびょういん
+道の駅あさひ,ja,道の駅あさひ
+道の駅あさひ,ja-Hrkt,みちのえきあさひ
+下田,ja,下田
+下田,ja-Hrkt,しもだ

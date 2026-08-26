@@ -1,0 +1,883 @@
+<title>Counted in Full — FOSS4G Talk Dossier</title>
+<style>
+  /* ---- Tokens: complete light palette on bare :root -------------------- */
+  /* 토큰: 기본 :root에 라이트 팔레트 전체를 정의한다 */
+  :root {
+    --ground:      #EDEFEA;  /* topo-sheet off-white / 지형도 용지색 */
+    --surface:     #E4E7E0;
+    --surface-2:   #DADED4;
+    --ink:         #141A17;
+    --ink-soft:    #3C443E;
+    --muted:       #6E7570;  /* green-grey neutral, chosen not inherited */
+    --rule:        #C3C9BE;
+    --sienna:      #A0552E;  /* contour ink / 등고선 잉크 */
+    --teal:        #1E6B72;  /* corrected, verified / 보정·검증 */
+    --crimson:     #A32E28;  /* overcount severity / 과대계상 심각도 */
+    --bar-track:   #D2D7CC;
+    --shade:       rgba(160, 85, 46, 0.18);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:    #131714;
+      --surface:   #1B211C;
+      --surface-2: #232A24;
+      --ink:       #E6E8E1;
+      --ink-soft:  #C2C8BE;
+      --muted:     #8D958A;
+      --rule:      #333B34;
+      --sienna:    #C97A4E;
+      --teal:      #4FA5AC;
+      --crimson:   #D2645C;
+      --bar-track: #2A312B;
+      --shade:     rgba(201, 122, 78, 0.22);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground:    #131714;
+    --surface:   #1B211C;
+    --surface-2: #232A24;
+    --ink:       #E6E8E1;
+    --ink-soft:  #C2C8BE;
+    --muted:     #8D958A;
+    --rule:      #333B34;
+    --sienna:    #C97A4E;
+    --teal:      #4FA5AC;
+    --crimson:   #D2645C;
+    --bar-track: #2A312B;
+    --shade:     rgba(201, 122, 78, 0.22);
+  }
+
+  /* ---- Type roles ------------------------------------------------------ */
+  :root {
+    --display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    --body: "Segoe UI", "Malgun Gothic", "Apple SD Gothic Neo",
+            system-ui, -apple-system, sans-serif;
+    --mono: "Cascadia Code", Consolas, "SF Mono", ui-monospace, monospace;
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.65;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+  }
+
+  .wrap {
+    max-width: 60rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+  }
+
+  /* ---- Masthead -------------------------------------------------------- */
+  .masthead {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 2.5rem;
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--sienna);
+  }
+
+  h1 {
+    font-family: var(--display);
+    font-size: clamp(2.6rem, 6vw, 4.1rem);
+    line-height: 1.02;
+    font-weight: 400;
+    margin: 0;
+    text-wrap: balance;
+    letter-spacing: -0.015em;
+  }
+
+  .subtitle {
+    font-family: var(--display);
+    font-size: clamp(1.1rem, 2.4vw, 1.4rem);
+    font-style: italic;
+    color: var(--ink-soft);
+    margin: 0;
+    max-width: 44ch;
+    text-wrap: balance;
+  }
+
+  .masthead .ko {
+    color: var(--muted);
+    font-size: 0.95rem;
+    max-width: 52ch;
+    margin: 0;
+  }
+
+  /* ---- Sections -------------------------------------------------------- */
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .sec-head {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  h2 {
+    font-family: var(--display);
+    font-size: clamp(1.7rem, 3.4vw, 2.3rem);
+    font-weight: 400;
+    line-height: 1.15;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  h2 .ko {
+    display: block;
+    font-family: var(--body);
+    font-size: 0.92rem;
+    color: var(--muted);
+    font-style: normal;
+    margin-top: 0.35rem;
+    letter-spacing: 0;
+  }
+
+  h3 {
+    font-family: var(--body);
+    font-size: 1rem;
+    font-weight: 650;
+    margin: 0;
+    letter-spacing: 0.01em;
+  }
+
+  p { margin: 0; max-width: 66ch; }
+  p + p { margin-top: 0.9rem; }
+  .ko { color: var(--muted); }
+  p .ko { display: block; margin-top: 0.3rem; font-size: 0.93rem; }
+
+  strong { font-weight: 650; }
+  em.term { font-style: normal; color: var(--sienna); font-weight: 650; }
+
+  code {
+    font-family: var(--mono);
+    font-size: 0.86em;
+    background: var(--surface);
+    padding: 0.12em 0.38em;
+    border-radius: 2px;
+    color: var(--ink);
+  }
+
+  /* ---- Thesis figure --------------------------------------------------- */
+  .figure {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    padding: 2rem 1.5rem 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .figure svg { width: 100%; max-width: 34rem; height: auto; }
+
+  .figcaption {
+    font-family: var(--mono);
+    font-size: 0.76rem;
+    color: var(--muted);
+    text-align: center;
+    max-width: 46ch;
+    line-height: 1.6;
+  }
+
+  /* ---- Findings -------------------------------------------------------- */
+  .findings { display: flex; flex-direction: column; gap: 0; }
+
+  .finding {
+    display: grid;
+    grid-template-columns: 3.2rem 1fr auto;
+    gap: 0 1.1rem;
+    align-items: baseline;
+    padding: 1.4rem 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  .finding:last-child { border-bottom: 1px solid var(--rule); }
+
+  .rank {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+  }
+
+  .finding-body { display: flex; flex-direction: column; gap: 0.45rem; }
+
+  .loc {
+    font-family: var(--mono);
+    font-size: 0.76rem;
+    color: var(--teal);
+  }
+
+  .magnitude {
+    font-family: var(--mono);
+    font-size: clamp(1.5rem, 3.6vw, 2.1rem);
+    color: var(--crimson);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+    line-height: 1;
+  }
+
+  .bar {
+    grid-column: 2 / 4;
+    height: 3px;
+    background: var(--bar-track);
+    border-radius: 2px;
+    margin-top: 0.7rem;
+    overflow: hidden;
+  }
+
+  .bar span {
+    display: block;
+    height: 100%;
+    background: var(--crimson);
+  }
+
+  /* ---- Tables ---------------------------------------------------------- */
+  .table-scroll { overflow-x: auto; }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.9rem;
+    min-width: 32rem;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 0.6rem 0.9rem 0.6rem 0;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+
+  th {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 400;
+    white-space: nowrap;
+  }
+
+  td.num {
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .lo { color: var(--crimson); }
+  .hi { color: var(--teal); }
+
+  /* ---- Talk sequence --------------------------------------------------- */
+  .beats { display: flex; flex-direction: column; gap: 0; }
+
+  .beat {
+    display: grid;
+    grid-template-columns: 3.2rem 1fr;
+    gap: 0 1.1rem;
+    padding: 1.25rem 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  .beat:last-child { border-bottom: 1px solid var(--rule); }
+
+  .beat-n {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--sienna);
+    letter-spacing: 0.08em;
+    padding-top: 0.15rem;
+  }
+
+  .beat-body { display: flex; flex-direction: column; gap: 0.35rem; }
+
+  .beat-body .meta {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--muted);
+  }
+
+  /* ---- Abstract -------------------------------------------------------- */
+  .abstract {
+    background: var(--surface);
+    border-left: 2px solid var(--sienna);
+    padding: 1.6rem 1.6rem 1.6rem 1.4rem;
+    border-radius: 0 2px 2px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .abstract p { max-width: 70ch; font-size: 0.95rem; }
+
+  .callout {
+    background: var(--surface-2);
+    border-left: 2px solid var(--crimson);
+    padding: 1.5rem 1.5rem 1.5rem 1.3rem;
+    border-radius: 0 2px 2px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+
+  .callout .kicker {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--crimson);
+  }
+
+  .callout h3 { font-size: 1.15rem; }
+  .callout p { font-size: 0.92rem; }
+
+  .ledger {
+    font-family: var(--mono);
+    font-size: 0.82rem;
+    font-variant-numeric: tabular-nums;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.3rem 1.2rem;
+    padding-top: 0.2rem;
+  }
+
+  .ledger dt { color: var(--muted); white-space: nowrap; }
+  .ledger dd { margin: 0; }
+
+  /* ---- Status ---------------------------------------------------------- */
+  .status { display: flex; flex-direction: column; gap: 0; }
+
+  .status-row {
+    display: grid;
+    grid-template-columns: 1.6rem 1fr auto;
+    gap: 0 0.9rem;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: baseline;
+    font-size: 0.92rem;
+  }
+
+  .mark { font-family: var(--mono); font-size: 0.85rem; }
+  .mark.done { color: var(--teal); }
+  .mark.todo { color: var(--muted); }
+
+  .status-row .tag {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  footer {
+    border-top: 1px solid var(--rule);
+    padding-top: 1.5rem;
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  a { color: var(--teal); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible, [tabindex]:focus-visible {
+    outline: 2px solid var(--sienna);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+
+  @media (max-width: 34rem) {
+    .finding { grid-template-columns: 2.2rem 1fr; }
+    .magnitude { grid-column: 2; margin-top: 0.5rem; }
+    .bar { grid-column: 2; }
+    .beat { grid-template-columns: 2.2rem 1fr; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="eyebrow">FOSS4G Hiroshima &middot; Talk Dossier &middot; 발표 준비 문서</div>
+    <h1>Counted in Full</h1>
+    <p class="subtitle">Four bugs, one mistake: when partial spatial overlap is
+      treated as whole, the map still draws and the answer is still wrong.</p>
+    <p class="ko">네 개의 버그, 하나의 실수. 부분적인 공간 중첩을 전체로 취급하면
+      지도는 여전히 그려지고, 답은 여전히 틀린다.</p>
+  </header>
+
+  <!-- ================= THESIS ================= -->
+  <section>
+    <div class="sec-head">
+      <h2>The mistake, in one picture
+        <span class="ko">한 장으로 보는 실수</span>
+      </h2>
+    </div>
+
+    <p>Every defect found in this codebase reduces to the same operation: a
+      spatial predicate that answers <em class="term">yes or no</em> is used
+      where the question was <em class="term">how much</em>.
+      <span class="ko">이 코드베이스에서 발견된 모든 결함은 같은 연산으로 환원된다.
+        '얼마나'를 물어야 할 자리에 '예/아니오'로 답하는 공간 술어를 쓴 것이다.</span>
+    </p>
+
+    <div class="figure">
+      <svg viewBox="0 0 560 220" role="img"
+           aria-label="A 100-metre grid cell straddling a district boundary. The naive method counts all 420 residents; area weighting counts 143.">
+        <!-- boundary line / 경계선 -->
+        <path d="M 232 6 L 262 214" stroke="var(--ink)" stroke-width="1.5"
+              fill="none" stroke-dasharray="7 4"/>
+        <!-- cell outline / 격자 외곽 -->
+        <rect x="150" y="45" width="130" height="130" fill="none"
+              stroke="var(--ink-soft)" stroke-width="1.5"/>
+        <!-- retained portion / 잔존 영역 -->
+        <path d="M 150 45 L 244 45 L 259 175 L 150 175 Z" fill="var(--shade)"/>
+        <text x="150" y="32" fill="var(--muted)" font-size="11"
+              font-family="monospace">100 m cell &middot; pop 420</text>
+        <text x="292" y="66" fill="var(--ink)" font-size="13"
+              font-family="monospace">.intersects() &rarr; True</text>
+        <text x="292" y="86" fill="var(--crimson)" font-size="15"
+              font-family="monospace">counts 420</text>
+        <text x="292" y="132" fill="var(--ink)" font-size="13"
+              font-family="monospace">area &times; 0.34</text>
+        <text x="292" y="152" fill="var(--teal)" font-size="15"
+              font-family="monospace">counts 143</text>
+        <text x="166" y="200" fill="var(--muted)" font-size="11"
+              font-family="monospace">inside</text>
+        <text x="268" y="200" fill="var(--muted)" font-size="11"
+              font-family="monospace">outside</text>
+      </svg>
+      <p class="figcaption">The cell is 34 % inside the district. Both methods
+        run without error. Only one is an estimate of anything.<br>
+        격자는 34%만 행정동 안에 있다. 두 방법 모두 에러 없이 실행된다.
+        추정치라 할 수 있는 것은 하나뿐이다.</p>
+    </div>
+  </section>
+
+  <!-- ================= FINDINGS ================= -->
+  <section>
+    <div class="sec-head">
+      <h2>Findings, by magnitude
+        <span class="ko">크기순 발견 사항</span>
+      </h2>
+      <p>All four measured against the same data. Every one produces a running
+        program, a rendered map, and a plausible number.
+        <span class="ko">네 건 모두 동일 데이터로 측정했다. 하나도 빠짐없이
+          정상 실행되고, 지도가 그려지고, 그럴듯한 숫자를 낸다.</span>
+      </p>
+    </div>
+
+    <div class="findings">
+      <div class="finding">
+        <div class="rank">01</div>
+        <div class="finding-body">
+          <h3>Binary <code>intersects()</code> for population</h3>
+          <div class="loc">3-4_session.ipynb &middot; cell 75</div>
+          <p style="font-size:0.9rem">A cell overlapping the uncovered area by
+            1&nbsp;% counts its whole population. 8,672 reported against 5,715
+            actual. Twenty-two cells overlap by under 10&nbsp;% yet contribute
+            1,762 people at full weight.
+            <span class="ko">비커버 영역에 1%만 겹친 격자가 인구를 전액 계상한다.
+              보고값 8,672명, 실제 5,715명. 22개 격자는 10% 미만만 겹쳤는데
+              1,762명을 전액 기여한다.</span>
+          </p>
+        </div>
+        <div class="magnitude">+51.7%</div>
+        <div class="bar"><span style="width:100%"></span></div>
+      </div>
+
+      <div class="finding">
+        <div class="rank">02</div>
+        <div class="finding-body">
+          <h3>Grid clipped, population not redistributed</h3>
+          <div class="loc">app.py:158 &middot; 청림동</div>
+          <p style="font-size:0.9rem">Boundary cells keep 100&nbsp;% of their
+            population after clipping. Error scales inversely with district
+            size: 46 cells in 0.297&nbsp;km² means boundary cells dominate.
+            <span class="ko">클리핑 후에도 경계 격자가 인구를 100% 유지한다.
+              오차는 행정동 크기에 반비례한다. 0.297km²에 격자 46개면
+              경계 격자가 지배적이다.</span>
+          </p>
+        </div>
+        <div class="magnitude">+34.8%</div>
+        <div class="bar"><span style="width:67%"></span></div>
+      </div>
+
+      <div class="finding">
+        <div class="rank">03</div>
+        <div class="finding-body">
+          <h3>Cells straddling the service radius counted whole</h3>
+          <div class="loc">3-4_session.ipynb &middot; cell 82</div>
+          <p style="font-size:0.9rem">Population inside a 1,250&nbsp;m circle:
+            10,906 reported, 8,861 area-weighted. The candidate-siting
+            simulation is built on the inflated figure.
+            <span class="ko">1,250m 원 내 인구: 보고값 10,906명,
+              면적가중 8,861명. 입지 시뮬레이션이 부풀려진 값 위에 서 있다.</span>
+          </p>
+        </div>
+        <div class="magnitude">+23.1%</div>
+        <div class="bar"><span style="width:45%"></span></div>
+      </div>
+
+      <div class="finding">
+        <div class="rank">04</div>
+        <div class="finding-body">
+          <h3>Stops selected by administrative membership</h3>
+          <div class="loc">app.py:123 &middot; 남현동</div>
+          <p style="font-size:0.9rem">A stop 10&nbsp;m outside the boundary is
+            discarded though it serves residents inside. Nine stops used where
+            362 are relevant &mdash; yet population error stays small, because
+            the uncovered land here is mountainside where nobody lives.
+            <span class="ko">경계 밖 10m의 정류장이 안쪽 주민에게 서비스하는데도
+              버려진다. 관련 정류장 362개 중 9개만 사용. 그런데도 인구 오차는
+              작다. 여기 비커버 지역이 사람이 살지 않는 산지이기 때문이다.</span>
+          </p>
+        </div>
+        <div class="magnitude">+3.2%</div>
+        <div class="bar"><span style="width:6%"></span></div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="kicker">Finding 05 &middot; a different mechanism</div>
+      <h3>A district disappeared, and nobody noticed for six months</h3>
+      <p>Seoul has 426 dongs and 425 distinct names. 신사동 exists in both
+        관악구 and 강남구. The lecture builds its population lookup with
+        <code>set_index("region_nm").to_dict()</code> &mdash; a dictionary keyed
+        on a non-unique key. One of the two survives.
+        <span class="ko">서울은 426개 동에 이름은 425개다. 신사동이 관악구와
+          강남구에 각각 있다. 비고유 키로 dict를 만들면 하나만 살아남는다.</span>
+      </p>
+      <dl class="ledger">
+        <dt>관악구 신사동</dt>
+        <dd>population <span class="lo">NaN</span> &rarr; score
+          <span class="lo">NaN</span> &rarr; <span class="lo">rank 427 of 427</span></dd>
+        <dt>강남구 신사동</dt>
+        <dd>appears twice &mdash; 24,296 (its own) and 15,291 (관악구's)</dd>
+        <dt>result table</dt>
+        <dd>427 rows for 426 districts</dd>
+      </dl>
+      <p>No exception. No warning. A district silently dropped out of an
+        analysis about which districts are underserved &mdash; and it placed
+        last, which is exactly where a genuinely underserved district would
+        also appear.
+        <span class="ko">예외도, 경고도 없다. '어느 동이 소외됐는가'를 묻는
+          분석에서 한 동이 조용히 빠졌다. 그리고 최하위에 놓였는데,
+          진짜로 소외된 동이 놓일 자리도 바로 거기다.</span>
+      </p>
+      <p>This one does not fit the overlap frame &mdash; it is identity, not
+        geometry. Both belong to the same family: <strong>a lossy operation
+        that returns a valid-looking result.</strong>
+        <span class="ko">이 건은 중첩 프레임에 안 맞는다. 기하가 아니라
+          동일성의 문제다. 그러나 같은 계열이다 &mdash;
+          <strong>정보를 잃으면서 멀쩡해 보이는 결과를 돌려주는 연산.</strong></span>
+      </p>
+    </div>
+
+    <p><strong>Finding 04 is the one to open with, not the one to lean on.</strong>
+      Its small error is the point: the same bug is nearly harmless on a
+      mountain and severe in a dense block. Severity is a property of the
+      terrain, not of the code.
+      <span class="ko"><strong>04번은 시작용이지 기댈 곳이 아니다.</strong>
+        오차가 작다는 것 자체가 논점이다. 같은 버그가 산에서는 거의 무해하고
+        고밀 주거지에서는 심각하다. 심각도는 코드가 아니라 지형의 속성이다.</span>
+    </p>
+  </section>
+
+  <!-- ================= CONSEQUENCE ================= -->
+  <section>
+    <div class="sec-head">
+      <h2>What it did to the answer
+        <span class="ko">답에 미친 영향</span>
+      </h2>
+      <p>The lecture ranks all 426 Seoul dongs on three min-max normalised
+        indicators, weighted <code>0.33 / 0.33 / 0.33</code>, and takes the top
+        five. The reproduction below matches the original exactly, in order.
+        <span class="ko">2강은 서울 426개 행정동을 세 지표로 채점해
+          <code>0.33 / 0.33 / 0.33</code> 가중 후 상위 5개를 취한다.
+          아래 재현은 원본과 순서까지 정확히 일치한다.</span>
+      </p>
+    </div>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th><th>District</th>
+            <th style="text-align:right">Pop. density</th>
+            <th style="text-align:right">Uncovered ratio</th>
+            <th style="text-align:right">Stops</th>
+            <th style="text-align:right">Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="num">1</td><td>청림동</td><td class="num">48,556</td><td class="num lo">0.0000</td><td class="num">8</td><td class="num">0.6336</td></tr>
+          <tr><td class="num">2</td><td>남현동</td><td class="num">5,328</td><td class="num">0.7621</td><td class="num">9</td><td class="num">0.6289</td></tr>
+          <tr><td class="num">3</td><td>중계4동</td><td class="num">12,402</td><td class="num">0.6178</td><td class="num">7</td><td class="num">0.6280</td></tr>
+          <tr><td class="num">4</td><td>천호3동</td><td class="num">48,004</td><td class="num lo">0.0006</td><td class="num">12</td><td class="num">0.6176</td></tr>
+          <tr><td class="num">5</td><td>사당4동</td><td class="num">31,501</td><td class="num">0.2130</td><td class="num">4</td><td class="num">0.6122</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Ranks 1 and 2 are <strong>opposite phenomena scoring the same</strong>.
+      청림동 is ultra-dense and <em class="term">fully covered</em> &mdash; its
+      coverage indicator contributes nothing. 남현동 is sparse with 76&nbsp;% of
+      its area uncovered. An equal-weight composite makes them indistinguishable.
+      <span class="ko">1위와 2위는 <strong>정반대 현상인데 점수가 같다</strong>.
+        청림동은 초고밀에 완전 커버로 커버리지 지표 기여분이 0이다.
+        남현동은 저밀에 면적의 76%가 비커버다. 균등가중 합성지수가
+        둘을 구분 불가능하게 만든다.</span>
+    </p>
+
+    <h3>Then the weights were moved</h3>
+    <p>231 weight combinations across the simplex, step 0.05. Nothing else
+      changed &mdash; same data, same indicators, same code.
+      <span class="ko">단체 격자 위 231개 가중치 조합, 간격 0.05.
+        데이터·지표·코드 모두 그대로 두고 가중치만 움직였다.</span>
+    </p>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>District</th>
+            <th style="text-align:right">Original rank</th>
+            <th style="text-align:right">In Top 5</th>
+            <th style="text-align:right">Reaches rank 1</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>청림동</td><td class="num">1</td><td class="num">51.5 %</td><td class="num">39.4 %</td></tr>
+          <tr><td>남현동</td><td class="num">2</td><td class="num">50.2 %</td><td class="num">24.2 %</td></tr>
+          <tr><td>중계4동</td><td class="num">3</td><td class="num">29.9 %</td><td class="num">0.4 %</td></tr>
+          <tr><td>천호3동</td><td class="num">4</td><td class="num">45.5 %</td><td class="num">&mdash;</td></tr>
+          <tr><td>사당4동</td><td class="num">5</td><td class="num lo">11.7 %</td><td class="num">&mdash;</td></tr>
+          <tr><td>우이동</td><td class="num">&mdash;</td><td class="num hi">36.4 %</td><td class="num hi">21.6 %</td></tr>
+          <tr><td>거여2동</td><td class="num">&mdash;</td><td class="num hi">38.5 %</td><td class="num">&mdash;</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>24 districts enter the Top 5 at least once. Seven reach rank 1.</strong>
+      우이동 never appears in the published result yet takes first place in
+      21.6&nbsp;% of weightings. 사당4동, published as fifth, survives 11.7&nbsp;%.
+      One unjustified line &mdash; <code>W_POP = W_UNC = W_BUS = 0.33</code> &mdash;
+      chose the answer.
+      <span class="ko"><strong>24개 행정동이 한 번 이상 Top5에 들고, 7개가 1위에 오른다.</strong>
+        우이동은 발표된 결과에 없지만 가중치 조합의 21.6%에서 1위다.
+        5위로 발표된 사당4동은 11.7%만 살아남는다. 근거 없는 한 줄이 답을 결정했다.</span>
+    </p>
+  </section>
+
+  <!-- ================= TALK STRUCTURE ================= -->
+  <section>
+    <div class="sec-head">
+      <h2>Talk structure
+        <span class="ko">발표 구성</span>
+      </h2>
+      <p>A sequence, because each beat only lands once the previous one has.
+        <span class="ko">앞 단계가 성립해야 다음이 성립하므로 순서가 있다.</span>
+      </p>
+    </div>
+
+    <div class="beats">
+      <div class="beat">
+        <div class="beat-n">01</div>
+        <div class="beat-body">
+          <h3>The question and the first answer</h3>
+          <div class="meta">~4 min &middot; lecture 1 material</div>
+          <p style="font-size:0.9rem">Which Seoul districts are underserved by
+            transit? Count stops per district. Outer low-density areas win —
+            obviously wrong.
+            <span class="ko">서울에서 대중교통이 부족한 동은? 동별 정류장 수로
+              세면 외곽 저밀지역이 뽑힌다. 명백히 틀렸다.</span></p>
+        </div>
+      </div>
+
+      <div class="beat">
+        <div class="beat-n">02</div>
+        <div class="beat-body">
+          <h3>Three refinements, three different cities</h3>
+          <div class="meta">~6 min &middot; lectures 2–4</div>
+          <p style="font-size:0.9rem">Add population. Add buffers. Add the walk
+            network. The answer moves every time — and each intermediate answer
+            looked finished when it was current.
+            <span class="ko">인구를 넣고, 버퍼를 넣고, 도보 네트워크를 넣는다.
+              매번 답이 이동한다. 각 중간 답은 당시엔 완성돼 보였다.</span></p>
+        </div>
+      </div>
+
+      <div class="beat">
+        <div class="beat-n">03</div>
+        <div class="beat-body">
+          <h3>Live: ask a model to write the coverage step</h3>
+          <div class="meta">~5 min &middot; demo</div>
+          <p style="font-size:0.9rem">Prompt it in plain language. It produces
+            <code>.within()</code> and <code>.intersects()</code>. The map
+            renders. Flip the sidebar toggles in app.py and watch the KPIs move.
+            <span class="ko">평이한 말로 요청하면 <code>.within()</code>,
+              <code>.intersects()</code>가 나온다. 지도가 그려진다.
+              app.py 사이드바 토글을 켜면 KPI가 움직인다.</span></p>
+        </div>
+      </div>
+
+      <div class="beat">
+        <div class="beat-n">04</div>
+        <div class="beat-body">
+          <h3>Five bugs, one family</h3>
+          <div class="meta">~7 min &middot; the findings table</div>
+          <p style="font-size:0.9rem">+51.7 %, +34.8 %, +23.1 %, +3.2 % &mdash;
+            partial overlap counted whole. Then the one that is not about
+            geometry at all: a district that vanished into a name collision.
+            Close the beat there; it is the line people repeat afterwards.
+            <span class="ko">넷은 부분 중첩을 전체로 계상한 것. 그다음
+              기하와 무관한 하나 — 이름 충돌로 사라진 행정동. 여기서 끊는다.
+              사람들이 나중에 옮기는 문장이 이것이다.</span></p>
+        </div>
+      </div>
+
+      <div class="beat">
+        <div class="beat-n">05</div>
+        <div class="beat-body">
+          <h3>And then the weights moved</h3>
+          <div class="meta">~5 min &middot; the payoff</div>
+          <p style="font-size:0.9rem">24 districts, 7 possible winners. The
+            fixes mattered less than the modelling choice nobody defended.
+            <span class="ko">24개 행정동, 7명의 우승 후보. 버그 수정보다
+              아무도 변호하지 않은 모델링 선택이 더 컸다.</span></p>
+        </div>
+      </div>
+
+      <div class="beat">
+        <div class="beat-n">06</div>
+        <div class="beat-body">
+          <h3>Hiroshima: where the same code stops being harmless</h3>
+          <div class="meta">~6 min &middot; the local case</div>
+          <p style="font-size:0.9rem">The walk network is routed on planar
+            distance. In 남현동 the uncovered land is empty mountainside, so the
+            error hides. On the 斜面市街地 of 呉市 and 尾道市, people live on
+            that slope — and a stairway is not 300 m of walking.
+            <span class="ko">도보 네트워크가 평면거리로 계산된다. 남현동에선
+              비커버 지역이 빈 산지라 오차가 숨는다. 呉市·尾道市의 斜面市街地에는
+              그 경사면에 사람이 산다. 계단은 300m 보행이 아니다.</span></p>
+        </div>
+      </div>
+
+      <div class="beat">
+        <div class="beat-n">07</div>
+        <div class="beat-body">
+          <h3>What survives automation</h3>
+          <div class="meta">~3 min &middot; close</div>
+          <p style="font-size:0.9rem">Syntax was never the failure mode of GIS.
+            Generation makes plausible spatial analysis cheap; judging it stays
+            expensive. Show the ODbL attribution slide here.
+            <span class="ko">GIS의 실패 모드는 원래 문법이 아니었다. 생성은
+              그럴듯한 공간분석을 싸게 만들지만, 판별은 여전히 비싸다.
+              ODbL 어트리뷰션 슬라이드를 여기에 둔다.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABSTRACT ================= -->
+  <section>
+    <div class="sec-head">
+      <h2>Abstract draft
+        <span class="ko">초록 초안</span>
+      </h2>
+      <p>Roughly 210 words. Trim to the CFP limit once it is known.
+        <span class="ko">약 210단어. CFP 제한 확인 후 조정.</span>
+      </p>
+    </div>
+
+    <div class="abstract">
+      <p><strong>Counted in Full: How Partial Spatial Overlap Silently Breaks
+        Accessibility Analysis</strong></p>
+      <p>Six months ago I built a four-part course on public transport
+        accessibility in Seoul, using GeoPandas, OSMnx and deck.gl to find
+        districts underserved by bus and subway. Re-auditing it for this talk,
+        I found that one of the districts had quietly fallen out of the
+        analysis altogether — two dongs share the name 신사동, the population
+        lookup was keyed on that name, and one of them ended up with no
+        population, no score, and last place out of 427 rows describing 426
+        districts.</p>
+      <p>It was not alone. Four further defects all reduced to the same
+        operation: a spatial predicate answering <em>whether</em> two geometries
+        meet, used where the question was <em>how much</em>. Measured against
+        the same data, they overstated affected population by 3.2 %, 23.1 %,
+        34.8 % and 51.7 %. None raised an exception. None distorted a map badly
+        enough to notice.</p>
+      <p>Then I moved the three index weights the original had fixed at 0.33
+        without argument. Across 231 combinations, 24 districts entered the top
+        five and seven reached first place. The published winner held rank one
+        in 39 % of weightings; a district absent from the published result took
+        first in 22 %.</p>
+      <p>Generated code makes plausible spatial analysis cheap to produce and no
+        cheaper to judge. I will show the audit, the corrections, and why the
+        same code that is nearly harmless on an empty Seoul hillside becomes
+        dangerous on the inhabited slopes of Kure and Onomichi.</p>
+    </div>
+  </section>
+
+  <!-- ================= STATUS ================= -->
+  <section>
+    <div class="sec-head">
+      <h2>Build status
+        <span class="ko">작업 현황</span>
+      </h2>
+      <p>One month to the talk.
+        <span class="ko">발표까지 1개월.</span>
+      </p>
+    </div>
+
+    <div class="status">
+      <div class="status-row"><span class="mark done">done</span><span>Mapbox tokens removed from notebook, exported HTML and archives &middot; 토큰 제거</span><span class="tag">security</span></div>
+      <div class="status-row"><span class="mark done">done</span><span>Edge effect quantified and made a live toggle in app.py &middot; edge effect 정량화</span><span class="tag">finding 04</span></div>
+      <div class="status-row"><span class="mark done">done</span><span>Areal weighting applied to app.py and lecture 4 &middot; 면적가중 적용</span><span class="tag">findings 01–03</span></div>
+      <div class="status-row"><span class="mark done">done</span><span>Ranking reproduced exactly; weight sensitivity across 231 combinations &middot; 민감도 분석</span><span class="tag">payoff</span></div>
+      <div class="status-row"><span class="mark done">done</span><span>pydeck &rarr; lonboard: MapLibre-rendered, zero Mapbox token &middot; lonboard 전환</span><span class="tag">venue fit</span></div>
+      <div class="status-row"><span class="mark done">done</span><span>Hiroshima slope case, Koi-ue (己斐上): Tobler's hiking function applied &middot; &minus;15.5% hillside vs &minus;0.7% valley-floor</span><span class="tag">beat 06</span></div>
+      <div class="status-row"><span class="mark done">done</span><span>GeoParquet pre-bake (fixed a dead app.py file reference) + self-hosted PMTiles basemap &middot; 오프라인 데모</span><span class="tag">demo risk</span></div>
+      <div class="status-row"><span class="mark done">done</span><span>Isolated uv environment with a lockfile &mdash; verified by rerunning the Tobler script and app.py inside it &middot; 락파일</span><span class="tag">reproducibility</span></div>
+      <div class="status-row"><span class="mark todo">open</span><span>spopt MCLP against the greedy siting heuristic &middot; 최적 입지</span><span class="tag">optional</span></div>
+      <div class="status-row"><span class="mark todo">open</span><span>GTFS-based time-of-day accessibility &mdash; likely a separate talk &middot; GTFS</span><span class="tag">out of scope</span></div>
+    </div>
+  </section>
+
+  <footer>
+    Scripts and result tables in <code>analysis/</code> &mdash;
+    edge_effect_experiment.py, reproduce_ranking.py, lecture4_grid_bias.py,
+    weight_sensitivity.py.<br>
+    Environment: geopandas 1.1.4 &middot; shapely 2.1.2 &middot; pandas 3.0.5
+    &middot; osmnx 2.1.1 &middot; streamlit 1.61.1.<br>
+    Population grid <code>nlsp_021001001</code> covers 31.3 km² across 39
+    districts &mdash; not all of Seoul (605 km², 426 districts).
+    Registered-population figures are the independent check.
+  </footer>
+
+</div>

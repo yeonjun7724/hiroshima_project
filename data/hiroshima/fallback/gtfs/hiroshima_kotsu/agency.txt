@@ -1,0 +1,3 @@
+﻿agency_id,agency_name,agency_url,agency_timezone,agency_lang,agency_phone,agency_fare_url,agency_email
+7240001009175,広島交通,https://www.hiroko-group.co.jp/kotsu/index.htm,Asia/Tokyo,ja,,,
+5240001009945,広交観光,https://www.hiroko-group.co.jp/kanko/ibara.html,Asia/Tokyo,ja,,,
