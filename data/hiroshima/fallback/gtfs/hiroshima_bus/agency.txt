@@ -1,0 +1,2 @@
+﻿agency_id,agency_name,agency_url,agency_timezone,agency_lang,agency_phone,agency_fare_url,agency_email
+4240001009574,広島バス,http://www.hirobus.co.jp/route-bus/index.html,Asia/Tokyo,ja,,,

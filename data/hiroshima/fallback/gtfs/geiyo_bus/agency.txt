@@ -1,0 +1,2 @@
+﻿agency_id,agency_name,agency_url,agency_timezone,agency_lang,agency_phone,agency_fare_url,agency_email
+3240001022504,芸陽バス,https://www.geiyo.co.jp/route_bus.html,Asia/Tokyo,ja,,,
