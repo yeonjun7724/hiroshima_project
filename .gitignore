@@ -1,0 +1,19 @@
+# Python environments and caches / 파이썬 환경과 캐시
+.venv/
+**/.venv/
+__pycache__/
+*.py[cod]
+
+# Jupyter temporary files / 주피터 임시 파일
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# OSMnx download and graph cache / OSMnx 다운로드·그래프 캐시
+hiroshima_presentation/cache/
+
+# Local secrets and operating-system files / 로컬 비밀정보·운영체제 파일
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db

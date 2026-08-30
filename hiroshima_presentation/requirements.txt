@@ -1,10 +1,18 @@
-geopandas
-pandas
-numpy
-matplotlib
-nbformat
-jupyter
-pydeck
-folium
-osmnx
-scikit-learn
+# Spatial analysis / 공간분석
+geopandas>=1.0,<2
+osmnx>=2.0,<3
+networkx>=3.3,<4
+
+# Data and modelling / 데이터·모델링
+pandas>=2.2,<4
+numpy>=2.0,<3
+scikit-learn>=1.5,<2
+
+# Visualization / 시각화
+matplotlib>=3.9,<4
+folium>=0.18,<1
+pydeck>=0.9,<1
+
+# Notebook runtime / 노트북 실행환경
+nbformat>=5.10,<6
+jupyter>=1.1,<2

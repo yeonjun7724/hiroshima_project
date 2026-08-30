@@ -36,9 +36,18 @@ Vibe coding is not uncritical code generation. We describe the analytical intent
 ## 4. deck.gl 시각화로 질문을 탐색하기
 ## 4. Exploring questions with deck.gl visualizations
 
-정적 지도는 결과를 확인하는 데 쓰고, deck.gl은 결과를 탐색하는 인터페이스로 사용한다. 인구 압출 지도는 “사람이 많은 곳에 공급이 있는가?”를, 사각지대 레이어는 “미도달 영역이 어디에 남는가?”를, PathLayer는 “실제 보행 경로가 얼마나 우회하는가?”를 보여준다.
+정적 지도는 결과 검증에, deck.gl은 가설 탐색에 사용한다. 시각 문법은 모든 지도에서 동일하다. 폴리곤은 공간 맥락, 색은 정규화 지표, 높이는 규모, 선은 이동, 점은 관측값이나 후보 위치를 나타낸다. 넓은 배경 레이어를 먼저 그리고 경로·외곽선·마커를 나중에 그려 중요한 정보가 가려지지 않게 한다.
 
-We use static maps to verify results and deck.gl as an exploratory interface. The population extrusion map asks whether supply follows people, the blind-spot layer shows where uncovered space remains, and the PathLayer reveals how much real walking detours.
+Static maps support verification; deck.gl supports hypothesis exploration. Every view uses the same visual grammar: polygons provide spatial context, colour shows a normalized indicator, height shows magnitude, paths show movement, and points mark observations or candidate locations. Broad context layers are drawn first and routes, outlines, and markers last so important information remains visible.
+
+1. 인구·공급 지도: 높이는 인구, 빨강→청록은 인구 1만 명당 버스 공급 부족→충분을 뜻한다. 높고 붉은 블록을 먼저 찾는다.
+   - Population and supply: height is population; red→teal is low→high bus supply per 10,000 residents. Look first for tall red blocks.
+2. 사각지대 지도: 노랑→빨강은 미커버 비율, 청록 외곽선은 취약성 상위 5개 지역이다.
+   - Blind spots: yellow→red is uncovered share; cyan outlines identify the five highest vulnerability scores.
+3. 보행 경로 지도: 청록은 버스정류장 경로, 자홍은 역 경로이며 어두운 외곽선이 중첩 경로를 분리한다.
+   - Walking routes: cyan leads to bus stops, magenta to stations, and a dark casing separates overlaps.
+4. 3D 후보지역 지도: 높이와 순차색은 탐색 반경 내 유효 인구, 흰색 링은 탐색 범위, 중심 마커는 선택 후보를 나타낸다.
+   - 3D candidate view: height and sequential colour show effective population, the white ring shows the search radius, and the centre marker shows the selected candidate.
 
 ## 5. 히로시마 사례에서 읽는 인사이트
 ## 5. Insights from the Hiroshima case
