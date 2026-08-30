@@ -6,7 +6,9 @@
         <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
-    <script src='https://cdn.jsdelivr.net/npm/@deck.gl/jupyter-widget@~9.0.*/dist/index.js'></script>
+    <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.14.0/dist/maplibre-gl.css" />
+    <script src='https://cdn.jsdelivr.net/npm/@deck.gl/jupyter-widget@~9.3.*/dist/index.js'></script>
+    <link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/@deck.gl/widgets@~9.3.*/dist/stylesheet.css />
     <style>
     body {
   margin: 0;
@@ -22,6 +24,13 @@
 #deck-container canvas {
   z-index: 1;
   background: none;
+}
+
+#deck-container .error_text {
+  color: red;
+  background: none;
+  position: absolute;
+  z-index: 100;
 }
     </style>
   </head>
@@ -9027,7 +9036,7 @@
       "getElevation": "@@=elev",
       "getFillColor": "@@=fill_color",
       "getPolygon": "@@=polygon",
-      "id": "5c29db0a-5622-4881-8959-b50bbb157c37",
+      "id": "51c69220-51dd-4f49-bf61-0e2308df4435",
       "pickable": true
     },
     {
@@ -9307,7 +9316,7 @@
       ],
       "getLineWidth": 40,
       "getPolygon": "@@=polygon",
-      "id": "cc83dc31-ab91-40b5-b3e4-82ff212abfa6",
+      "id": "b0117505-bc9b-4aa8-87d0-cb5d8c0cc202",
       "stroked": true
     }
   ],
@@ -9329,8 +9338,8 @@
       jsonInput,
       tooltip,
       customLibraries,
-      configuration
-    });
+      configuration,
+          });
 
   </script>
 </html>
